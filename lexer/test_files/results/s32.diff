@@ -1,0 +1,64 @@
+error #1
+lexed as:   '-'
+should be:  ERROR "Unmatched *)"
+
+error #2
+lexed as:   '-'
+should be: 
+
+error #3
+lexed as:   OBJECTID tricky
+should be: 
+
+error #4
+lexed as:   ':'
+should be: 
+
+error #5
+lexed as:   OBJECTID this
+should be: 
+
+error #6
+lexed as:   OBJECTID should
+should be: 
+
+error #7
+lexed as:   OBJECTID be
+should be: 
+
+error #8
+lexed as:   OBJECTID seen
+should be: 
+
+error #9
+lexed as:   OBJECTID as
+should be: 
+
+error #10
+lexed as:   OBJECTID an
+should be: 
+
+error #11
+lexed as:   OBJECTID error
+should be: 
+
+error #12
+lexed as:   ','
+should be: 
+
+error #13
+lexed as:   NOT
+should be: 
+
+error #14
+lexed as:   OBJECTID two
+should be: 
+
+error #15
+lexed as:   OBJECTID tokens
+should be: 
+
+error #16
+lexed as:   ERROR "Comment isn't closed!"
+should be: 
+

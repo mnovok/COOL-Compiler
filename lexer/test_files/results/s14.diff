@@ -1,0 +1,12 @@
+error #3
+lexed as:   '-'
+should be: 
+
+error #4
+lexed as:   '-'
+should be: 
+
+error #5
+lexed as:   OBJECTID cmt2
+should be: 
+

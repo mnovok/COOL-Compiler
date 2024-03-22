@@ -1,0 +1,4 @@
+error #6
+lexed as:   ERROR "Comment isn't closed!"
+should be:  ERROR "Unmatched *)"
+

@@ -1,0 +1,20 @@
+error #2
+lexed as:   OBJECTID this
+should be:  ERROR "Unterminated string constant"
+
+error #3
+lexed as:   OBJECTID string
+should be: 
+
+error #4
+lexed as:   OBJECTID doens
+should be: 
+
+error #5
+lexed as:   OBJECTID t
+should be: 
+
+error #6
+lexed as:   OBJECTID end
+should be: 
+

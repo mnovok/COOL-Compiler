@@ -1,0 +1,80 @@
+error #11
+lexed as:   OBJECTID fjsjs
+should be:  INT_CONST 33
+
+error #12
+lexed as:   OBJECTID jjkljkl
+should be:  OBJECTID fjsjs
+
+error #13
+lexed as:   OBJECTID f3243f
+should be:  INT_CONST 34
+
+error #14
+lexed as:   OBJECTID fedfj
+should be:  OBJECTID jjkljkl
+
+error #15
+lexed as:   TYPEID FFFFF____
+should be:  OBJECTID f3243f
+
+error #16
+lexed as:   OBJECTID quasar
+should be:  ERROR "_"
+
+error #17
+lexed as:   TYPEID Quasar
+should be:  ERROR "_"
+
+error #18
+lexed as:   OBJECTID q__uasar
+should be:  ERROR "_"
+
+error #19
+lexed as:   OBJECTID q__uasar__
+should be:  INT_CONST 23432
+
+error #20
+lexed as:   TYPEID Q__uasar
+should be:  ERROR "_"
+
+error #21
+lexed as:   TYPEID Q_uasar___
+should be:  ERROR "_"
+
+error #22
+lexed as:   OBJECTID q_23_ads
+should be:  OBJECTID fedfj
+
+error #23
+lexed as:   OBJECTID q__23__ads
+should be:  ERROR "_"
+
+error #24
+lexed as:   TYPEID Q_23_ads
+should be:  ERROR "_"
+
+error #25
+lexed as:   TYPEID Q_23ADS
+should be:  ERROR "_"
+
+error #26
+lexed as:   OBJECTID fjsjs
+should be:  ERROR "_"
+
+error #27
+lexed as:   OBJECTID jjkljkl
+should be:  ERROR "_"
+
+error #28
+lexed as:   OBJECTID f3243f
+should be:  INT_CONST 3232
+
+error #29
+lexed as:   OBJECTID fedfj
+should be:  TYPEID FFFFF____
+
+error #30
+lexed as:   TYPEID FFFFF____
+should be:  OBJECTID quasar
+

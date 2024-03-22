@@ -1,0 +1,14 @@
+#name ".//test_files//lineno3.cl"
+#5 '-'
+#5 '-'
+#5 OBJECTID sixth
+#5 OBJECTID line
+#6 '+'
+#7 OBJECTID abc
+#8 '-'
+#8 '-'
+#8 OBJECTID ninth
+#8 OBJECTID line
+#11 TYPEID DEF
+"#12 OBJECTID string
+"

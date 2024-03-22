@@ -1,0 +1,7 @@
+#name ".//test_files//escapedquote.cl"
+"#1 OBJECTID string
+#1 OBJECTID with
+#1 OBJECTID no
+#1 OBJECTID closing
+#1 OBJECTID quote
+\"

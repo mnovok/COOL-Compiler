@@ -1,0 +1,116 @@
+error #1
+lexed as:   OBJECTID this
+should be:  STR_CONST "this is a string"
+
+error #2
+lexed as:   OBJECTID is
+should be:  STR_CONST "so is this"
+
+error #3
+lexed as:   OBJECTID a
+should be:  STR_CONST "one more string"
+
+error #4
+lexed as:   OBJECTID string
+should be:  STR_CONST "strings can have keywords inside: if else case"
+
+error #5
+lexed as:   OBJECTID so
+should be:  STR_CONST "!@#$%^&*()_+1234567890-=\tjustanother string   "
+
+error #6
+lexed as:   OBJECTID is
+should be: 
+
+error #7
+lexed as:   OBJECTID this
+should be: 
+
+error #8
+lexed as:   OBJECTID one
+should be: 
+
+error #9
+lexed as:   OBJECTID more
+should be: 
+
+error #10
+lexed as:   OBJECTID string
+should be: 
+
+error #11
+lexed as:   OBJECTID strings
+should be: 
+
+error #12
+lexed as:   OBJECTID can
+should be: 
+
+error #13
+lexed as:   OBJECTID have
+should be: 
+
+error #14
+lexed as:   OBJECTID keywords
+should be: 
+
+error #15
+lexed as:   OBJECTID inside
+should be: 
+
+error #16
+lexed as:   ':'
+should be: 
+
+error #17
+lexed as:   IF
+should be: 
+
+error #18
+lexed as:   ELSE
+should be: 
+
+error #19
+lexed as:   CASE
+should be: 
+
+error #20
+lexed as:   '@'
+should be: 
+
+error #21
+lexed as:   '*'
+should be: 
+
+error #22
+lexed as:   '('
+should be: 
+
+error #23
+lexed as:   ')'
+should be: 
+
+error #24
+lexed as:   '+'
+should be: 
+
+error #25
+lexed as:   '-'
+should be: 
+
+error #26
+lexed as:   '='
+should be: 
+
+error #27
+lexed as:   OBJECTID justanother
+should be: 
+
+error #28
+lexed as:   OBJECTID string
+should be: 
+
+error #29
+lexed as:  "
+should be: 
+

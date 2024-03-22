@@ -1,0 +1,4 @@
+error #2
+lexed as:   OBJECTID h
+should be:  ERROR "\001"
+

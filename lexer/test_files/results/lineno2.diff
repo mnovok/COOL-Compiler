@@ -1,0 +1,8 @@
+error #1
+lexed as:   OBJECTID fjdk
+should be:  ERROR "!"
+
+error #2
+lexed as:  ""
+should be:  OBJECTID fjdk
+

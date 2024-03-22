@@ -1,0 +1,952 @@
+error #1
+lexed as:   OBJECTID class
+should be:  CLASS
+
+error #82
+lexed as:   ';'
+should be:  INT_CONST 2
+
+error #83
+lexed as:   OBJECTID i
+should be:  ';'
+
+error #84
+lexed as:   ';'
+should be:  OBJECTID i
+
+error #85
+lexed as:   '}'
+should be:  ';'
+
+error #86
+lexed as:   ')'
+should be:  '}'
+
+error #87
+lexed as:   '}'
+should be:  ')'
+
+error #88
+lexed as:   ';'
+should be:  '}'
+
+error #89
+lexed as:   '}'
+should be:  ';'
+
+error #90
+lexed as:   ';'
+should be:  '}'
+
+error #91
+lexed as:   OBJECTID class
+should be:  ';'
+
+error #92
+lexed as:   TYPEID Bar
+should be:  CLASS
+
+error #93
+lexed as:   INHERITS
+should be:  TYPEID Bar
+
+error #94
+lexed as:   TYPEID Razz
+should be:  INHERITS
+
+error #95
+lexed as:   '{'
+should be:  TYPEID Razz
+
+error #96
+lexed as:   OBJECTID c
+should be:  '{'
+
+error #97
+lexed as:   ':'
+should be:  OBJECTID c
+
+error #98
+lexed as:   TYPEID Int
+should be:  ':'
+
+error #99
+lexed as:   ASSIGN
+should be:  TYPEID Int
+
+error #100
+lexed as:   OBJECTID doh
+should be:  ASSIGN
+
+error #101
+lexed as:   '('
+should be:  OBJECTID doh
+
+error #102
+lexed as:   ')'
+should be:  '('
+
+error #103
+lexed as:   ';'
+should be:  ')'
+
+error #104
+lexed as:   OBJECTID d
+should be:  ';'
+
+error #105
+lexed as:   ':'
+should be:  OBJECTID d
+
+error #106
+lexed as:   TYPEID Object
+should be:  ':'
+
+error #107
+lexed as:   ASSIGN
+should be:  TYPEID Object
+
+error #108
+lexed as:   OBJECTID printh
+should be:  ASSIGN
+
+error #109
+lexed as:   '('
+should be:  OBJECTID printh
+
+error #110
+lexed as:   ')'
+should be:  '('
+
+error #111
+lexed as:   ';'
+should be:  ')'
+
+error #112
+lexed as:   '}'
+should be:  ';'
+
+error #113
+lexed as:   ';'
+should be:  '}'
+
+error #114
+lexed as:   OBJECTID class
+should be:  ';'
+
+error #115
+lexed as:   TYPEID Razz
+should be:  CLASS
+
+error #116
+lexed as:   INHERITS
+should be:  TYPEID Razz
+
+error #117
+lexed as:   TYPEID Foo
+should be:  INHERITS
+
+error #118
+lexed as:   '{'
+should be:  TYPEID Foo
+
+error #119
+lexed as:   OBJECTID e
+should be:  '{'
+
+error #120
+lexed as:   ':'
+should be:  OBJECTID e
+
+error #121
+lexed as:   TYPEID Bar
+should be:  ':'
+
+error #122
+lexed as:   ASSIGN
+should be:  TYPEID Bar
+
+error #123
+lexed as:   CASE
+should be:  ASSIGN
+
+error #124
+lexed as:   OBJECTID self
+should be:  CASE
+
+error #125
+lexed as:   OF
+should be:  OBJECTID self
+
+error #126
+lexed as:   OBJECTID n
+should be:  OF
+
+error #127
+lexed as:   ':'
+should be:  OBJECTID n
+
+error #128
+lexed as:   TYPEID Razz
+should be:  ':'
+
+error #129
+lexed as:   DARROW
+should be:  TYPEID Razz
+
+error #130
+lexed as:   '('
+should be:  DARROW
+
+error #131
+lexed as:   NEW
+should be:  '('
+
+error #132
+lexed as:   TYPEID Bar
+should be:  NEW
+
+error #133
+lexed as:   ')'
+should be:  TYPEID Bar
+
+error #134
+lexed as:   ';'
+should be:  ')'
+
+error #135
+lexed as:   OBJECTID n
+should be:  ';'
+
+error #136
+lexed as:   ':'
+should be:  OBJECTID n
+
+error #137
+lexed as:   TYPEID Bar
+should be:  ':'
+
+error #138
+lexed as:   DARROW
+should be:  TYPEID Bar
+
+error #139
+lexed as:   OBJECTID n
+should be:  DARROW
+
+error #140
+lexed as:   ';'
+should be:  OBJECTID n
+
+error #141
+lexed as:   ESAC
+should be:  ';'
+
+error #142
+lexed as:   ';'
+should be:  ESAC
+
+error #143
+lexed as:   OBJECTID f
+should be:  ';'
+
+error #144
+lexed as:   ':'
+should be:  OBJECTID f
+
+error #145
+lexed as:   TYPEID Int
+should be:  ':'
+
+error #146
+lexed as:   ASSIGN
+should be:  TYPEID Int
+
+error #147
+lexed as:   OBJECTID a
+should be:  ASSIGN
+
+error #148
+lexed as:   '@'
+should be:  OBJECTID a
+
+error #149
+lexed as:   TYPEID Bazz
+should be:  '@'
+
+error #150
+lexed as:   '.'
+should be:  TYPEID Bazz
+
+error #151
+lexed as:   OBJECTID doh
+should be:  '.'
+
+error #152
+lexed as:   '('
+should be:  OBJECTID doh
+
+error #153
+lexed as:   ')'
+should be:  '('
+
+error #154
+lexed as:   '+'
+should be:  ')'
+
+error #155
+lexed as:   OBJECTID g
+should be:  '+'
+
+error #156
+lexed as:   '.'
+should be:  OBJECTID g
+
+error #157
+lexed as:   OBJECTID doh
+should be:  '.'
+
+error #158
+lexed as:   '('
+should be:  OBJECTID doh
+
+error #159
+lexed as:   ')'
+should be:  '('
+
+error #160
+lexed as:   '+'
+should be:  ')'
+
+error #161
+lexed as:   OBJECTID e
+should be:  '+'
+
+error #162
+lexed as:   '.'
+should be:  OBJECTID e
+
+error #163
+lexed as:   OBJECTID doh
+should be:  '.'
+
+error #164
+lexed as:   '('
+should be:  OBJECTID doh
+
+error #165
+lexed as:   ')'
+should be:  '('
+
+error #166
+lexed as:   '+'
+should be:  ')'
+
+error #167
+lexed as:   OBJECTID doh
+should be:  '+'
+
+error #168
+lexed as:   '('
+should be:  OBJECTID doh
+
+error #169
+lexed as:   ')'
+should be:  '('
+
+error #170
+lexed as:   '+'
+should be:  ')'
+
+error #171
+lexed as:   OBJECTID printh
+should be:  '+'
+
+error #172
+lexed as:   '('
+should be:  OBJECTID printh
+
+error #173
+lexed as:   ')'
+should be:  '('
+
+error #174
+lexed as:   ';'
+should be:  ')'
+
+error #175
+lexed as:   '}'
+should be:  ';'
+
+error #176
+lexed as:   ';'
+should be:  '}'
+
+error #177
+lexed as:   OBJECTID class
+should be:  ';'
+
+error #178
+lexed as:   TYPEID Bazz
+should be:  CLASS
+
+error #179
+lexed as:   INHERITS
+should be:  TYPEID Bazz
+
+error #180
+lexed as:   TYPEID IO
+should be:  INHERITS
+
+error #181
+lexed as:   '{'
+should be:  TYPEID IO
+
+error #182
+lexed as:   OBJECTID h
+should be:  '{'
+
+error #183
+lexed as:   ':'
+should be:  OBJECTID h
+
+error #184
+lexed as:   TYPEID Int
+should be:  ':'
+
+error #185
+lexed as:   ASSIGN
+should be:  TYPEID Int
+
+error #186
+lexed as:   ';'
+should be:  ASSIGN
+
+error #187
+lexed as:   OBJECTID g
+should be:  INT_CONST 1
+
+error #188
+lexed as:   ':'
+should be:  ';'
+
+error #189
+lexed as:   TYPEID Foo
+should be:  OBJECTID g
+
+error #190
+lexed as:   ASSIGN
+should be:  ':'
+
+error #191
+lexed as:   CASE
+should be:  TYPEID Foo
+
+error #192
+lexed as:   OBJECTID self
+should be:  ASSIGN
+
+error #193
+lexed as:   OF
+should be:  CASE
+
+error #194
+lexed as:   OBJECTID n
+should be:  OBJECTID self
+
+error #195
+lexed as:   ':'
+should be:  OF
+
+error #196
+lexed as:   TYPEID Bazz
+should be:  OBJECTID n
+
+error #197
+lexed as:   DARROW
+should be:  ':'
+
+error #198
+lexed as:   '('
+should be:  TYPEID Bazz
+
+error #199
+lexed as:   NEW
+should be:  DARROW
+
+error #200
+lexed as:   TYPEID Foo
+should be:  '('
+
+error #201
+lexed as:   ')'
+should be:  NEW
+
+error #202
+lexed as:   ';'
+should be:  TYPEID Foo
+
+error #203
+lexed as:   OBJECTID n
+should be:  ')'
+
+error #204
+lexed as:   ':'
+should be:  ';'
+
+error #205
+lexed as:   TYPEID Razz
+should be:  OBJECTID n
+
+error #206
+lexed as:   DARROW
+should be:  ':'
+
+error #207
+lexed as:   '('
+should be:  TYPEID Razz
+
+error #208
+lexed as:   NEW
+should be:  DARROW
+
+error #209
+lexed as:   TYPEID Bar
+should be:  '('
+
+error #210
+lexed as:   ')'
+should be:  NEW
+
+error #211
+lexed as:   ';'
+should be:  TYPEID Bar
+
+error #212
+lexed as:   OBJECTID n
+should be:  ')'
+
+error #213
+lexed as:   ':'
+should be:  ';'
+
+error #214
+lexed as:   TYPEID Foo
+should be:  OBJECTID n
+
+error #215
+lexed as:   DARROW
+should be:  ':'
+
+error #216
+lexed as:   '('
+should be:  TYPEID Foo
+
+error #217
+lexed as:   NEW
+should be:  DARROW
+
+error #218
+lexed as:   TYPEID Razz
+should be:  '('
+
+error #219
+lexed as:   ')'
+should be:  NEW
+
+error #220
+lexed as:   ';'
+should be:  TYPEID Razz
+
+error #221
+lexed as:   OBJECTID n
+should be:  ')'
+
+error #222
+lexed as:   ':'
+should be:  ';'
+
+error #223
+lexed as:   TYPEID Bar
+should be:  OBJECTID n
+
+error #224
+lexed as:   DARROW
+should be:  ':'
+
+error #225
+lexed as:   OBJECTID n
+should be:  TYPEID Bar
+
+error #226
+lexed as:   ';'
+should be:  DARROW
+
+error #227
+lexed as:   ESAC
+should be:  OBJECTID n
+
+error #229
+lexed as:   OBJECTID i
+should be:  ESAC
+
+error #230
+lexed as:   ':'
+should be:  ';'
+
+error #231
+lexed as:   TYPEID Object
+should be:  OBJECTID i
+
+error #232
+lexed as:   ASSIGN
+should be:  ':'
+
+error #233
+lexed as:   OBJECTID printh
+should be:  TYPEID Object
+
+error #234
+lexed as:   '('
+should be:  ASSIGN
+
+error #235
+lexed as:   ')'
+should be:  OBJECTID printh
+
+error #236
+lexed as:   ';'
+should be:  '('
+
+error #237
+lexed as:   OBJECTID printh
+should be:  ')'
+
+error #238
+lexed as:   '('
+should be:  ';'
+
+error #239
+lexed as:   ')'
+should be:  OBJECTID printh
+
+error #240
+lexed as:   ':'
+should be:  '('
+
+error #241
+lexed as:   TYPEID Int
+should be:  ')'
+
+error #242
+lexed as:   '{'
+should be:  ':'
+
+error #243
+lexed as:   '{'
+should be:  TYPEID Int
+
+error #244
+lexed as:   OBJECTID out_int
+should be:  '{'
+
+error #245
+lexed as:   '('
+should be:  '{'
+
+error #246
+lexed as:   OBJECTID h
+should be:  OBJECTID out_int
+
+error #247
+lexed as:   ')'
+should be:  '('
+
+error #248
+lexed as:   ';'
+should be:  OBJECTID h
+
+error #249
+lexed as:   ';'
+should be:  ')'
+
+error #250
+lexed as:   '}'
+should be:  ';'
+
+error #251
+lexed as:   '}'
+should be:  INT_CONST 0
+
+error #253
+lexed as:   OBJECTID doh
+should be:  '}'
+
+error #254
+lexed as:   '('
+should be:  '}'
+
+error #255
+lexed as:   ')'
+should be:  ';'
+
+error #256
+lexed as:   ':'
+should be:  OBJECTID doh
+
+error #257
+lexed as:   TYPEID Int
+should be:  '('
+
+error #258
+lexed as:   '{'
+should be:  ')'
+
+error #259
+lexed as:   '('
+should be:  ':'
+
+error #260
+lexed as:   LET
+should be:  TYPEID Int
+
+error #261
+lexed as:   OBJECTID i
+should be:  '{'
+
+error #262
+lexed as:   ':'
+should be:  '('
+
+error #263
+lexed as:   TYPEID Int
+should be:  LET
+
+error #264
+lexed as:   ASSIGN
+should be:  OBJECTID i
+
+error #265
+lexed as:   OBJECTID h
+should be:  ':'
+
+error #266
+lexed as:   IN
+should be:  TYPEID Int
+
+error #267
+lexed as:   '{'
+should be:  ASSIGN
+
+error #269
+lexed as:   ASSIGN
+should be:  IN
+
+error #270
+lexed as:   OBJECTID h
+should be:  '{'
+
+error #271
+lexed as:   '+'
+should be:  OBJECTID h
+
+error #272
+lexed as:   ';'
+should be:  ASSIGN
+
+error #273
+lexed as:   OBJECTID i
+should be:  OBJECTID h
+
+error #274
+lexed as:   ';'
+should be:  '+'
+
+error #275
+lexed as:   '}'
+should be:  INT_CONST 1
+
+error #276
+lexed as:   ')'
+should be:  ';'
+
+error #277
+lexed as:   '}'
+should be:  OBJECTID i
+
+error #280
+lexed as:   ';'
+should be:  ')'
+
+error #281
+lexed as:   OBJECTID class
+should be:  '}'
+
+error #282
+lexed as:   TYPEID Main
+should be:  ';'
+
+error #283
+lexed as:   '{'
+should be:  '}'
+
+error #284
+lexed as:   OBJECTID a
+should be:  ';'
+
+error #285
+lexed as:   ':'
+should be:  CLASS
+
+error #286
+lexed as:   TYPEID Bazz
+should be:  TYPEID Main
+
+error #287
+lexed as:   ASSIGN
+should be:  '{'
+
+error #288
+lexed as:   NEW
+should be:  OBJECTID a
+
+error #289
+lexed as:   TYPEID Bazz
+should be:  ':'
+
+error #290
+lexed as:   ';'
+should be:  TYPEID Bazz
+
+error #291
+lexed as:   OBJECTID b
+should be:  ASSIGN
+
+error #292
+lexed as:   ':'
+should be:  NEW
+
+error #293
+lexed as:   TYPEID Foo
+should be:  TYPEID Bazz
+
+error #294
+lexed as:   ASSIGN
+should be:  ';'
+
+error #295
+lexed as:   NEW
+should be:  OBJECTID b
+
+error #296
+lexed as:   TYPEID Foo
+should be:  ':'
+
+error #297
+lexed as:   ';'
+should be:  TYPEID Foo
+
+error #298
+lexed as:   OBJECTID c
+should be:  ASSIGN
+
+error #299
+lexed as:   ':'
+should be:  NEW
+
+error #300
+lexed as:   TYPEID Razz
+should be:  TYPEID Foo
+
+error #301
+lexed as:   ASSIGN
+should be:  ';'
+
+error #302
+lexed as:   NEW
+should be:  OBJECTID c
+
+error #303
+lexed as:   TYPEID Razz
+should be:  ':'
+
+error #304
+lexed as:   ';'
+should be:  TYPEID Razz
+
+error #305
+lexed as:   OBJECTID d
+should be:  ASSIGN
+
+error #306
+lexed as:   ':'
+should be:  NEW
+
+error #307
+lexed as:   TYPEID Bar
+should be:  TYPEID Razz
+
+error #308
+lexed as:   ASSIGN
+should be:  ';'
+
+error #309
+lexed as:   NEW
+should be:  OBJECTID d
+
+error #310
+lexed as:   TYPEID Bar
+should be:  ':'
+
+error #311
+lexed as:   ';'
+should be:  TYPEID Bar
+
+error #312
+lexed as:   OBJECTID main
+should be:  ASSIGN
+
+error #313
+lexed as:   '('
+should be:  NEW
+
+error #314
+lexed as:   ')'
+should be:  TYPEID Bar
+
+error #315
+lexed as:   ':'
+should be:  ';'
+
+error #316
+lexed as:   TYPEID String
+should be:  OBJECTID main
+
+error #317
+lexed as:   '{'
+should be:  '('
+
+error #318
+lexed as:   OBJECTID do
+should be:  ')'
+
+error #319
+lexed as:   OBJECTID nothing
+should be:  ':'
+
+error #320
+lexed as:   '}'
+should be:  TYPEID String
+
+error #321
+lexed as:   ';'
+should be:  '{'
+
+error #322
+lexed as:   '}'
+should be:  STR_CONST "do nothing"
+
+error #323
+lexed as:   ';'
+should be:  '}'
+

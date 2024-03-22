@@ -1,0 +1,24 @@
+#name ".//test_files//stringcomment.cl"
+"#1 TYPEID This
+#1 OBJECTID is
+#1 OBJECTID a
+#1 OBJECTID string
+#1 '-'
+#1 '-'
+#1 OBJECTID and
+#1 OBJECTID it
+'#1 OBJECTID s
+#1 OBJECTID still
+#1 OBJECTID a
+#1 OBJECTID string
+"#2 '-'
+#2 '-'
+#2 TYPEID This
+#2 OBJECTID is
+#2 OBJECTID a
+#2 OBJECTID comment
+#2 ','
+"#2 NOT
+#2 OBJECTID a
+#2 OBJECTID string
+"""

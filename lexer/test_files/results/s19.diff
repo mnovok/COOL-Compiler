@@ -1,0 +1,8 @@
+error #1
+lexed as:   OBJECTID c
+should be:  ERROR "Unterminated string constant"
+
+error #3
+lexed as:  "
+should be:  ERROR "Unterminated string constant"
+

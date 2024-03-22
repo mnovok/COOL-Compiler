@@ -1,0 +1,7908 @@
+error #1
+lexed as:   OBJECTID class
+should be:  CLASS
+
+error #8
+lexed as:   ';'
+should be:  INT_CONST 0
+
+error #9
+lexed as:   OBJECTID value
+should be:  ';'
+
+error #10
+lexed as:   '('
+should be:  OBJECTID value
+
+error #11
+lexed as:   ')'
+should be:  '('
+
+error #12
+lexed as:   ':'
+should be:  ')'
+
+error #13
+lexed as:   TYPEID Int
+should be:  ':'
+
+error #14
+lexed as:   '{'
+should be:  TYPEID Int
+
+error #15
+lexed as:   OBJECTID var
+should be:  '{'
+
+error #16
+lexed as:   '}'
+should be:  OBJECTID var
+
+error #17
+lexed as:   ';'
+should be:  '}'
+
+error #18
+lexed as:   OBJECTID set_var
+should be:  ';'
+
+error #19
+lexed as:   '('
+should be:  OBJECTID set_var
+
+error #20
+lexed as:   OBJECTID num
+should be:  '('
+
+error #21
+lexed as:   ':'
+should be:  OBJECTID num
+
+error #22
+lexed as:   TYPEID Int
+should be:  ':'
+
+error #23
+lexed as:   ')'
+should be:  TYPEID Int
+
+error #24
+lexed as:   ':'
+should be:  ')'
+
+error #25
+lexed as:   TYPEID SELF_TYPE
+should be:  ':'
+
+error #26
+lexed as:   '{'
+should be:  TYPEID SELF_TYPE
+
+error #28
+lexed as:   OBJECTID var
+should be:  '{'
+
+error #29
+lexed as:   ASSIGN
+should be:  OBJECTID var
+
+error #30
+lexed as:   OBJECTID num
+should be:  ASSIGN
+
+error #31
+lexed as:   ';'
+should be:  OBJECTID num
+
+error #32
+lexed as:   OBJECTID self
+should be:  ';'
+
+error #33
+lexed as:   ';'
+should be:  OBJECTID self
+
+error #34
+lexed as:   '}'
+should be:  ';'
+
+error #36
+lexed as:   ';'
+should be:  '}'
+
+error #37
+lexed as:   OBJECTID method1
+should be:  ';'
+
+error #38
+lexed as:   '('
+should be:  OBJECTID method1
+
+error #39
+lexed as:   OBJECTID num
+should be:  '('
+
+error #40
+lexed as:   ':'
+should be:  OBJECTID num
+
+error #41
+lexed as:   TYPEID Int
+should be:  ':'
+
+error #42
+lexed as:   ')'
+should be:  TYPEID Int
+
+error #43
+lexed as:   ':'
+should be:  ')'
+
+error #44
+lexed as:   TYPEID SELF_TYPE
+should be:  ':'
+
+error #45
+lexed as:   '{'
+should be:  TYPEID SELF_TYPE
+
+error #46
+lexed as:   '-'
+should be:  '{'
+
+error #47
+lexed as:   '-'
+should be:  OBJECTID self
+
+error #48
+lexed as:   OBJECTID same
+should be:  '}'
+
+error #49
+lexed as:   OBJECTID self
+should be:  ';'
+
+error #50
+lexed as:   '}'
+should be:  OBJECTID method2
+
+error #51
+lexed as:   ';'
+should be:  '('
+
+error #52
+lexed as:   OBJECTID method2
+should be:  OBJECTID num1
+
+error #53
+lexed as:   '('
+should be:  ':'
+
+error #54
+lexed as:   OBJECTID num1
+should be:  TYPEID Int
+
+error #55
+lexed as:   ':'
+should be:  ','
+
+error #56
+lexed as:   TYPEID Int
+should be:  OBJECTID num2
+
+error #57
+lexed as:   ','
+should be:  ':'
+
+error #58
+lexed as:   OBJECTID num2
+should be:  TYPEID Int
+
+error #59
+lexed as:   ':'
+should be:  ')'
+
+error #60
+lexed as:   TYPEID Int
+should be:  ':'
+
+error #61
+lexed as:   ')'
+should be:  TYPEID B
+
+error #62
+lexed as:   ':'
+should be:  '{'
+
+error #63
+lexed as:   TYPEID B
+should be:  '('
+
+error #64
+lexed as:   '{'
+should be:  LET
+
+error #65
+lexed as:   '-'
+should be:  OBJECTID x
+
+error #66
+lexed as:   '-'
+should be:  ':'
+
+error #67
+lexed as:   OBJECTID plus
+should be:  TYPEID Int
+
+error #68
+lexed as:   '('
+should be:  IN
+
+error #69
+lexed as:   LET
+should be:  '{'
+
+error #71
+lexed as:   ':'
+should be:  ASSIGN
+
+error #72
+lexed as:   TYPEID Int
+should be:  OBJECTID num1
+
+error #73
+lexed as:   IN
+should be:  '+'
+
+error #74
+lexed as:   '{'
+should be:  OBJECTID num2
+
+error #75
+lexed as:   OBJECTID x
+should be:  ';'
+
+error #76
+lexed as:   ASSIGN
+should be:  '('
+
+error #77
+lexed as:   OBJECTID num1
+should be:  NEW
+
+error #78
+lexed as:   '+'
+should be:  TYPEID B
+
+error #79
+lexed as:   OBJECTID num2
+should be:  ')'
+
+error #80
+lexed as:   ';'
+should be:  '.'
+
+error #81
+lexed as:   '('
+should be:  OBJECTID set_var
+
+error #82
+lexed as:   NEW
+should be:  '('
+
+error #83
+lexed as:   TYPEID B
+should be:  OBJECTID x
+
+error #85
+lexed as:   '.'
+should be:  ';'
+
+error #86
+lexed as:   OBJECTID set_var
+should be:  '}'
+
+error #87
+lexed as:   '('
+should be:  ')'
+
+error #88
+lexed as:   OBJECTID x
+should be:  '}'
+
+error #89
+lexed as:   ')'
+should be:  ';'
+
+error #90
+lexed as:   ';'
+should be:  OBJECTID method3
+
+error #91
+lexed as:   '}'
+should be:  '('
+
+error #92
+lexed as:   ')'
+should be:  OBJECTID num
+
+error #93
+lexed as:   '}'
+should be:  ':'
+
+error #94
+lexed as:   ';'
+should be:  TYPEID Int
+
+error #95
+lexed as:   OBJECTID method3
+should be:  ')'
+
+error #96
+lexed as:   '('
+should be:  ':'
+
+error #97
+lexed as:   OBJECTID num
+should be:  TYPEID C
+
+error #98
+lexed as:   ':'
+should be:  '{'
+
+error #99
+lexed as:   TYPEID Int
+should be:  '('
+
+error #100
+lexed as:   ')'
+should be:  LET
+
+error #101
+lexed as:   ':'
+should be:  OBJECTID x
+
+error #102
+lexed as:   TYPEID C
+should be:  ':'
+
+error #103
+lexed as:   '{'
+should be:  TYPEID Int
+
+error #104
+lexed as:   '-'
+should be:  IN
+
+error #105
+lexed as:   '-'
+should be:  '{'
+
+error #106
+lexed as:   OBJECTID negate
+should be:  OBJECTID x
+
+error #107
+lexed as:   '('
+should be:  ASSIGN
+
+error #108
+lexed as:   LET
+should be:  '~'
+
+error #109
+lexed as:   OBJECTID x
+should be:  OBJECTID num
+
+error #110
+lexed as:   ':'
+should be:  ';'
+
+error #111
+lexed as:   TYPEID Int
+should be:  '('
+
+error #112
+lexed as:   IN
+should be:  NEW
+
+error #113
+lexed as:   '{'
+should be:  TYPEID C
+
+error #114
+lexed as:   OBJECTID x
+should be:  ')'
+
+error #115
+lexed as:   ASSIGN
+should be:  '.'
+
+error #116
+lexed as:   '~'
+should be:  OBJECTID set_var
+
+error #117
+lexed as:   OBJECTID num
+should be:  '('
+
+error #118
+lexed as:   ';'
+should be:  OBJECTID x
+
+error #119
+lexed as:   '('
+should be:  ')'
+
+error #120
+lexed as:   NEW
+should be:  ';'
+
+error #121
+lexed as:   TYPEID C
+should be:  '}'
+
+error #123
+lexed as:   '.'
+should be:  '}'
+
+error #124
+lexed as:   OBJECTID set_var
+should be:  ';'
+
+error #125
+lexed as:   '('
+should be:  OBJECTID method4
+
+error #126
+lexed as:   OBJECTID x
+should be:  '('
+
+error #127
+lexed as:   ')'
+should be:  OBJECTID num1
+
+error #128
+lexed as:   ';'
+should be:  ':'
+
+error #129
+lexed as:   '}'
+should be:  TYPEID Int
+
+error #130
+lexed as:   ')'
+should be:  ','
+
+error #131
+lexed as:   '}'
+should be:  OBJECTID num2
+
+error #132
+lexed as:   ';'
+should be:  ':'
+
+error #133
+lexed as:   OBJECTID method4
+should be:  TYPEID Int
+
+error #134
+lexed as:   '('
+should be:  ')'
+
+error #135
+lexed as:   OBJECTID num1
+should be:  ':'
+
+error #136
+lexed as:   ':'
+should be:  TYPEID D
+
+error #137
+lexed as:   TYPEID Int
+should be:  '{'
+
+error #138
+lexed as:   ','
+should be:  IF
+
+error #140
+lexed as:   ':'
+should be:  '<'
+
+error #141
+lexed as:   TYPEID Int
+should be:  OBJECTID num1
+
+error #142
+lexed as:   ')'
+should be:  THEN
+
+error #143
+lexed as:   ':'
+should be:  '('
+
+error #144
+lexed as:   TYPEID D
+should be:  LET
+
+error #145
+lexed as:   '{'
+should be:  OBJECTID x
+
+error #146
+lexed as:   '-'
+should be:  ':'
+
+error #147
+lexed as:   '-'
+should be:  TYPEID Int
+
+error #148
+lexed as:   OBJECTID diff
+should be:  IN
+
+error #149
+lexed as:   IF
+should be:  '{'
+
+error #150
+lexed as:   OBJECTID num2
+should be:  OBJECTID x
+
+error #151
+lexed as:   '<'
+should be:  ASSIGN
+
+error #153
+lexed as:   THEN
+should be:  '-'
+
+error #154
+lexed as:   '('
+should be:  OBJECTID num2
+
+error #155
+lexed as:   LET
+should be:  ';'
+
+error #156
+lexed as:   OBJECTID x
+should be:  '('
+
+error #157
+lexed as:   ':'
+should be:  NEW
+
+error #158
+lexed as:   TYPEID Int
+should be:  TYPEID D
+
+error #159
+lexed as:   IN
+should be:  ')'
+
+error #160
+lexed as:   '{'
+should be:  '.'
+
+error #161
+lexed as:   OBJECTID x
+should be:  OBJECTID set_var
+
+error #162
+lexed as:   ASSIGN
+should be:  '('
+
+error #163
+lexed as:   OBJECTID num1
+should be:  OBJECTID x
+
+error #164
+lexed as:   '-'
+should be:  ')'
+
+error #165
+lexed as:   OBJECTID num2
+should be:  ';'
+
+error #166
+lexed as:   ';'
+should be:  '}'
+
+error #167
+lexed as:   '('
+should be:  ')'
+
+error #168
+lexed as:   NEW
+should be:  ELSE
+
+error #169
+lexed as:   TYPEID D
+should be:  '('
+
+error #170
+lexed as:   ')'
+should be:  LET
+
+error #171
+lexed as:   '.'
+should be:  OBJECTID x
+
+error #172
+lexed as:   OBJECTID set_var
+should be:  ':'
+
+error #173
+lexed as:   '('
+should be:  TYPEID Int
+
+error #174
+lexed as:   OBJECTID x
+should be:  IN
+
+error #175
+lexed as:   ')'
+should be:  '{'
+
+error #176
+lexed as:   ';'
+should be:  OBJECTID x
+
+error #177
+lexed as:   '}'
+should be:  ASSIGN
+
+error #178
+lexed as:   ')'
+should be:  OBJECTID num2
+
+error #179
+lexed as:   ELSE
+should be:  '-'
+
+error #180
+lexed as:   '('
+should be:  OBJECTID num1
+
+error #181
+lexed as:   LET
+should be:  ';'
+
+error #182
+lexed as:   OBJECTID x
+should be:  '('
+
+error #183
+lexed as:   ':'
+should be:  NEW
+
+error #184
+lexed as:   TYPEID Int
+should be:  TYPEID D
+
+error #185
+lexed as:   IN
+should be:  ')'
+
+error #186
+lexed as:   '{'
+should be:  '.'
+
+error #187
+lexed as:   OBJECTID x
+should be:  OBJECTID set_var
+
+error #188
+lexed as:   ASSIGN
+should be:  '('
+
+error #189
+lexed as:   OBJECTID num2
+should be:  OBJECTID x
+
+error #190
+lexed as:   '-'
+should be:  ')'
+
+error #191
+lexed as:   OBJECTID num1
+should be:  ';'
+
+error #192
+lexed as:   ';'
+should be:  '}'
+
+error #193
+lexed as:   '('
+should be:  ')'
+
+error #194
+lexed as:   NEW
+should be:  FI
+
+error #195
+lexed as:   TYPEID D
+should be:  '}'
+
+error #196
+lexed as:   ')'
+should be:  ';'
+
+error #197
+lexed as:   '.'
+should be:  OBJECTID method5
+
+error #198
+lexed as:   OBJECTID set_var
+should be:  '('
+
+error #199
+lexed as:   '('
+should be:  OBJECTID num
+
+error #200
+lexed as:   OBJECTID x
+should be:  ':'
+
+error #201
+lexed as:   ')'
+should be:  TYPEID Int
+
+error #202
+lexed as:   ';'
+should be:  ')'
+
+error #203
+lexed as:   '}'
+should be:  ':'
+
+error #204
+lexed as:   ')'
+should be:  TYPEID E
+
+error #205
+lexed as:   FI
+should be:  '{'
+
+error #206
+lexed as:   '}'
+should be:  '('
+
+error #207
+lexed as:   ';'
+should be:  LET
+
+error #208
+lexed as:   OBJECTID method5
+should be:  OBJECTID x
+
+error #209
+lexed as:   '('
+should be:  ':'
+
+error #210
+lexed as:   OBJECTID num
+should be:  TYPEID Int
+
+error #211
+lexed as:   ':'
+should be:  ASSIGN
+
+error #212
+lexed as:   TYPEID Int
+should be:  INT_CONST 1
+
+error #213
+lexed as:   ')'
+should be:  IN
+
+error #214
+lexed as:   ':'
+should be:  '{'
+
+error #215
+lexed as:   TYPEID E
+should be:  '('
+
+error #216
+lexed as:   '{'
+should be:  LET
+
+error #217
+lexed as:   '-'
+should be:  OBJECTID y
+
+error #218
+lexed as:   '-'
+should be:  ':'
+
+error #219
+lexed as:   OBJECTID factorial
+should be:  TYPEID Int
+
+error #220
+lexed as:   '('
+should be:  ASSIGN
+
+error #221
+lexed as:   LET
+should be:  INT_CONST 1
+
+error #222
+lexed as:   OBJECTID x
+should be:  IN
+
+error #223
+lexed as:   ':'
+should be:  WHILE
+
+error #224
+lexed as:   TYPEID Int
+should be:  OBJECTID y
+
+error #225
+lexed as:   ASSIGN
+should be:  LE
+
+error #226
+lexed as:   IN
+should be:  OBJECTID num
+
+error #227
+lexed as:   '{'
+should be:  LOOP
+
+error #228
+lexed as:   '('
+should be:  '{'
+
+error #229
+lexed as:   LET
+should be:  OBJECTID x
+
+error #230
+lexed as:   OBJECTID y
+should be:  ASSIGN
+
+error #231
+lexed as:   ':'
+should be:  OBJECTID x
+
+error #232
+lexed as:   TYPEID Int
+should be:  '*'
+
+error #233
+lexed as:   ASSIGN
+should be:  OBJECTID y
+
+error #234
+lexed as:   IN
+should be:  ';'
+
+error #235
+lexed as:   WHILE
+should be:  OBJECTID y
+
+error #236
+lexed as:   OBJECTID y
+should be:  ASSIGN
+
+error #237
+lexed as:   LE
+should be:  OBJECTID y
+
+error #238
+lexed as:   OBJECTID num
+should be:  '+'
+
+error #239
+lexed as:   LOOP
+should be:  INT_CONST 1
+
+error #240
+lexed as:   '{'
+should be:  ';'
+
+error #241
+lexed as:   OBJECTID x
+should be:  '}'
+
+error #242
+lexed as:   ASSIGN
+should be:  POOL
+
+error #243
+lexed as:   OBJECTID x
+should be:  ')'
+
+error #244
+lexed as:   '*'
+should be:  ';'
+
+error #245
+lexed as:   OBJECTID y
+should be:  '('
+
+error #246
+lexed as:   ';'
+should be:  NEW
+
+error #247
+lexed as:   OBJECTID y
+should be:  TYPEID E
+
+error #248
+lexed as:   ASSIGN
+should be:  ')'
+
+error #249
+lexed as:   OBJECTID y
+should be:  '.'
+
+error #250
+lexed as:   '+'
+should be:  OBJECTID set_var
+
+error #251
+lexed as:   ';'
+should be:  '('
+
+error #252
+lexed as:   '}'
+should be:  OBJECTID x
+
+error #253
+lexed as:   POOL
+should be:  ')'
+
+error #254
+lexed as:   ')'
+should be:  ';'
+
+error #255
+lexed as:   ';'
+should be:  '}'
+
+error #256
+lexed as:   '('
+should be:  ')'
+
+error #257
+lexed as:   NEW
+should be:  '}'
+
+error #258
+lexed as:   TYPEID E
+should be:  ';'
+
+error #259
+lexed as:   ')'
+should be:  '}'
+
+error #260
+lexed as:   '.'
+should be:  ';'
+
+error #261
+lexed as:   OBJECTID set_var
+should be:  CLASS
+
+error #262
+lexed as:   '('
+should be:  TYPEID B
+
+error #263
+lexed as:   OBJECTID x
+should be:  INHERITS
+
+error #264
+lexed as:   ')'
+should be:  TYPEID A
+
+error #265
+lexed as:   ';'
+should be:  '{'
+
+error #266
+lexed as:   '}'
+should be:  OBJECTID method5
+
+error #267
+lexed as:   ')'
+should be:  '('
+
+error #268
+lexed as:   '}'
+should be:  OBJECTID num
+
+error #269
+lexed as:   ';'
+should be:  ':'
+
+error #270
+lexed as:   '}'
+should be:  TYPEID Int
+
+error #271
+lexed as:   ';'
+should be:  ')'
+
+error #272
+lexed as:   OBJECTID class
+should be:  ':'
+
+error #273
+lexed as:   TYPEID B
+should be:  TYPEID E
+
+error #274
+lexed as:   INHERITS
+should be:  '{'
+
+error #275
+lexed as:   TYPEID A
+should be:  '('
+
+error #276
+lexed as:   '{'
+should be:  LET
+
+error #277
+lexed as:   '-'
+should be:  OBJECTID x
+
+error #278
+lexed as:   '-'
+should be:  ':'
+
+error #279
+lexed as:   TYPEID B
+should be:  TYPEID Int
+
+error #280
+lexed as:   OBJECTID is
+should be:  IN
+
+error #281
+lexed as:   OBJECTID a
+should be:  '{'
+
+error #282
+lexed as:   OBJECTID number
+should be:  OBJECTID x
+
+error #283
+lexed as:   OBJECTID squared
+should be:  ASSIGN
+
+error #284
+lexed as:   OBJECTID method5
+should be:  OBJECTID num
+
+error #285
+lexed as:   '('
+should be:  '*'
+
+error #287
+lexed as:   ':'
+should be:  ';'
+
+error #288
+lexed as:   TYPEID Int
+should be:  '('
+
+error #289
+lexed as:   ')'
+should be:  NEW
+
+error #290
+lexed as:   ':'
+should be:  TYPEID E
+
+error #291
+lexed as:   TYPEID E
+should be:  ')'
+
+error #292
+lexed as:   '{'
+should be:  '.'
+
+error #293
+lexed as:   '-'
+should be:  OBJECTID set_var
+
+error #294
+lexed as:   '-'
+should be:  '('
+
+error #295
+lexed as:   OBJECTID square
+should be:  OBJECTID x
+
+error #296
+lexed as:   '('
+should be:  ')'
+
+error #297
+lexed as:   LET
+should be:  ';'
+
+error #298
+lexed as:   OBJECTID x
+should be:  '}'
+
+error #299
+lexed as:   ':'
+should be:  ')'
+
+error #300
+lexed as:   TYPEID Int
+should be:  '}'
+
+error #301
+lexed as:   IN
+should be:  ';'
+
+error #302
+lexed as:   '{'
+should be:  '}'
+
+error #303
+lexed as:   OBJECTID x
+should be:  ';'
+
+error #304
+lexed as:   ASSIGN
+should be:  CLASS
+
+error #305
+lexed as:   OBJECTID num
+should be:  TYPEID C
+
+error #306
+lexed as:   '*'
+should be:  INHERITS
+
+error #307
+lexed as:   OBJECTID num
+should be:  TYPEID B
+
+error #308
+lexed as:   ';'
+should be:  '{'
+
+error #309
+lexed as:   '('
+should be:  OBJECTID method6
+
+error #310
+lexed as:   NEW
+should be:  '('
+
+error #311
+lexed as:   TYPEID E
+should be:  OBJECTID num
+
+error #312
+lexed as:   ')'
+should be:  ':'
+
+error #313
+lexed as:   '.'
+should be:  TYPEID Int
+
+error #314
+lexed as:   OBJECTID set_var
+should be:  ')'
+
+error #315
+lexed as:   '('
+should be:  ':'
+
+error #316
+lexed as:   OBJECTID x
+should be:  TYPEID A
+
+error #317
+lexed as:   ')'
+should be:  '{'
+
+error #318
+lexed as:   ';'
+should be:  '('
+
+error #319
+lexed as:   '}'
+should be:  LET
+
+error #320
+lexed as:   ')'
+should be:  OBJECTID x
+
+error #321
+lexed as:   '}'
+should be:  ':'
+
+error #322
+lexed as:   ';'
+should be:  TYPEID Int
+
+error #323
+lexed as:   '}'
+should be:  IN
+
+error #324
+lexed as:   ';'
+should be:  '{'
+
+error #325
+lexed as:   OBJECTID class
+should be:  OBJECTID x
+
+error #326
+lexed as:   TYPEID C
+should be:  ASSIGN
+
+error #327
+lexed as:   INHERITS
+should be:  '~'
+
+error #328
+lexed as:   TYPEID B
+should be:  OBJECTID num
+
+error #329
+lexed as:   '{'
+should be:  ';'
+
+error #330
+lexed as:   OBJECTID method6
+should be:  '('
+
+error #331
+lexed as:   '('
+should be:  NEW
+
+error #332
+lexed as:   OBJECTID num
+should be:  TYPEID A
+
+error #333
+lexed as:   ':'
+should be:  ')'
+
+error #334
+lexed as:   TYPEID Int
+should be:  '.'
+
+error #335
+lexed as:   ')'
+should be:  OBJECTID set_var
+
+error #336
+lexed as:   ':'
+should be:  '('
+
+error #337
+lexed as:   TYPEID A
+should be:  OBJECTID x
+
+error #338
+lexed as:   '{'
+should be:  ')'
+
+error #339
+lexed as:   '-'
+should be:  ';'
+
+error #340
+lexed as:   '-'
+should be:  '}'
+
+error #341
+lexed as:   OBJECTID negate
+should be:  ')'
+
+error #342
+lexed as:   '('
+should be:  '}'
+
+error #343
+lexed as:   LET
+should be:  ';'
+
+error #344
+lexed as:   OBJECTID x
+should be:  OBJECTID method5
+
+error #345
+lexed as:   ':'
+should be:  '('
+
+error #346
+lexed as:   TYPEID Int
+should be:  OBJECTID num
+
+error #347
+lexed as:   IN
+should be:  ':'
+
+error #348
+lexed as:   '{'
+should be:  TYPEID Int
+
+error #349
+lexed as:   OBJECTID x
+should be:  ')'
+
+error #350
+lexed as:   ASSIGN
+should be:  ':'
+
+error #351
+lexed as:   '~'
+should be:  TYPEID E
+
+error #352
+lexed as:   OBJECTID num
+should be:  '{'
+
+error #353
+lexed as:   ';'
+should be:  '('
+
+error #354
+lexed as:   '('
+should be:  LET
+
+error #355
+lexed as:   NEW
+should be:  OBJECTID x
+
+error #356
+lexed as:   TYPEID A
+should be:  ':'
+
+error #357
+lexed as:   ')'
+should be:  TYPEID Int
+
+error #358
+lexed as:   '.'
+should be:  IN
+
+error #359
+lexed as:   OBJECTID set_var
+should be:  '{'
+
+error #360
+lexed as:   '('
+should be:  OBJECTID x
+
+error #361
+lexed as:   OBJECTID x
+should be:  ASSIGN
+
+error #362
+lexed as:   ')'
+should be:  OBJECTID num
+
+error #363
+lexed as:   ';'
+should be:  '*'
+
+error #364
+lexed as:   '}'
+should be:  OBJECTID num
+
+error #365
+lexed as:   ')'
+should be:  '*'
+
+error #366
+lexed as:   '}'
+should be:  OBJECTID num
+
+error #368
+lexed as:   OBJECTID method5
+should be:  '('
+
+error #369
+lexed as:   '('
+should be:  NEW
+
+error #370
+lexed as:   OBJECTID num
+should be:  TYPEID E
+
+error #371
+lexed as:   ':'
+should be:  ')'
+
+error #372
+lexed as:   TYPEID Int
+should be:  '.'
+
+error #373
+lexed as:   ')'
+should be:  OBJECTID set_var
+
+error #374
+lexed as:   ':'
+should be:  '('
+
+error #375
+lexed as:   TYPEID E
+should be:  OBJECTID x
+
+error #376
+lexed as:   '{'
+should be:  ')'
+
+error #377
+lexed as:   '-'
+should be:  ';'
+
+error #378
+lexed as:   '-'
+should be:  '}'
+
+error #379
+lexed as:   OBJECTID cube
+should be:  ')'
+
+error #380
+lexed as:   '('
+should be:  '}'
+
+error #381
+lexed as:   LET
+should be:  ';'
+
+error #382
+lexed as:   OBJECTID x
+should be:  '}'
+
+error #383
+lexed as:   ':'
+should be:  ';'
+
+error #384
+lexed as:   TYPEID Int
+should be:  CLASS
+
+error #385
+lexed as:   IN
+should be:  TYPEID D
+
+error #386
+lexed as:   '{'
+should be:  INHERITS
+
+error #387
+lexed as:   OBJECTID x
+should be:  TYPEID B
+
+error #388
+lexed as:   ASSIGN
+should be:  '{'
+
+error #389
+lexed as:   OBJECTID num
+should be:  OBJECTID method7
+
+error #390
+lexed as:   '*'
+should be:  '('
+
+error #392
+lexed as:   '*'
+should be:  ':'
+
+error #393
+lexed as:   OBJECTID num
+should be:  TYPEID Int
+
+error #394
+lexed as:   ';'
+should be:  ')'
+
+error #395
+lexed as:   '('
+should be:  ':'
+
+error #396
+lexed as:   NEW
+should be:  TYPEID Bool
+
+error #397
+lexed as:   TYPEID E
+should be:  '{'
+
+error #398
+lexed as:   ')'
+should be:  '('
+
+error #399
+lexed as:   '.'
+should be:  LET
+
+error #400
+lexed as:   OBJECTID set_var
+should be:  OBJECTID x
+
+error #401
+lexed as:   '('
+should be:  ':'
+
+error #402
+lexed as:   OBJECTID x
+should be:  TYPEID Int
+
+error #403
+lexed as:   ')'
+should be:  ASSIGN
+
+error #404
+lexed as:   ';'
+should be:  OBJECTID num
+
+error #405
+lexed as:   '}'
+should be:  IN
+
+error #406
+lexed as:   ')'
+should be:  IF
+
+error #407
+lexed as:   '}'
+should be:  OBJECTID x
+
+error #408
+lexed as:   ';'
+should be:  '<'
+
+error #409
+lexed as:   '}'
+should be:  INT_CONST 0
+
+error #410
+lexed as:   ';'
+should be:  THEN
+
+error #411
+lexed as:   OBJECTID class
+should be:  OBJECTID method7
+
+error #412
+lexed as:   TYPEID D
+should be:  '('
+
+error #413
+lexed as:   INHERITS
+should be:  '~'
+
+error #414
+lexed as:   TYPEID B
+should be:  OBJECTID x
+
+error #415
+lexed as:   '{'
+should be:  ')'
+
+error #416
+lexed as:   OBJECTID method7
+should be:  ELSE
+
+error #417
+lexed as:   '('
+should be:  IF
+
+error #418
+lexed as:   OBJECTID num
+should be:  INT_CONST 0
+
+error #419
+lexed as:   ':'
+should be:  '='
+
+error #420
+lexed as:   TYPEID Int
+should be:  OBJECTID x
+
+error #421
+lexed as:   ')'
+should be:  THEN
+
+error #422
+lexed as:   ':'
+should be:  BOOL_CONST true
+
+error #423
+lexed as:   TYPEID Bool
+should be:  ELSE
+
+error #424
+lexed as:   '{'
+should be:  IF
+
+error #425
+lexed as:   '-'
+should be:  INT_CONST 1
+
+error #426
+lexed as:   '-'
+should be:  '='
+
+error #427
+lexed as:   OBJECTID divisible
+should be:  OBJECTID x
+
+error #428
+lexed as:   OBJECTID by
+should be:  THEN
+
+error #429
+lexed as:   '('
+should be:  BOOL_CONST false
+
+error #430
+lexed as:   LET
+should be:  ELSE
+
+error #431
+lexed as:   OBJECTID x
+should be:  IF
+
+error #432
+lexed as:   ':'
+should be:  INT_CONST 2
+
+error #433
+lexed as:   TYPEID Int
+should be:  '='
+
+error #434
+lexed as:   ASSIGN
+should be:  OBJECTID x
+
+error #435
+lexed as:   OBJECTID num
+should be:  THEN
+
+error #436
+lexed as:   IN
+should be:  BOOL_CONST false
+
+error #437
+lexed as:   IF
+should be:  ELSE
+
+error #438
+lexed as:   OBJECTID x
+should be:  OBJECTID method7
+
+error #439
+lexed as:   '<'
+should be:  '('
+
+error #440
+lexed as:   THEN
+should be:  OBJECTID x
+
+error #441
+lexed as:   OBJECTID method7
+should be:  '-'
+
+error #442
+lexed as:   '('
+should be:  INT_CONST 3
+
+error #443
+lexed as:   '~'
+should be:  ')'
+
+error #444
+lexed as:   OBJECTID x
+should be:  FI
+
+error #445
+lexed as:   ')'
+should be:  FI
+
+error #446
+lexed as:   ELSE
+should be:  FI
+
+error #447
+lexed as:   IF
+should be:  FI
+
+error #448
+lexed as:   '='
+should be:  ')'
+
+error #449
+lexed as:   OBJECTID x
+should be:  '}'
+
+error #450
+lexed as:   THEN
+should be:  ';'
+
+error #451
+lexed as:   BOOL_CONST true
+should be:  '}'
+
+error #452
+lexed as:   ELSE
+should be:  ';'
+
+error #453
+lexed as:   IF
+should be:  CLASS
+
+error #454
+lexed as:   '='
+should be:  TYPEID E
+
+error #455
+lexed as:   OBJECTID x
+should be:  INHERITS
+
+error #456
+lexed as:   THEN
+should be:  TYPEID D
+
+error #457
+lexed as:   BOOL_CONST false
+should be:  '{'
+
+error #458
+lexed as:   ELSE
+should be:  OBJECTID method6
+
+error #459
+lexed as:   IF
+should be:  '('
+
+error #460
+lexed as:   '='
+should be:  OBJECTID num
+
+error #461
+lexed as:   OBJECTID x
+should be:  ':'
+
+error #462
+lexed as:   THEN
+should be:  TYPEID Int
+
+error #463
+lexed as:   BOOL_CONST false
+should be:  ')'
+
+error #464
+lexed as:   ELSE
+should be:  ':'
+
+error #465
+lexed as:   OBJECTID method7
+should be:  TYPEID A
+
+error #466
+lexed as:   '('
+should be:  '{'
+
+error #467
+lexed as:   OBJECTID x
+should be:  '('
+
+error #468
+lexed as:   '-'
+should be:  LET
+
+error #469
+lexed as:   ')'
+should be:  OBJECTID x
+
+error #470
+lexed as:   FI
+should be:  ':'
+
+error #471
+lexed as:   FI
+should be:  TYPEID Int
+
+error #472
+lexed as:   FI
+should be:  IN
+
+error #473
+lexed as:   FI
+should be:  '{'
+
+error #474
+lexed as:   ')'
+should be:  OBJECTID x
+
+error #475
+lexed as:   '}'
+should be:  ASSIGN
+
+error #476
+lexed as:   ';'
+should be:  OBJECTID num
+
+error #477
+lexed as:   '}'
+should be:  '/'
+
+error #478
+lexed as:   ';'
+should be:  INT_CONST 8
+
+error #479
+lexed as:   OBJECTID class
+should be:  ';'
+
+error #480
+lexed as:   TYPEID E
+should be:  '('
+
+error #481
+lexed as:   INHERITS
+should be:  NEW
+
+error #482
+lexed as:   TYPEID D
+should be:  TYPEID A
+
+error #483
+lexed as:   '{'
+should be:  ')'
+
+error #484
+lexed as:   OBJECTID method6
+should be:  '.'
+
+error #485
+lexed as:   '('
+should be:  OBJECTID set_var
+
+error #486
+lexed as:   OBJECTID num
+should be:  '('
+
+error #487
+lexed as:   ':'
+should be:  OBJECTID x
+
+error #488
+lexed as:   TYPEID Int
+should be:  ')'
+
+error #489
+lexed as:   ')'
+should be:  ';'
+
+error #490
+lexed as:   ':'
+should be:  '}'
+
+error #491
+lexed as:   TYPEID A
+should be:  ')'
+
+error #492
+lexed as:   '{'
+should be:  '}'
+
+error #493
+lexed as:   '-'
+should be:  ';'
+
+error #494
+lexed as:   '-'
+should be:  '}'
+
+error #495
+lexed as:   OBJECTID division
+should be:  ';'
+
+error #496
+lexed as:   '('
+should be:  CLASS
+
+error #497
+lexed as:   LET
+should be:  TYPEID A2I
+
+error #498
+lexed as:   OBJECTID x
+should be:  '{'
+
+error #499
+lexed as:   ':'
+should be:  OBJECTID c2i
+
+error #500
+lexed as:   TYPEID Int
+should be:  '('
+
+error #501
+lexed as:   IN
+should be:  OBJECTID char
+
+error #502
+lexed as:   '{'
+should be:  ':'
+
+error #503
+lexed as:   OBJECTID x
+should be:  TYPEID String
+
+error #504
+lexed as:   ASSIGN
+should be:  ')'
+
+error #505
+lexed as:   OBJECTID num
+should be:  ':'
+
+error #506
+lexed as:   '/'
+should be:  TYPEID Int
+
+error #507
+lexed as:   ';'
+should be:  '{'
+
+error #508
+lexed as:   '('
+should be:  IF
+
+error #509
+lexed as:   NEW
+should be:  OBJECTID char
+
+error #510
+lexed as:   TYPEID A
+should be:  '='
+
+error #511
+lexed as:   ')'
+should be:  STR_CONST "0"
+
+error #512
+lexed as:   '.'
+should be:  THEN
+
+error #513
+lexed as:   OBJECTID set_var
+should be:  INT_CONST 0
+
+error #514
+lexed as:   '('
+should be:  ELSE
+
+error #515
+lexed as:   OBJECTID x
+should be:  IF
+
+error #516
+lexed as:   ')'
+should be:  OBJECTID char
+
+error #517
+lexed as:   ';'
+should be:  '='
+
+error #518
+lexed as:   '}'
+should be:  STR_CONST "1"
+
+error #519
+lexed as:   ')'
+should be:  THEN
+
+error #520
+lexed as:   '}'
+should be:  INT_CONST 1
+
+error #521
+lexed as:   ';'
+should be:  ELSE
+
+error #522
+lexed as:   '}'
+should be:  IF
+
+error #523
+lexed as:   ';'
+should be:  OBJECTID char
+
+error #524
+lexed as:   OBJECTID class
+should be:  '='
+
+error #525
+lexed as:   TYPEID A2I
+should be:  STR_CONST "2"
+
+error #526
+lexed as:   '{'
+should be:  THEN
+
+error #527
+lexed as:   OBJECTID c2i
+should be:  INT_CONST 2
+
+error #528
+lexed as:   '('
+should be:  ELSE
+
+error #529
+lexed as:   OBJECTID char
+should be:  IF
+
+error #530
+lexed as:   ':'
+should be:  OBJECTID char
+
+error #531
+lexed as:   TYPEID String
+should be:  '='
+
+error #532
+lexed as:   ')'
+should be:  STR_CONST "3"
+
+error #533
+lexed as:   ':'
+should be:  THEN
+
+error #534
+lexed as:   TYPEID Int
+should be:  INT_CONST 3
+
+error #535
+lexed as:   '{'
+should be:  ELSE
+
+error #539
+lexed as:   THEN
+should be:  STR_CONST "4"
+
+error #540
+lexed as:   ELSE
+should be:  THEN
+
+error #541
+lexed as:   IF
+should be:  INT_CONST 4
+
+error #542
+lexed as:   OBJECTID char
+should be:  ELSE
+
+error #543
+lexed as:   '='
+should be:  IF
+
+error #544
+lexed as:   THEN
+should be:  OBJECTID char
+
+error #545
+lexed as:   ELSE
+should be:  '='
+
+error #546
+lexed as:   IF
+should be:  STR_CONST "5"
+
+error #547
+lexed as:   OBJECTID char
+should be:  THEN
+
+error #548
+lexed as:   '='
+should be:  INT_CONST 5
+
+error #549
+lexed as:   THEN
+should be:  ELSE
+
+error #550
+lexed as:   ELSE
+should be:  IF
+
+error #551
+lexed as:   IF
+should be:  OBJECTID char
+
+error #552
+lexed as:   OBJECTID char
+should be:  '='
+
+error #553
+lexed as:   '='
+should be:  STR_CONST "6"
+
+error #555
+lexed as:   ELSE
+should be:  INT_CONST 6
+
+error #556
+lexed as:   IF
+should be:  ELSE
+
+error #557
+lexed as:   OBJECTID char
+should be:  IF
+
+error #558
+lexed as:   '='
+should be:  OBJECTID char
+
+error #559
+lexed as:   THEN
+should be:  '='
+
+error #560
+lexed as:   ELSE
+should be:  STR_CONST "7"
+
+error #561
+lexed as:   IF
+should be:  THEN
+
+error #562
+lexed as:   OBJECTID char
+should be:  INT_CONST 7
+
+error #563
+lexed as:   '='
+should be:  ELSE
+
+error #564
+lexed as:   THEN
+should be:  IF
+
+error #565
+lexed as:   ELSE
+should be:  OBJECTID char
+
+error #566
+lexed as:   IF
+should be:  '='
+
+error #567
+lexed as:   OBJECTID char
+should be:  STR_CONST "8"
+
+error #568
+lexed as:   '='
+should be:  THEN
+
+error #569
+lexed as:   THEN
+should be:  INT_CONST 8
+
+error #574
+lexed as:   THEN
+should be:  STR_CONST "9"
+
+error #575
+lexed as:   ELSE
+should be:  THEN
+
+error #576
+lexed as:   IF
+should be:  INT_CONST 9
+
+error #577
+lexed as:   OBJECTID char
+should be:  ELSE
+
+error #578
+lexed as:   '='
+should be:  '{'
+
+error #579
+lexed as:   THEN
+should be:  OBJECTID abort
+
+error #580
+lexed as:   ELSE
+should be:  '('
+
+error #581
+lexed as:   IF
+should be:  ')'
+
+error #582
+lexed as:   OBJECTID char
+should be:  ';'
+
+error #583
+lexed as:   '='
+should be:  INT_CONST 0
+
+error #584
+lexed as:   THEN
+should be:  ';'
+
+error #585
+lexed as:   ELSE
+should be:  '}'
+
+error #586
+lexed as:   '{'
+should be:  FI
+
+error #587
+lexed as:   OBJECTID abort
+should be:  FI
+
+error #588
+lexed as:   '('
+should be:  FI
+
+error #589
+lexed as:   ')'
+should be:  FI
+
+error #590
+lexed as:   ';'
+should be:  FI
+
+error #591
+lexed as:   ';'
+should be:  FI
+
+error #592
+lexed as:   '}'
+should be:  FI
+
+error #596
+lexed as:   FI
+should be:  '}'
+
+error #597
+lexed as:   FI
+should be:  ';'
+
+error #598
+lexed as:   FI
+should be:  OBJECTID i2c
+
+error #599
+lexed as:   FI
+should be:  '('
+
+error #600
+lexed as:   FI
+should be:  OBJECTID i
+
+error #601
+lexed as:   FI
+should be:  ':'
+
+error #602
+lexed as:   FI
+should be:  TYPEID Int
+
+error #603
+lexed as:   '}'
+should be:  ')'
+
+error #604
+lexed as:   ';'
+should be:  ':'
+
+error #605
+lexed as:   OBJECTID i2c
+should be:  TYPEID String
+
+error #606
+lexed as:   '('
+should be:  '{'
+
+error #607
+lexed as:   OBJECTID i
+should be:  IF
+
+error #608
+lexed as:   ':'
+should be:  OBJECTID i
+
+error #609
+lexed as:   TYPEID Int
+should be:  '='
+
+error #610
+lexed as:   ')'
+should be:  INT_CONST 0
+
+error #611
+lexed as:   ':'
+should be:  THEN
+
+error #612
+lexed as:   TYPEID String
+should be:  STR_CONST "0"
+
+error #613
+lexed as:   '{'
+should be:  ELSE
+
+error #617
+lexed as:   THEN
+should be:  INT_CONST 1
+
+error #618
+lexed as:   ELSE
+should be:  THEN
+
+error #619
+lexed as:   IF
+should be:  STR_CONST "1"
+
+error #620
+lexed as:   OBJECTID i
+should be:  ELSE
+
+error #621
+lexed as:   '='
+should be:  IF
+
+error #622
+lexed as:   THEN
+should be:  OBJECTID i
+
+error #623
+lexed as:   ELSE
+should be:  '='
+
+error #624
+lexed as:   IF
+should be:  INT_CONST 2
+
+error #625
+lexed as:   OBJECTID i
+should be:  THEN
+
+error #626
+lexed as:   '='
+should be:  STR_CONST "2"
+
+error #627
+lexed as:   THEN
+should be:  ELSE
+
+error #628
+lexed as:   ELSE
+should be:  IF
+
+error #629
+lexed as:   IF
+should be:  OBJECTID i
+
+error #630
+lexed as:   OBJECTID i
+should be:  '='
+
+error #631
+lexed as:   '='
+should be:  INT_CONST 3
+
+error #633
+lexed as:   ELSE
+should be:  STR_CONST "3"
+
+error #634
+lexed as:   IF
+should be:  ELSE
+
+error #635
+lexed as:   OBJECTID i
+should be:  IF
+
+error #636
+lexed as:   '='
+should be:  OBJECTID i
+
+error #637
+lexed as:   THEN
+should be:  '='
+
+error #638
+lexed as:   ELSE
+should be:  INT_CONST 4
+
+error #639
+lexed as:   IF
+should be:  THEN
+
+error #640
+lexed as:   OBJECTID i
+should be:  STR_CONST "4"
+
+error #641
+lexed as:   '='
+should be:  ELSE
+
+error #642
+lexed as:   THEN
+should be:  IF
+
+error #643
+lexed as:   ELSE
+should be:  OBJECTID i
+
+error #644
+lexed as:   IF
+should be:  '='
+
+error #645
+lexed as:   OBJECTID i
+should be:  INT_CONST 5
+
+error #646
+lexed as:   '='
+should be:  THEN
+
+error #647
+lexed as:   THEN
+should be:  STR_CONST "5"
+
+error #652
+lexed as:   THEN
+should be:  INT_CONST 6
+
+error #653
+lexed as:   ELSE
+should be:  THEN
+
+error #654
+lexed as:   IF
+should be:  STR_CONST "6"
+
+error #655
+lexed as:   OBJECTID i
+should be:  ELSE
+
+error #656
+lexed as:   '='
+should be:  IF
+
+error #657
+lexed as:   THEN
+should be:  OBJECTID i
+
+error #658
+lexed as:   ELSE
+should be:  '='
+
+error #659
+lexed as:   IF
+should be:  INT_CONST 7
+
+error #660
+lexed as:   OBJECTID i
+should be:  THEN
+
+error #661
+lexed as:   '='
+should be:  STR_CONST "7"
+
+error #662
+lexed as:   THEN
+should be:  ELSE
+
+error #663
+lexed as:   ELSE
+should be:  IF
+
+error #664
+lexed as:   '{'
+should be:  OBJECTID i
+
+error #665
+lexed as:   OBJECTID abort
+should be:  '='
+
+error #666
+lexed as:   '('
+should be:  INT_CONST 8
+
+error #667
+lexed as:   ')'
+should be:  THEN
+
+error #668
+lexed as:   ';'
+should be:  STR_CONST "8"
+
+error #669
+lexed as:   ';'
+should be:  ELSE
+
+error #670
+lexed as:   '}'
+should be:  IF
+
+error #671
+lexed as:   '-'
+should be:  OBJECTID i
+
+error #672
+lexed as:   '-'
+should be:  '='
+
+error #673
+lexed as:   OBJECTID the
+should be:  INT_CONST 9
+
+error #674
+lexed as:   OBJECTID is
+should be:  THEN
+
+error #675
+lexed as:   OBJECTID needed
+should be:  STR_CONST "9"
+
+error #676
+lexed as:   OBJECTID to
+should be:  ELSE
+
+error #677
+lexed as:   OBJECTID satisfy
+should be:  '{'
+
+error #678
+lexed as:   OBJECTID the
+should be:  OBJECTID abort
+
+error #679
+lexed as:   OBJECTID typchecker
+should be:  '('
+
+error #680
+lexed as:   FI
+should be:  ')'
+
+error #681
+lexed as:   FI
+should be:  ';'
+
+error #682
+lexed as:   FI
+should be:  STR_CONST ""
+
+error #683
+lexed as:   FI
+should be:  ';'
+
+error #684
+lexed as:   FI
+should be:  '}'
+
+error #690
+lexed as:   '}'
+should be:  FI
+
+error #691
+lexed as:   ';'
+should be:  FI
+
+error #692
+lexed as:   OBJECTID a2i
+should be:  FI
+
+error #693
+lexed as:   '('
+should be:  FI
+
+error #694
+lexed as:   OBJECTID s
+should be:  FI
+
+error #695
+lexed as:   ':'
+should be:  '}'
+
+error #696
+lexed as:   TYPEID String
+should be:  ';'
+
+error #697
+lexed as:   ')'
+should be:  OBJECTID a2i
+
+error #698
+lexed as:   ':'
+should be:  '('
+
+error #699
+lexed as:   TYPEID Int
+should be:  OBJECTID s
+
+error #700
+lexed as:   '{'
+should be:  ':'
+
+error #701
+lexed as:   IF
+should be:  TYPEID String
+
+error #702
+lexed as:   OBJECTID s
+should be:  ')'
+
+error #703
+lexed as:   '.'
+should be:  ':'
+
+error #704
+lexed as:   OBJECTID length
+should be:  TYPEID Int
+
+error #705
+lexed as:   '('
+should be:  '{'
+
+error #706
+lexed as:   ')'
+should be:  IF
+
+error #707
+lexed as:   '='
+should be:  OBJECTID s
+
+error #708
+lexed as:   THEN
+should be:  '.'
+
+error #709
+lexed as:   ELSE
+should be:  OBJECTID length
+
+error #710
+lexed as:   IF
+should be:  '('
+
+error #711
+lexed as:   OBJECTID s
+should be:  ')'
+
+error #712
+lexed as:   '.'
+should be:  '='
+
+error #713
+lexed as:   OBJECTID substr
+should be:  INT_CONST 0
+
+error #714
+lexed as:   '('
+should be:  THEN
+
+error #715
+lexed as:   ','
+should be:  INT_CONST 0
+
+error #716
+lexed as:   ')'
+should be:  ELSE
+
+error #717
+lexed as:   '='
+should be:  IF
+
+error #718
+lexed as:   '-'
+should be:  OBJECTID s
+
+error #719
+lexed as:   THEN
+should be:  '.'
+
+error #720
+lexed as:   '~'
+should be:  OBJECTID substr
+
+error #721
+lexed as:   OBJECTID a2i_aux
+should be:  '('
+
+error #722
+lexed as:   '('
+should be:  INT_CONST 0
+
+error #723
+lexed as:   OBJECTID s
+should be:  ','
+
+error #724
+lexed as:   '.'
+should be:  INT_CONST 1
+
+error #725
+lexed as:   OBJECTID substr
+should be:  ')'
+
+error #726
+lexed as:   '('
+should be:  '='
+
+error #727
+lexed as:   ','
+should be:  STR_CONST "-"
+
+error #728
+lexed as:   OBJECTID s
+should be:  THEN
+
+error #729
+lexed as:   '.'
+should be:  '~'
+
+error #730
+lexed as:   OBJECTID length
+should be:  OBJECTID a2i_aux
+
+error #732
+lexed as:   ')'
+should be:  OBJECTID s
+
+error #733
+lexed as:   '-'
+should be:  '.'
+
+error #734
+lexed as:   ')'
+should be:  OBJECTID substr
+
+error #735
+lexed as:   ')'
+should be:  '('
+
+error #736
+lexed as:   ELSE
+should be:  INT_CONST 1
+
+error #737
+lexed as:   IF
+should be:  ','
+
+error #740
+lexed as:   OBJECTID substr
+should be:  OBJECTID length
+
+error #742
+lexed as:   ','
+should be:  ')'
+
+error #743
+lexed as:   ')'
+should be:  '-'
+
+error #744
+lexed as:   '='
+should be:  INT_CONST 1
+
+error #745
+lexed as:   '+'
+should be:  ')'
+
+error #746
+lexed as:   THEN
+should be:  ')'
+
+error #747
+lexed as:   OBJECTID a2i_aux
+should be:  ELSE
+
+error #748
+lexed as:   '('
+should be:  IF
+
+error #753
+lexed as:   ','
+should be:  INT_CONST 0
+
+error #754
+lexed as:   OBJECTID s
+should be:  ','
+
+error #755
+lexed as:   '.'
+should be:  INT_CONST 1
+
+error #756
+lexed as:   OBJECTID length
+should be:  ')'
+
+error #757
+lexed as:   '('
+should be:  '='
+
+error #758
+lexed as:   ')'
+should be:  STR_CONST "+"
+
+error #759
+lexed as:   '-'
+should be:  THEN
+
+error #760
+lexed as:   ')'
+should be:  OBJECTID a2i_aux
+
+error #761
+lexed as:   ')'
+should be:  '('
+
+error #762
+lexed as:   ELSE
+should be:  OBJECTID s
+
+error #763
+lexed as:   OBJECTID a2i_aux
+should be:  '.'
+
+error #764
+lexed as:   '('
+should be:  OBJECTID substr
+
+error #765
+lexed as:   OBJECTID s
+should be:  '('
+
+error #766
+lexed as:   ')'
+should be:  INT_CONST 1
+
+error #767
+lexed as:   FI
+should be:  ','
+
+error #768
+lexed as:   FI
+should be:  OBJECTID s
+
+error #769
+lexed as:   FI
+should be:  '.'
+
+error #770
+lexed as:   '}'
+should be:  OBJECTID length
+
+error #771
+lexed as:   ';'
+should be:  '('
+
+error #772
+lexed as:   OBJECTID a2i_aux
+should be:  ')'
+
+error #773
+lexed as:   '('
+should be:  '-'
+
+error #774
+lexed as:   OBJECTID s
+should be:  INT_CONST 1
+
+error #775
+lexed as:   ':'
+should be:  ')'
+
+error #776
+lexed as:   TYPEID String
+should be:  ')'
+
+error #777
+lexed as:   ')'
+should be:  ELSE
+
+error #778
+lexed as:   ':'
+should be:  OBJECTID a2i_aux
+
+error #779
+lexed as:   TYPEID Int
+should be:  '('
+
+error #780
+lexed as:   '{'
+should be:  OBJECTID s
+
+error #781
+lexed as:   '('
+should be:  ')'
+
+error #782
+lexed as:   LET
+should be:  FI
+
+error #783
+lexed as:   OBJECTID int
+should be:  FI
+
+error #784
+lexed as:   ':'
+should be:  FI
+
+error #785
+lexed as:   TYPEID Int
+should be:  '}'
+
+error #786
+lexed as:   ASSIGN
+should be:  ';'
+
+error #787
+lexed as:   IN
+should be:  OBJECTID a2i_aux
+
+error #788
+lexed as:   '{'
+should be:  '('
+
+error #789
+lexed as:   '('
+should be:  OBJECTID s
+
+error #790
+lexed as:   LET
+should be:  ':'
+
+error #791
+lexed as:   OBJECTID j
+should be:  TYPEID String
+
+error #792
+lexed as:   ':'
+should be:  ')'
+
+error #793
+lexed as:   TYPEID Int
+should be:  ':'
+
+error #794
+lexed as:   ASSIGN
+should be:  TYPEID Int
+
+error #795
+lexed as:   OBJECTID s
+should be:  '{'
+
+error #796
+lexed as:   '.'
+should be:  '('
+
+error #797
+lexed as:   OBJECTID length
+should be:  LET
+
+error #798
+lexed as:   '('
+should be:  OBJECTID int
+
+error #799
+lexed as:   ')'
+should be:  ':'
+
+error #800
+lexed as:   IN
+should be:  TYPEID Int
+
+error #801
+lexed as:   '('
+should be:  ASSIGN
+
+error #802
+lexed as:   LET
+should be:  INT_CONST 0
+
+error #803
+lexed as:   OBJECTID i
+should be:  IN
+
+error #804
+lexed as:   ':'
+should be:  '{'
+
+error #805
+lexed as:   TYPEID Int
+should be:  '('
+
+error #806
+lexed as:   ASSIGN
+should be:  LET
+
+error #807
+lexed as:   IN
+should be:  OBJECTID j
+
+error #808
+lexed as:   WHILE
+should be:  ':'
+
+error #809
+lexed as:   OBJECTID i
+should be:  TYPEID Int
+
+error #810
+lexed as:   '<'
+should be:  ASSIGN
+
+error #811
+lexed as:   OBJECTID j
+should be:  OBJECTID s
+
+error #812
+lexed as:   LOOP
+should be:  '.'
+
+error #813
+lexed as:   '{'
+should be:  OBJECTID length
+
+error #814
+lexed as:   OBJECTID int
+should be:  '('
+
+error #815
+lexed as:   ASSIGN
+should be:  ')'
+
+error #816
+lexed as:   OBJECTID int
+should be:  IN
+
+error #817
+lexed as:   '*'
+should be:  '('
+
+error #818
+lexed as:   '+'
+should be:  LET
+
+error #819
+lexed as:   OBJECTID c2i
+should be:  OBJECTID i
+
+error #820
+lexed as:   '('
+should be:  ':'
+
+error #821
+lexed as:   OBJECTID s
+should be:  TYPEID Int
+
+error #822
+lexed as:   '.'
+should be:  ASSIGN
+
+error #823
+lexed as:   OBJECTID substr
+should be:  INT_CONST 0
+
+error #824
+lexed as:   '('
+should be:  IN
+
+error #825
+lexed as:   OBJECTID i
+should be:  WHILE
+
+error #826
+lexed as:   ','
+should be:  OBJECTID i
+
+error #827
+lexed as:   ')'
+should be:  '<'
+
+error #828
+lexed as:   ')'
+should be:  OBJECTID j
+
+error #829
+lexed as:   ';'
+should be:  LOOP
+
+error #830
+lexed as:   OBJECTID i
+should be:  '{'
+
+error #831
+lexed as:   ASSIGN
+should be:  OBJECTID int
+
+error #832
+lexed as:   OBJECTID i
+should be:  ASSIGN
+
+error #833
+lexed as:   '+'
+should be:  OBJECTID int
+
+error #834
+lexed as:   ';'
+should be:  '*'
+
+error #835
+lexed as:   '}'
+should be:  INT_CONST 10
+
+error #836
+lexed as:   POOL
+should be:  '+'
+
+error #837
+lexed as:   ')'
+should be:  OBJECTID c2i
+
+error #838
+lexed as:   ')'
+should be:  '('
+
+error #839
+lexed as:   ';'
+should be:  OBJECTID s
+
+error #840
+lexed as:   OBJECTID int
+should be:  '.'
+
+error #841
+lexed as:   ';'
+should be:  OBJECTID substr
+
+error #842
+lexed as:   '}'
+should be:  '('
+
+error #843
+lexed as:   ')'
+should be:  OBJECTID i
+
+error #844
+lexed as:   '}'
+should be:  ','
+
+error #845
+lexed as:   ';'
+should be:  INT_CONST 1
+
+error #846
+lexed as:   OBJECTID i2a
+should be:  ')'
+
+error #847
+lexed as:   '('
+should be:  ')'
+
+error #848
+lexed as:   OBJECTID i
+should be:  ';'
+
+error #849
+lexed as:   ':'
+should be:  OBJECTID i
+
+error #850
+lexed as:   TYPEID Int
+should be:  ASSIGN
+
+error #851
+lexed as:   ')'
+should be:  OBJECTID i
+
+error #852
+lexed as:   ':'
+should be:  '+'
+
+error #853
+lexed as:   TYPEID String
+should be:  INT_CONST 1
+
+error #854
+lexed as:   '{'
+should be:  ';'
+
+error #855
+lexed as:   IF
+should be:  '}'
+
+error #856
+lexed as:   OBJECTID i
+should be:  POOL
+
+error #857
+lexed as:   '='
+should be:  ')'
+
+error #858
+lexed as:   THEN
+should be:  ')'
+
+error #859
+lexed as:   ELSE
+should be:  ';'
+
+error #860
+lexed as:   IF
+should be:  OBJECTID int
+
+error #861
+lexed as:   '<'
+should be:  ';'
+
+error #862
+lexed as:   OBJECTID i
+should be:  '}'
+
+error #863
+lexed as:   THEN
+should be:  ')'
+
+error #864
+lexed as:   OBJECTID i2a_aux
+should be:  '}'
+
+error #865
+lexed as:   '('
+should be:  ';'
+
+error #866
+lexed as:   OBJECTID i
+should be:  OBJECTID i2a
+
+error #867
+lexed as:   ')'
+should be:  '('
+
+error #868
+lexed as:   ELSE
+should be:  OBJECTID i
+
+error #869
+lexed as:   '-'
+should be:  ':'
+
+error #870
+lexed as:   '.'
+should be:  TYPEID Int
+
+error #871
+lexed as:   OBJECTID concat
+should be:  ')'
+
+error #872
+lexed as:   '('
+should be:  ':'
+
+error #873
+lexed as:   OBJECTID i2a_aux
+should be:  TYPEID String
+
+error #874
+lexed as:   '('
+should be:  '{'
+
+error #875
+lexed as:   OBJECTID i
+should be:  IF
+
+error #876
+lexed as:   '*'
+should be:  OBJECTID i
+
+error #877
+lexed as:   '~'
+should be:  '='
+
+error #878
+lexed as:   ')'
+should be:  INT_CONST 0
+
+error #879
+lexed as:   ')'
+should be:  THEN
+
+error #880
+lexed as:   FI
+should be:  STR_CONST "0"
+
+error #881
+lexed as:   FI
+should be:  ELSE
+
+error #882
+lexed as:   '}'
+should be:  IF
+
+error #883
+lexed as:   ';'
+should be:  INT_CONST 0
+
+error #884
+lexed as:   OBJECTID i2a_aux
+should be:  '<'
+
+error #885
+lexed as:   '('
+should be:  OBJECTID i
+
+error #886
+lexed as:   OBJECTID i
+should be:  THEN
+
+error #887
+lexed as:   ':'
+should be:  OBJECTID i2a_aux
+
+error #888
+lexed as:   TYPEID Int
+should be:  '('
+
+error #889
+lexed as:   ')'
+should be:  OBJECTID i
+
+error #890
+lexed as:   ':'
+should be:  ')'
+
+error #891
+lexed as:   TYPEID String
+should be:  ELSE
+
+error #892
+lexed as:   '{'
+should be:  STR_CONST "-"
+
+error #893
+lexed as:   IF
+should be:  '.'
+
+error #894
+lexed as:   OBJECTID i
+should be:  OBJECTID concat
+
+error #895
+lexed as:   '='
+should be:  '('
+
+error #896
+lexed as:   THEN
+should be:  OBJECTID i2a_aux
+
+error #897
+lexed as:   ELSE
+should be:  '('
+
+error #898
+lexed as:   '('
+should be:  OBJECTID i
+
+error #899
+lexed as:   LET
+should be:  '*'
+
+error #900
+lexed as:   OBJECTID next
+should be:  '~'
+
+error #901
+lexed as:   ':'
+should be:  INT_CONST 1
+
+error #902
+lexed as:   TYPEID Int
+should be:  ')'
+
+error #903
+lexed as:   ASSIGN
+should be:  ')'
+
+error #904
+lexed as:   OBJECTID i
+should be:  FI
+
+error #905
+lexed as:   '/'
+should be:  FI
+
+error #906
+lexed as:   IN
+should be:  '}'
+
+error #907
+lexed as:   OBJECTID i2a_aux
+should be:  ';'
+
+error #908
+lexed as:   '('
+should be:  OBJECTID i2a_aux
+
+error #909
+lexed as:   OBJECTID next
+should be:  '('
+
+error #910
+lexed as:   ')'
+should be:  OBJECTID i
+
+error #911
+lexed as:   '.'
+should be:  ':'
+
+error #912
+lexed as:   OBJECTID concat
+should be:  TYPEID Int
+
+error #913
+lexed as:   '('
+should be:  ')'
+
+error #914
+lexed as:   OBJECTID i2c
+should be:  ':'
+
+error #915
+lexed as:   '('
+should be:  TYPEID String
+
+error #916
+lexed as:   OBJECTID i
+should be:  '{'
+
+error #917
+lexed as:   '-'
+should be:  IF
+
+error #918
+lexed as:   OBJECTID next
+should be:  OBJECTID i
+
+error #919
+lexed as:   '*'
+should be:  '='
+
+error #920
+lexed as:   ')'
+should be:  INT_CONST 0
+
+error #921
+lexed as:   ')'
+should be:  THEN
+
+error #922
+lexed as:   ')'
+should be:  STR_CONST ""
+
+error #923
+lexed as:   FI
+should be:  ELSE
+
+error #924
+lexed as:   '}'
+should be:  '('
+
+error #925
+lexed as:   ';'
+should be:  LET
+
+error #926
+lexed as:   '}'
+should be:  OBJECTID next
+
+error #927
+lexed as:   ';'
+should be:  ':'
+
+error #928
+lexed as:   OBJECTID class
+should be:  TYPEID Int
+
+error #929
+lexed as:   TYPEID Main
+should be:  ASSIGN
+
+error #930
+lexed as:   INHERITS
+should be:  OBJECTID i
+
+error #931
+lexed as:   TYPEID IO
+should be:  '/'
+
+error #932
+lexed as:   '{'
+should be:  INT_CONST 10
+
+error #933
+lexed as:   OBJECTID char
+should be:  IN
+
+error #934
+lexed as:   ':'
+should be:  OBJECTID i2a_aux
+
+error #935
+lexed as:   TYPEID String
+should be:  '('
+
+error #936
+lexed as:   ';'
+should be:  OBJECTID next
+
+error #937
+lexed as:   OBJECTID avar
+should be:  ')'
+
+error #938
+lexed as:   ':'
+should be:  '.'
+
+error #939
+lexed as:   TYPEID A
+should be:  OBJECTID concat
+
+error #940
+lexed as:   ';'
+should be:  '('
+
+error #941
+lexed as:   OBJECTID a_var
+should be:  OBJECTID i2c
+
+error #942
+lexed as:   ':'
+should be:  '('
+
+error #943
+lexed as:   TYPEID A
+should be:  OBJECTID i
+
+error #944
+lexed as:   ';'
+should be:  '-'
+
+error #945
+lexed as:   OBJECTID flag
+should be:  OBJECTID next
+
+error #946
+lexed as:   ':'
+should be:  '*'
+
+error #947
+lexed as:   TYPEID Bool
+should be:  INT_CONST 10
+
+error #948
+lexed as:   ASSIGN
+should be:  ')'
+
+error #949
+lexed as:   BOOL_CONST true
+should be:  ')'
+
+error #950
+lexed as:   ';'
+should be:  ')'
+
+error #951
+lexed as:   OBJECTID menu
+should be:  FI
+
+error #952
+lexed as:   '('
+should be:  '}'
+
+error #953
+lexed as:   ')'
+should be:  ';'
+
+error #954
+lexed as:   ':'
+should be:  '}'
+
+error #955
+lexed as:   TYPEID String
+should be:  ';'
+
+error #956
+lexed as:   '{'
+should be:  CLASS
+
+error #957
+lexed as:   '{'
+should be:  TYPEID Main
+
+error #958
+lexed as:   OBJECTID out_string
+should be:  INHERITS
+
+error #959
+lexed as:   '('
+should be:  TYPEID IO
+
+error #960
+lexed as:   OBJECTID n
+should be:  '{'
+
+error #961
+lexed as:   OBJECTID tTo
+should be:  OBJECTID char
+
+error #962
+lexed as:   OBJECTID add
+should be:  ':'
+
+error #963
+lexed as:   OBJECTID a
+should be:  TYPEID String
+
+error #964
+lexed as:   OBJECTID number
+should be:  ';'
+
+error #965
+lexed as:   OBJECTID to
+should be:  OBJECTID avar
+
+error #966
+lexed as:   ')'
+should be:  ':'
+
+error #967
+lexed as:   ';'
+should be:  TYPEID A
+
+error #968
+lexed as:   OBJECTID print
+should be:  ';'
+
+error #969
+lexed as:   '('
+should be:  OBJECTID a_var
+
+error #970
+lexed as:   OBJECTID avar
+should be:  ':'
+
+error #971
+lexed as:   ')'
+should be:  TYPEID A
+
+error #973
+lexed as:   OBJECTID out_string
+should be:  OBJECTID flag
+
+error #974
+lexed as:   '('
+should be:  ':'
+
+error #975
+lexed as:   '.'
+should be:  TYPEID Bool
+
+error #976
+lexed as:   '.'
+should be:  ASSIGN
+
+error #977
+lexed as:   '.'
+should be:  BOOL_CONST true
+
+error #978
+lexed as:   OBJECTID enter
+should be:  ';'
+
+error #979
+lexed as:   OBJECTID a
+should be:  OBJECTID menu
+
+error #980
+lexed as:   ':'
+should be:  '('
+
+error #981
+lexed as:   OBJECTID n
+should be:  ')'
+
+error #982
+lexed as:   ')'
+should be:  ':'
+
+error #983
+lexed as:   ';'
+should be:  TYPEID String
+
+error #984
+lexed as:   OBJECTID out_string
+should be:  '{'
+
+error #985
+lexed as:   '('
+should be:  '{'
+
+error #986
+lexed as:   OBJECTID tTo
+should be:  OBJECTID out_string
+
+error #987
+lexed as:   OBJECTID negate
+should be:  '('
+
+error #988
+lexed as:   ')'
+should be:  STR_CONST "\n\tTo add a number to "
+
+error #989
+lexed as:   ';'
+should be:  ')'
+
+error #990
+lexed as:   OBJECTID print
+should be:  ';'
+
+error #991
+lexed as:   '('
+should be:  OBJECTID print
+
+error #992
+lexed as:   OBJECTID avar
+should be:  '('
+
+error #993
+lexed as:   ')'
+should be:  OBJECTID avar
+
+error #994
+lexed as:   ';'
+should be:  ')'
+
+error #995
+lexed as:   OBJECTID out_string
+should be:  ';'
+
+error #996
+lexed as:   '('
+should be:  OBJECTID out_string
+
+error #997
+lexed as:   '.'
+should be:  '('
+
+error #998
+lexed as:   '.'
+should be:  STR_CONST "...enter a:\n"
+
+error #999
+lexed as:   '.'
+should be:  ')'
+
+error #1000
+lexed as:   OBJECTID enter
+should be:  ';'
+
+error #1001
+lexed as:   OBJECTID b
+should be:  OBJECTID out_string
+
+error #1002
+lexed as:   ':'
+should be:  '('
+
+error #1003
+lexed as:   OBJECTID n
+should be:  STR_CONST "\tTo negate "
+
+error #1006
+lexed as:   OBJECTID out_string
+should be:  OBJECTID print
+
+error #1008
+lexed as:   OBJECTID tTo
+should be:  OBJECTID avar
+
+error #1009
+lexed as:   OBJECTID find
+should be:  ')'
+
+error #1010
+lexed as:   OBJECTID the
+should be:  ';'
+
+error #1011
+lexed as:   OBJECTID difference
+should be:  OBJECTID out_string
+
+error #1012
+lexed as:   OBJECTID between
+should be:  '('
+
+error #1013
+lexed as:   ')'
+should be:  STR_CONST "...enter b:\n"
+
+error #1014
+lexed as:   ';'
+should be:  ')'
+
+error #1015
+lexed as:   OBJECTID print
+should be:  ';'
+
+error #1016
+lexed as:   '('
+should be:  OBJECTID out_string
+
+error #1017
+lexed as:   OBJECTID avar
+should be:  '('
+
+error #1018
+lexed as:   ')'
+should be:  STR_CONST "\tTo find the difference between "
+
+error #1019
+lexed as:   ';'
+should be:  ')'
+
+error #1020
+lexed as:   OBJECTID out_string
+should be:  ';'
+
+error #1021
+lexed as:   '('
+should be:  OBJECTID print
+
+error #1022
+lexed as:   OBJECTID and
+should be:  '('
+
+error #1023
+lexed as:   OBJECTID another
+should be:  OBJECTID avar
+
+error #1024
+lexed as:   OBJECTID number
+should be:  ')'
+
+error #1025
+lexed as:   '.'
+should be:  ';'
+
+error #1026
+lexed as:   '.'
+should be:  OBJECTID out_string
+
+error #1027
+lexed as:   '.'
+should be:  '('
+
+error #1028
+lexed as:   OBJECTID enter
+should be:  STR_CONST "and another number...enter c:\n"
+
+error #1029
+lexed as:   OBJECTID c
+should be:  ')'
+
+error #1030
+lexed as:   ':'
+should be:  ';'
+
+error #1031
+lexed as:   OBJECTID n
+should be:  OBJECTID out_string
+
+error #1032
+lexed as:   ')'
+should be:  '('
+
+error #1033
+lexed as:   ';'
+should be:  STR_CONST "\tTo find the factorial of "
+
+error #1034
+lexed as:   OBJECTID out_string
+should be:  ')'
+
+error #1035
+lexed as:   '('
+should be:  ';'
+
+error #1036
+lexed as:   OBJECTID tTo
+should be:  OBJECTID print
+
+error #1037
+lexed as:   OBJECTID find
+should be:  '('
+
+error #1038
+lexed as:   OBJECTID the
+should be:  OBJECTID avar
+
+error #1039
+lexed as:   OBJECTID factorial
+should be:  ')'
+
+error #1040
+lexed as:   OF
+should be:  ';'
+
+error #1041
+lexed as:   ')'
+should be:  OBJECTID out_string
+
+error #1042
+lexed as:   ';'
+should be:  '('
+
+error #1043
+lexed as:   OBJECTID print
+should be:  STR_CONST "...enter d:\n"
+
+error #1044
+lexed as:   '('
+should be:  ')'
+
+error #1045
+lexed as:   OBJECTID avar
+should be:  ';'
+
+error #1046
+lexed as:   ')'
+should be:  OBJECTID out_string
+
+error #1047
+lexed as:   ';'
+should be:  '('
+
+error #1048
+lexed as:   OBJECTID out_string
+should be:  STR_CONST "\tTo square "
+
+error #1049
+lexed as:   '('
+should be:  ')'
+
+error #1050
+lexed as:   '.'
+should be:  ';'
+
+error #1051
+lexed as:   '.'
+should be:  OBJECTID print
+
+error #1052
+lexed as:   '.'
+should be:  '('
+
+error #1053
+lexed as:   OBJECTID enter
+should be:  OBJECTID avar
+
+error #1054
+lexed as:   OBJECTID d
+should be:  ')'
+
+error #1055
+lexed as:   ':'
+should be:  ';'
+
+error #1056
+lexed as:   OBJECTID n
+should be:  OBJECTID out_string
+
+error #1057
+lexed as:   ')'
+should be:  '('
+
+error #1058
+lexed as:   ';'
+should be:  STR_CONST "...enter e:\n"
+
+error #1059
+lexed as:   OBJECTID out_string
+should be:  ')'
+
+error #1060
+lexed as:   '('
+should be:  ';'
+
+error #1061
+lexed as:   OBJECTID tTo
+should be:  OBJECTID out_string
+
+error #1062
+lexed as:   OBJECTID square
+should be:  '('
+
+error #1063
+lexed as:   ')'
+should be:  STR_CONST "\tTo cube "
+
+error #1064
+lexed as:   ';'
+should be:  ')'
+
+error #1065
+lexed as:   OBJECTID print
+should be:  ';'
+
+error #1066
+lexed as:   '('
+should be:  OBJECTID print
+
+error #1067
+lexed as:   OBJECTID avar
+should be:  '('
+
+error #1068
+lexed as:   ')'
+should be:  OBJECTID avar
+
+error #1069
+lexed as:   ';'
+should be:  ')'
+
+error #1070
+lexed as:   OBJECTID out_string
+should be:  ';'
+
+error #1071
+lexed as:   '('
+should be:  OBJECTID out_string
+
+error #1072
+lexed as:   '.'
+should be:  '('
+
+error #1073
+lexed as:   '.'
+should be:  STR_CONST "...enter f:\n"
+
+error #1074
+lexed as:   '.'
+should be:  ')'
+
+error #1075
+lexed as:   OBJECTID enter
+should be:  ';'
+
+error #1076
+lexed as:   OBJECTID e
+should be:  OBJECTID out_string
+
+error #1077
+lexed as:   ':'
+should be:  '('
+
+error #1078
+lexed as:   OBJECTID n
+should be:  STR_CONST "\tTo find out if "
+
+error #1081
+lexed as:   OBJECTID out_string
+should be:  OBJECTID print
+
+error #1083
+lexed as:   OBJECTID tTo
+should be:  OBJECTID avar
+
+error #1084
+lexed as:   OBJECTID cube
+should be:  ')'
+
+error #1085
+lexed as:   ')'
+should be:  ';'
+
+error #1086
+lexed as:   ';'
+should be:  OBJECTID out_string
+
+error #1087
+lexed as:   OBJECTID print
+should be:  '('
+
+error #1088
+lexed as:   '('
+should be:  STR_CONST "is a multiple of 3...enter g:\n"
+
+error #1089
+lexed as:   OBJECTID avar
+should be:  ')'
+
+error #1090
+lexed as:   ')'
+should be:  ';'
+
+error #1091
+lexed as:   ';'
+should be:  OBJECTID out_string
+
+error #1092
+lexed as:   OBJECTID out_string
+should be:  '('
+
+error #1093
+lexed as:   '('
+should be:  STR_CONST "\tTo divide "
+
+error #1094
+lexed as:   '.'
+should be:  ')'
+
+error #1095
+lexed as:   '.'
+should be:  ';'
+
+error #1096
+lexed as:   '.'
+should be:  OBJECTID print
+
+error #1097
+lexed as:   OBJECTID enter
+should be:  '('
+
+error #1098
+lexed as:   OBJECTID f
+should be:  OBJECTID avar
+
+error #1099
+lexed as:   ':'
+should be:  ')'
+
+error #1100
+lexed as:   OBJECTID n
+should be:  ';'
+
+error #1101
+lexed as:   ')'
+should be:  OBJECTID out_string
+
+error #1102
+lexed as:   ';'
+should be:  '('
+
+error #1103
+lexed as:   OBJECTID out_string
+should be:  STR_CONST "by 8...enter h:\n"
+
+error #1104
+lexed as:   '('
+should be:  ')'
+
+error #1105
+lexed as:   OBJECTID tTo
+should be:  ';'
+
+error #1106
+lexed as:   OBJECTID find
+should be:  OBJECTID out_string
+
+error #1107
+lexed as:   OBJECTID out
+should be:  '('
+
+error #1108
+lexed as:   IF
+should be:  STR_CONST "\tTo get a new number...enter j:\n"
+
+error #1111
+lexed as:   OBJECTID print
+should be:  OBJECTID out_string
+
+error #1113
+lexed as:   OBJECTID avar
+should be:  STR_CONST "\tTo quit...enter q:\n\n"
+
+error #1116
+lexed as:   OBJECTID out_string
+should be:  OBJECTID in_string
+
+error #1118
+lexed as:   OBJECTID is
+should be:  ')'
+
+error #1119
+lexed as:   OBJECTID a
+should be:  ';'
+
+error #1120
+lexed as:   OBJECTID multiple
+should be:  '}'
+
+error #1121
+lexed as:   OF
+should be:  '}'
+
+error #1122
+lexed as:   '.'
+should be:  ';'
+
+error #1123
+lexed as:   '.'
+should be:  OBJECTID prompt
+
+error #1124
+lexed as:   '.'
+should be:  '('
+
+error #1125
+lexed as:   OBJECTID enter
+should be:  ')'
+
+error #1126
+lexed as:   OBJECTID g
+should be:  ':'
+
+error #1127
+lexed as:   ':'
+should be:  TYPEID String
+
+error #1128
+lexed as:   OBJECTID n
+should be:  '{'
+
+error #1129
+lexed as:   ')'
+should be:  '{'
+
+error #1130
+lexed as:   ';'
+should be:  OBJECTID out_string
+
+error #1131
+lexed as:   OBJECTID out_string
+should be:  '('
+
+error #1132
+lexed as:   '('
+should be:  STR_CONST "\n"
+
+error #1133
+lexed as:   OBJECTID tTo
+should be:  ')'
+
+error #1134
+lexed as:   OBJECTID divide
+should be:  ';'
+
+error #1135
+lexed as:   ')'
+should be:  OBJECTID out_string
+
+error #1136
+lexed as:   ';'
+should be:  '('
+
+error #1137
+lexed as:   OBJECTID print
+should be:  STR_CONST "Please enter a number...  "
+
+error #1138
+lexed as:   '('
+should be:  ')'
+
+error #1139
+lexed as:   OBJECTID avar
+should be:  ';'
+
+error #1140
+lexed as:   ')'
+should be:  OBJECTID in_string
+
+error #1141
+lexed as:   ';'
+should be:  '('
+
+error #1142
+lexed as:   OBJECTID out_string
+should be:  ')'
+
+error #1143
+lexed as:   '('
+should be:  ';'
+
+error #1144
+lexed as:   OBJECTID by
+should be:  '}'
+
+error #1145
+lexed as:   '.'
+should be:  '}'
+
+error #1146
+lexed as:   '.'
+should be:  ';'
+
+error #1147
+lexed as:   '.'
+should be:  OBJECTID get_int
+
+error #1148
+lexed as:   OBJECTID enter
+should be:  '('
+
+error #1149
+lexed as:   OBJECTID h
+should be:  ')'
+
+error #1151
+lexed as:   OBJECTID n
+should be:  TYPEID Int
+
+error #1152
+lexed as:   ')'
+should be:  '{'
+
+error #1153
+lexed as:   ';'
+should be:  '{'
+
+error #1154
+lexed as:   OBJECTID out_string
+should be:  '('
+
+error #1155
+lexed as:   '('
+should be:  LET
+
+error #1156
+lexed as:   OBJECTID tTo
+should be:  OBJECTID z
+
+error #1157
+lexed as:   OBJECTID get
+should be:  ':'
+
+error #1158
+lexed as:   OBJECTID a
+should be:  TYPEID A2I
+
+error #1159
+lexed as:   NEW
+should be:  ASSIGN
+
+error #1160
+lexed as:   OBJECTID number
+should be:  NEW
+
+error #1161
+lexed as:   '.'
+should be:  TYPEID A2I
+
+error #1162
+lexed as:   '.'
+should be:  IN
+
+error #1163
+lexed as:   '.'
+should be:  '('
+
+error #1164
+lexed as:   OBJECTID enter
+should be:  LET
+
+error #1165
+lexed as:   OBJECTID j
+should be:  OBJECTID s
+
+error #1167
+lexed as:   OBJECTID n
+should be:  TYPEID String
+
+error #1168
+lexed as:   ')'
+should be:  ASSIGN
+
+error #1169
+lexed as:   ';'
+should be:  OBJECTID prompt
+
+error #1170
+lexed as:   OBJECTID out_string
+should be:  '('
+
+error #1171
+lexed as:   '('
+should be:  ')'
+
+error #1172
+lexed as:   OBJECTID tTo
+should be:  IN
+
+error #1173
+lexed as:   OBJECTID quit
+should be:  OBJECTID z
+
+error #1175
+lexed as:   '.'
+should be:  OBJECTID a2i
+
+error #1176
+lexed as:   '.'
+should be:  '('
+
+error #1177
+lexed as:   OBJECTID enter
+should be:  OBJECTID s
+
+error #1178
+lexed as:   OBJECTID q
+should be:  ')'
+
+error #1179
+lexed as:   ':'
+should be:  ')'
+
+error #1180
+lexed as:   OBJECTID n
+should be:  ')'
+
+error #1181
+lexed as:   OBJECTID n
+should be:  ';'
+
+error #1182
+lexed as:   ')'
+should be:  '}'
+
+error #1183
+lexed as:   ';'
+should be:  '}'
+
+error #1184
+lexed as:   OBJECTID in_string
+should be:  ';'
+
+error #1185
+lexed as:   '('
+should be:  OBJECTID is_even
+
+error #1186
+lexed as:   ')'
+should be:  '('
+
+error #1187
+lexed as:   ';'
+should be:  OBJECTID num
+
+error #1188
+lexed as:   '}'
+should be:  ':'
+
+error #1189
+lexed as:   '}'
+should be:  TYPEID Int
+
+error #1190
+lexed as:   ';'
+should be:  ')'
+
+error #1191
+lexed as:   OBJECTID prompt
+should be:  ':'
+
+error #1192
+lexed as:   '('
+should be:  TYPEID Bool
+
+error #1193
+lexed as:   ')'
+should be:  '{'
+
+error #1194
+lexed as:   ':'
+should be:  '('
+
+error #1195
+lexed as:   TYPEID String
+should be:  LET
+
+error #1196
+lexed as:   '{'
+should be:  OBJECTID x
+
+error #1197
+lexed as:   '{'
+should be:  ':'
+
+error #1198
+lexed as:   OBJECTID out_string
+should be:  TYPEID Int
+
+error #1199
+lexed as:   '('
+should be:  ASSIGN
+
+error #1200
+lexed as:   OBJECTID n
+should be:  OBJECTID num
+
+error #1201
+lexed as:   ')'
+should be:  IN
+
+error #1202
+lexed as:   ';'
+should be:  IF
+
+error #1203
+lexed as:   OBJECTID out_string
+should be:  OBJECTID x
+
+error #1204
+lexed as:   '('
+should be:  '<'
+
+error #1205
+lexed as:   TYPEID Please
+should be:  INT_CONST 0
+
+error #1206
+lexed as:   OBJECTID enter
+should be:  THEN
+
+error #1207
+lexed as:   OBJECTID a
+should be:  OBJECTID is_even
+
+error #1208
+lexed as:   OBJECTID number
+should be:  '('
+
+error #1209
+lexed as:   '.'
+should be:  '~'
+
+error #1210
+lexed as:   '.'
+should be:  OBJECTID x
+
+error #1211
+lexed as:   '.'
+should be:  ')'
+
+error #1212
+lexed as:   ')'
+should be:  ELSE
+
+error #1213
+lexed as:   ';'
+should be:  IF
+
+error #1214
+lexed as:   OBJECTID in_string
+should be:  INT_CONST 0
+
+error #1215
+lexed as:   '('
+should be:  '='
+
+error #1216
+lexed as:   ')'
+should be:  OBJECTID x
+
+error #1217
+lexed as:   ';'
+should be:  THEN
+
+error #1218
+lexed as:   '}'
+should be:  BOOL_CONST true
+
+error #1219
+lexed as:   '}'
+should be:  ELSE
+
+error #1220
+lexed as:   ';'
+should be:  IF
+
+error #1221
+lexed as:   OBJECTID get_int
+should be:  INT_CONST 1
+
+error #1222
+lexed as:   '('
+should be:  '='
+
+error #1223
+lexed as:   ')'
+should be:  OBJECTID x
+
+error #1224
+lexed as:   ':'
+should be:  THEN
+
+error #1225
+lexed as:   TYPEID Int
+should be:  BOOL_CONST false
+
+error #1226
+lexed as:   '{'
+should be:  ELSE
+
+error #1227
+lexed as:   '{'
+should be:  OBJECTID is_even
+
+error #1229
+lexed as:   LET
+should be:  OBJECTID x
+
+error #1230
+lexed as:   OBJECTID z
+should be:  '-'
+
+error #1231
+lexed as:   ':'
+should be:  INT_CONST 2
+
+error #1232
+lexed as:   TYPEID A2I
+should be:  ')'
+
+error #1233
+lexed as:   ASSIGN
+should be:  FI
+
+error #1234
+lexed as:   NEW
+should be:  FI
+
+error #1235
+lexed as:   TYPEID A2I
+should be:  FI
+
+error #1236
+lexed as:   IN
+should be:  ')'
+
+error #1237
+lexed as:   '('
+should be:  '}'
+
+error #1238
+lexed as:   LET
+should be:  ';'
+
+error #1239
+lexed as:   OBJECTID s
+should be:  OBJECTID class_type
+
+error #1240
+lexed as:   ':'
+should be:  '('
+
+error #1241
+lexed as:   TYPEID String
+should be:  OBJECTID var
+
+error #1242
+lexed as:   ASSIGN
+should be:  ':'
+
+error #1243
+lexed as:   OBJECTID prompt
+should be:  TYPEID A
+
+error #1244
+lexed as:   '('
+should be:  ')'
+
+error #1245
+lexed as:   ')'
+should be:  ':'
+
+error #1246
+lexed as:   IN
+should be:  TYPEID SELF_TYPE
+
+error #1247
+lexed as:   OBJECTID z
+should be:  '{'
+
+error #1248
+lexed as:   '.'
+should be:  CASE
+
+error #1249
+lexed as:   OBJECTID a2i
+should be:  OBJECTID var
+
+error #1250
+lexed as:   '('
+should be:  OF
+
+error #1251
+lexed as:   OBJECTID s
+should be:  OBJECTID a
+
+error #1252
+lexed as:   ')'
+should be:  ':'
+
+error #1253
+lexed as:   ')'
+should be:  TYPEID A
+
+error #1254
+lexed as:   ')'
+should be:  DARROW
+
+error #1255
+lexed as:   ';'
+should be:  OBJECTID out_string
+
+error #1256
+lexed as:   '}'
+should be:  '('
+
+error #1257
+lexed as:   '}'
+should be:  STR_CONST "Class type is now A\n"
+
+error #1258
+lexed as:   ';'
+should be:  ')'
+
+error #1259
+lexed as:   OBJECTID is_even
+should be:  ';'
+
+error #1260
+lexed as:   '('
+should be:  OBJECTID b
+
+error #1261
+lexed as:   OBJECTID num
+should be:  ':'
+
+error #1262
+lexed as:   ':'
+should be:  TYPEID B
+
+error #1263
+lexed as:   TYPEID Int
+should be:  DARROW
+
+error #1264
+lexed as:   ')'
+should be:  OBJECTID out_string
+
+error #1265
+lexed as:   ':'
+should be:  '('
+
+error #1266
+lexed as:   TYPEID Bool
+should be:  STR_CONST "Class type is now B\n"
+
+error #1267
+lexed as:   '{'
+should be:  ')'
+
+error #1268
+lexed as:   '('
+should be:  ';'
+
+error #1269
+lexed as:   LET
+should be:  OBJECTID c
+
+error #1270
+lexed as:   OBJECTID x
+should be:  ':'
+
+error #1271
+lexed as:   ':'
+should be:  TYPEID C
+
+error #1272
+lexed as:   TYPEID Int
+should be:  DARROW
+
+error #1273
+lexed as:   ASSIGN
+should be:  OBJECTID out_string
+
+error #1274
+lexed as:   OBJECTID num
+should be:  '('
+
+error #1275
+lexed as:   IN
+should be:  STR_CONST "Class type is now C\n"
+
+error #1276
+lexed as:   IF
+should be:  ')'
+
+error #1277
+lexed as:   OBJECTID x
+should be:  ';'
+
+error #1278
+lexed as:   '<'
+should be:  OBJECTID d
+
+error #1279
+lexed as:   THEN
+should be:  ':'
+
+error #1280
+lexed as:   OBJECTID is_even
+should be:  TYPEID D
+
+error #1281
+lexed as:   '('
+should be:  DARROW
+
+error #1282
+lexed as:   '~'
+should be:  OBJECTID out_string
+
+error #1283
+lexed as:   OBJECTID x
+should be:  '('
+
+error #1284
+lexed as:   ')'
+should be:  STR_CONST "Class type is now D\n"
+
+error #1285
+lexed as:   ELSE
+should be:  ')'
+
+error #1286
+lexed as:   IF
+should be:  ';'
+
+error #1287
+lexed as:   '='
+should be:  OBJECTID e
+
+error #1288
+lexed as:   OBJECTID x
+should be:  ':'
+
+error #1289
+lexed as:   THEN
+should be:  TYPEID E
+
+error #1290
+lexed as:   BOOL_CONST true
+should be:  DARROW
+
+error #1291
+lexed as:   ELSE
+should be:  OBJECTID out_string
+
+error #1292
+lexed as:   IF
+should be:  '('
+
+error #1293
+lexed as:   '='
+should be:  STR_CONST "Class type is now E\n"
+
+error #1294
+lexed as:   OBJECTID x
+should be:  ')'
+
+error #1295
+lexed as:   THEN
+should be:  ';'
+
+error #1296
+lexed as:   BOOL_CONST false
+should be:  OBJECTID o
+
+error #1297
+lexed as:   ELSE
+should be:  ':'
+
+error #1298
+lexed as:   OBJECTID is_even
+should be:  TYPEID Object
+
+error #1299
+lexed as:   '('
+should be:  DARROW
+
+error #1300
+lexed as:   OBJECTID x
+should be:  OBJECTID out_string
+
+error #1301
+lexed as:   '-'
+should be:  '('
+
+error #1302
+lexed as:   ')'
+should be:  STR_CONST "Oooops\n"
+
+error #1303
+lexed as:   FI
+should be:  ')'
+
+error #1304
+lexed as:   FI
+should be:  ';'
+
+error #1305
+lexed as:   FI
+should be:  ESAC
+
+error #1306
+lexed as:   ')'
+should be:  '}'
+
+error #1307
+lexed as:   '}'
+should be:  ';'
+
+error #1308
+lexed as:   ';'
+should be:  OBJECTID print
+
+error #1309
+lexed as:   OBJECTID class_type
+should be:  '('
+
+error #1310
+lexed as:   '('
+should be:  OBJECTID var
+
+error #1311
+lexed as:   OBJECTID var
+should be:  ':'
+
+error #1312
+lexed as:   ':'
+should be:  TYPEID A
+
+error #1313
+lexed as:   TYPEID A
+should be:  ')'
+
+error #1314
+lexed as:   ')'
+should be:  ':'
+
+error #1315
+lexed as:   ':'
+should be:  TYPEID SELF_TYPE
+
+error #1316
+lexed as:   TYPEID SELF_TYPE
+should be:  '{'
+
+error #1317
+lexed as:   '{'
+should be:  '('
+
+error #1318
+lexed as:   CASE
+should be:  LET
+
+error #1319
+lexed as:   OBJECTID var
+should be:  OBJECTID z
+
+error #1320
+lexed as:   OF
+should be:  ':'
+
+error #1321
+lexed as:   OBJECTID a
+should be:  TYPEID A2I
+
+error #1322
+lexed as:   ':'
+should be:  ASSIGN
+
+error #1323
+lexed as:   TYPEID A
+should be:  NEW
+
+error #1324
+lexed as:   DARROW
+should be:  TYPEID A2I
+
+error #1325
+lexed as:   OBJECTID out_string
+should be:  IN
+
+error #1326
+lexed as:   '('
+should be:  '{'
+
+error #1327
+lexed as:   TYPEID Class
+should be:  OBJECTID out_string
+
+error #1328
+lexed as:   OBJECTID type
+should be:  '('
+
+error #1329
+lexed as:   OBJECTID is
+should be:  OBJECTID z
+
+error #1330
+lexed as:   OBJECTID now
+should be:  '.'
+
+error #1331
+lexed as:   TYPEID A
+should be:  OBJECTID i2a
+
+error #1332
+lexed as:   OBJECTID n
+should be:  '('
+
+error #1333
+lexed as:   ')'
+should be:  OBJECTID var
+
+error #1334
+lexed as:   ';'
+should be:  '.'
+
+error #1335
+lexed as:   OBJECTID b
+should be:  OBJECTID value
+
+error #1336
+lexed as:   ':'
+should be:  '('
+
+error #1337
+lexed as:   TYPEID B
+should be:  ')'
+
+error #1338
+lexed as:   DARROW
+should be:  ')'
+
+error #1339
+lexed as:   OBJECTID out_string
+should be:  ')'
+
+error #1340
+lexed as:   '('
+should be:  ';'
+
+error #1341
+lexed as:   TYPEID Class
+should be:  OBJECTID out_string
+
+error #1342
+lexed as:   OBJECTID type
+should be:  '('
+
+error #1343
+lexed as:   OBJECTID is
+should be:  STR_CONST " "
+
+error #1344
+lexed as:   OBJECTID now
+should be:  ')'
+
+error #1345
+lexed as:   TYPEID B
+should be:  ';'
+
+error #1346
+lexed as:   OBJECTID n
+should be:  '}'
+
+error #1348
+lexed as:   ';'
+should be:  '}'
+
+error #1349
+lexed as:   OBJECTID c
+should be:  ';'
+
+error #1350
+lexed as:   ':'
+should be:  OBJECTID main
+
+error #1351
+lexed as:   TYPEID C
+should be:  '('
+
+error #1352
+lexed as:   DARROW
+should be:  ')'
+
+error #1353
+lexed as:   OBJECTID out_string
+should be:  ':'
+
+error #1354
+lexed as:   '('
+should be:  TYPEID Object
+
+error #1355
+lexed as:   TYPEID Class
+should be:  '{'
+
+error #1356
+lexed as:   OBJECTID type
+should be:  '{'
+
+error #1357
+lexed as:   OBJECTID is
+should be:  OBJECTID avar
+
+error #1358
+lexed as:   OBJECTID now
+should be:  ASSIGN
+
+error #1359
+lexed as:   TYPEID C
+should be:  '('
+
+error #1360
+lexed as:   OBJECTID n
+should be:  NEW
+
+error #1361
+lexed as:   ')'
+should be:  TYPEID A
+
+error #1362
+lexed as:   ';'
+should be:  ')'
+
+error #1363
+lexed as:   OBJECTID d
+should be:  ';'
+
+error #1364
+lexed as:   ':'
+should be:  WHILE
+
+error #1365
+lexed as:   TYPEID D
+should be:  OBJECTID flag
+
+error #1366
+lexed as:   DARROW
+should be:  LOOP
+
+error #1367
+lexed as:   OBJECTID out_string
+should be:  '{'
+
+error #1368
+lexed as:   '('
+should be:  OBJECTID out_string
+
+error #1369
+lexed as:   TYPEID Class
+should be:  '('
+
+error #1370
+lexed as:   OBJECTID type
+should be:  STR_CONST "number "
+
+error #1371
+lexed as:   OBJECTID is
+should be:  ')'
+
+error #1372
+lexed as:   OBJECTID now
+should be:  ';'
+
+error #1373
+lexed as:   TYPEID D
+should be:  OBJECTID print
+
+error #1374
+lexed as:   OBJECTID n
+should be:  '('
+
+error #1375
+lexed as:   ')'
+should be:  OBJECTID avar
+
+error #1376
+lexed as:   ';'
+should be:  ')'
+
+error #1377
+lexed as:   OBJECTID e
+should be:  ';'
+
+error #1378
+lexed as:   ':'
+should be:  IF
+
+error #1379
+lexed as:   TYPEID E
+should be:  OBJECTID is_even
+
+error #1380
+lexed as:   DARROW
+should be:  '('
+
+error #1381
+lexed as:   OBJECTID out_string
+should be:  OBJECTID avar
+
+error #1382
+lexed as:   '('
+should be:  '.'
+
+error #1383
+lexed as:   TYPEID Class
+should be:  OBJECTID value
+
+error #1384
+lexed as:   OBJECTID type
+should be:  '('
+
+error #1385
+lexed as:   OBJECTID is
+should be:  ')'
+
+error #1386
+lexed as:   OBJECTID now
+should be:  ')'
+
+error #1387
+lexed as:   TYPEID E
+should be:  THEN
+
+error #1388
+lexed as:   OBJECTID n
+should be:  OBJECTID out_string
+
+error #1389
+lexed as:   ')'
+should be:  '('
+
+error #1390
+lexed as:   ';'
+should be:  STR_CONST "is even!\n"
+
+error #1391
+lexed as:   OBJECTID o
+should be:  ')'
+
+error #1392
+lexed as:   ':'
+should be:  ELSE
+
+error #1393
+lexed as:   TYPEID Object
+should be:  OBJECTID out_string
+
+error #1394
+lexed as:   DARROW
+should be:  '('
+
+error #1395
+lexed as:   OBJECTID out_string
+should be:  STR_CONST "is odd!\n"
+
+error #1396
+lexed as:   '('
+should be:  ')'
+
+error #1397
+lexed as:   TYPEID Oooops
+should be:  FI
+
+error #1398
+lexed as:   OBJECTID n
+should be:  ';'
+
+error #1399
+lexed as:   ')'
+should be:  OBJECTID class_type
+
+error #1400
+lexed as:   ';'
+should be:  '('
+
+error #1401
+lexed as:   ESAC
+should be:  OBJECTID avar
+
+error #1402
+lexed as:   '}'
+should be:  ')'
+
+error #1404
+lexed as:   OBJECTID print
+should be:  OBJECTID char
+
+error #1405
+lexed as:   '('
+should be:  ASSIGN
+
+error #1406
+lexed as:   OBJECTID var
+should be:  OBJECTID menu
+
+error #1407
+lexed as:   ':'
+should be:  '('
+
+error #1408
+lexed as:   TYPEID A
+should be:  ')'
+
+error #1409
+lexed as:   ')'
+should be:  ';'
+
+error #1410
+lexed as:   ':'
+should be:  IF
+
+error #1411
+lexed as:   TYPEID SELF_TYPE
+should be:  OBJECTID char
+
+error #1412
+lexed as:   '{'
+should be:  '='
+
+error #1413
+lexed as:   '('
+should be:  STR_CONST "a"
+
+error #1414
+lexed as:   LET
+should be:  THEN
+
+error #1415
+lexed as:   OBJECTID z
+should be:  '{'
+
+error #1416
+lexed as:   ':'
+should be:  OBJECTID a_var
+
+error #1417
+lexed as:   TYPEID A2I
+should be:  ASSIGN
+
+error #1418
+lexed as:   ASSIGN
+should be:  '('
+
+error #1420
+lexed as:   TYPEID A2I
+should be:  TYPEID A
+
+error #1421
+lexed as:   IN
+should be:  ')'
+
+error #1422
+lexed as:   '{'
+should be:  '.'
+
+error #1423
+lexed as:   OBJECTID out_string
+should be:  OBJECTID set_var
+
+error #1425
+lexed as:   OBJECTID z
+should be:  OBJECTID get_int
+
+error #1426
+lexed as:   '.'
+should be:  '('
+
+error #1427
+lexed as:   OBJECTID i2a
+should be:  ')'
+
+error #1428
+lexed as:   '('
+should be:  ')'
+
+error #1429
+lexed as:   OBJECTID var
+should be:  ';'
+
+error #1430
+lexed as:   '.'
+should be:  OBJECTID avar
+
+error #1431
+lexed as:   OBJECTID value
+should be:  ASSIGN
+
+error #1433
+lexed as:   ')'
+should be:  NEW
+
+error #1434
+lexed as:   ')'
+should be:  TYPEID B
+
+error #1436
+lexed as:   ';'
+should be:  '.'
+
+error #1437
+lexed as:   OBJECTID out_string
+should be:  OBJECTID method2
+
+error #1439
+lexed as:   ')'
+should be:  OBJECTID avar
+
+error #1440
+lexed as:   ';'
+should be:  '.'
+
+error #1441
+lexed as:   '}'
+should be:  OBJECTID value
+
+error #1442
+lexed as:   ')'
+should be:  '('
+
+error #1443
+lexed as:   '}'
+should be:  ')'
+
+error #1444
+lexed as:   ';'
+should be:  ','
+
+error #1445
+lexed as:   OBJECTID main
+should be:  OBJECTID a_var
+
+error #1446
+lexed as:   '('
+should be:  '.'
+
+error #1447
+lexed as:   ')'
+should be:  OBJECTID value
+
+error #1448
+lexed as:   ':'
+should be:  '('
+
+error #1449
+lexed as:   TYPEID Object
+should be:  ')'
+
+error #1450
+lexed as:   '{'
+should be:  ')'
+
+error #1451
+lexed as:   '{'
+should be:  ';'
+
+error #1452
+lexed as:   OBJECTID avar
+should be:  '}'
+
+error #1453
+lexed as:   ASSIGN
+should be:  ELSE
+
+error #1454
+lexed as:   '('
+should be:  IF
+
+error #1455
+lexed as:   NEW
+should be:  OBJECTID char
+
+error #1456
+lexed as:   TYPEID A
+should be:  '='
+
+error #1457
+lexed as:   ')'
+should be:  STR_CONST "b"
+
+error #1458
+lexed as:   ';'
+should be:  THEN
+
+error #1459
+lexed as:   WHILE
+should be:  CASE
+
+error #1460
+lexed as:   OBJECTID flag
+should be:  OBJECTID avar
+
+error #1461
+lexed as:   LOOP
+should be:  OF
+
+error #1462
+lexed as:   '{'
+should be:  OBJECTID c
+
+error #1463
+lexed as:   '-'
+should be:  ':'
+
+error #1464
+lexed as:   '-'
+should be:  TYPEID C
+
+error #1465
+lexed as:   OBJECTID avar
+should be:  DARROW
+
+error #1466
+lexed as:   ASSIGN
+should be:  OBJECTID avar
+
+error #1467
+lexed as:   '('
+should be:  ASSIGN
+
+error #1468
+lexed as:   NEW
+should be:  OBJECTID c
+
+error #1469
+lexed as:   TYPEID A
+should be:  '.'
+
+error #1470
+lexed as:   ')'
+should be:  OBJECTID method6
+
+error #1471
+lexed as:   '.'
+should be:  '('
+
+error #1472
+lexed as:   OBJECTID set_var
+should be:  OBJECTID c
+
+error #1473
+lexed as:   '('
+should be:  '.'
+
+error #1474
+lexed as:   OBJECTID get_int
+should be:  OBJECTID value
+
+error #1479
+lexed as:   OBJECTID out_string
+should be:  OBJECTID a
+
+error #1480
+lexed as:   '('
+should be:  ':'
+
+error #1481
+lexed as:   OBJECTID number
+should be:  TYPEID A
+
+error #1482
+lexed as:   ')'
+should be:  DARROW
+
+error #1483
+lexed as:   ';'
+should be:  OBJECTID avar
+
+error #1484
+lexed as:   OBJECTID print
+should be:  ASSIGN
+
+error #1485
+lexed as:   '('
+should be:  OBJECTID a
+
+error #1486
+lexed as:   OBJECTID avar
+should be:  '.'
+
+error #1487
+lexed as:   ')'
+should be:  OBJECTID method3
+
+error #1488
+lexed as:   ';'
+should be:  '('
+
+error #1489
+lexed as:   IF
+should be:  OBJECTID a
+
+error #1490
+lexed as:   OBJECTID is_even
+should be:  '.'
+
+error #1491
+lexed as:   '('
+should be:  OBJECTID value
+
+error #1492
+lexed as:   OBJECTID avar
+should be:  '('
+
+error #1493
+lexed as:   '.'
+should be:  ')'
+
+error #1494
+lexed as:   OBJECTID value
+should be:  ')'
+
+error #1495
+lexed as:   '('
+should be:  ';'
+
+error #1496
+lexed as:   ')'
+should be:  OBJECTID o
+
+error #1497
+lexed as:   ')'
+should be:  ':'
+
+error #1498
+lexed as:   THEN
+should be:  TYPEID Object
+
+error #1499
+lexed as:   OBJECTID out_string
+should be:  DARROW
+
+error #1500
+lexed as:   '('
+should be:  '{'
+
+error #1501
+lexed as:   OBJECTID is
+should be:  OBJECTID out_string
+
+error #1502
+lexed as:   OBJECTID even
+should be:  '('
+
+error #1503
+lexed as:   OBJECTID n
+should be:  STR_CONST "Oooops\n"
+
+error #1505
+lexed as:   ELSE
+should be:  ';'
+
+error #1506
+lexed as:   OBJECTID out_string
+should be:  OBJECTID abort
+
+error #1508
+lexed as:   OBJECTID is
+should be:  ')'
+
+error #1509
+lexed as:   OBJECTID odd
+should be:  ';'
+
+error #1510
+lexed as:   OBJECTID n
+should be:  INT_CONST 0
+
+error #1511
+lexed as:   ')'
+should be:  ';'
+
+error #1512
+lexed as:   FI
+should be:  '}'
+
+error #1514
+lexed as:   '-'
+should be:  ESAC
+
+error #1515
+lexed as:   '-'
+should be:  ELSE
+
+error #1516
+lexed as:   OBJECTID print
+should be:  IF
+
+error #1517
+lexed as:   '('
+should be:  OBJECTID char
+
+error #1518
+lexed as:   OBJECTID avar
+should be:  '='
+
+error #1519
+lexed as:   ')'
+should be:  STR_CONST "c"
+
+error #1520
+lexed as:   ';'
+should be:  THEN
+
+error #1521
+lexed as:   '-'
+should be:  '{'
+
+error #1522
+lexed as:   '-'
+should be:  OBJECTID a_var
+
+error #1523
+lexed as:   OBJECTID prints
+should be:  ASSIGN
+
+error #1524
+lexed as:   OBJECTID out
+should be:  '('
+
+error #1525
+lexed as:   OBJECTID answer
+should be:  NEW
+
+error #1526
+lexed as:   OBJECTID class_type
+should be:  TYPEID A
+
+error #1527
+lexed as:   '('
+should be:  ')'
+
+error #1528
+lexed as:   OBJECTID avar
+should be:  '.'
+
+error #1529
+lexed as:   ')'
+should be:  OBJECTID set_var
+
+error #1530
+lexed as:   ';'
+should be:  '('
+
+error #1531
+lexed as:   OBJECTID char
+should be:  OBJECTID get_int
+
+error #1532
+lexed as:   ASSIGN
+should be:  '('
+
+error #1533
+lexed as:   OBJECTID menu
+should be:  ')'
+
+error #1534
+lexed as:   '('
+should be:  ')'
+
+error #1535
+lexed as:   ')'
+should be:  ';'
+
+error #1536
+lexed as:   ';'
+should be:  OBJECTID avar
+
+error #1537
+lexed as:   IF
+should be:  ASSIGN
+
+error #1538
+lexed as:   OBJECTID char
+should be:  '('
+
+error #1539
+lexed as:   '='
+should be:  NEW
+
+error #1540
+lexed as:   OBJECTID a
+should be:  TYPEID D
+
+error #1541
+lexed as:   THEN
+should be:  ')'
+
+error #1542
+lexed as:   '-'
+should be:  '.'
+
+error #1543
+lexed as:   '-'
+should be:  OBJECTID method4
+
+error #1544
+lexed as:   OBJECTID add
+should be:  '('
+
+error #1545
+lexed as:   '{'
+should be:  OBJECTID avar
+
+error #1546
+lexed as:   OBJECTID a_var
+should be:  '.'
+
+error #1547
+lexed as:   ASSIGN
+should be:  OBJECTID value
+
+error #1549
+lexed as:   NEW
+should be:  ')'
+
+error #1550
+lexed as:   TYPEID A
+should be:  ','
+
+error #1551
+lexed as:   ')'
+should be:  OBJECTID a_var
+
+error #1553
+lexed as:   OBJECTID set_var
+should be:  OBJECTID value
+
+error #1555
+lexed as:   OBJECTID get_int
+should be:  ')'
+
+error #1556
+lexed as:   '('
+should be:  ')'
+
+error #1557
+lexed as:   ')'
+should be:  ';'
+
+error #1558
+lexed as:   ')'
+should be:  '}'
+
+error #1559
+lexed as:   ';'
+should be:  ELSE
+
+error #1560
+lexed as:   OBJECTID avar
+should be:  IF
+
+error #1561
+lexed as:   ASSIGN
+should be:  OBJECTID char
+
+error #1562
+lexed as:   '('
+should be:  '='
+
+error #1563
+lexed as:   NEW
+should be:  STR_CONST "d"
+
+error #1564
+lexed as:   TYPEID B
+should be:  THEN
+
+error #1565
+lexed as:   ')'
+should be:  OBJECTID avar
+
+error #1566
+lexed as:   '.'
+should be:  ASSIGN
+
+error #1567
+lexed as:   OBJECTID method2
+should be:  '('
+
+error #1568
+lexed as:   '('
+should be:  NEW
+
+error #1569
+lexed as:   OBJECTID avar
+should be:  TYPEID C
+
+error #1570
+lexed as:   '.'
+should be:  ')'
+
+error #1571
+lexed as:   OBJECTID value
+should be:  '@'
+
+error #1572
+lexed as:   '('
+should be:  TYPEID A
+
+error #1573
+lexed as:   ')'
+should be:  '.'
+
+error #1574
+lexed as:   ','
+should be:  OBJECTID method5
+
+error #1575
+lexed as:   OBJECTID a_var
+should be:  '('
+
+error #1576
+lexed as:   '.'
+should be:  OBJECTID avar
+
+error #1577
+lexed as:   OBJECTID value
+should be:  '.'
+
+error #1578
+lexed as:   '('
+should be:  OBJECTID value
+
+error #1579
+lexed as:   ')'
+should be:  '('
+
+error #1581
+lexed as:   ';'
+should be:  ')'
+
+error #1582
+lexed as:   '}'
+should be:  ELSE
+
+error #1583
+lexed as:   ELSE
+should be:  IF
+
+error #1584
+lexed as:   IF
+should be:  OBJECTID char
+
+error #1585
+lexed as:   OBJECTID char
+should be:  '='
+
+error #1586
+lexed as:   '='
+should be:  STR_CONST "e"
+
+error #1587
+lexed as:   OBJECTID b
+should be:  THEN
+
+error #1588
+lexed as:   THEN
+should be:  OBJECTID avar
+
+error #1589
+lexed as:   '-'
+should be:  ASSIGN
+
+error #1590
+lexed as:   '-'
+should be:  '('
+
+error #1591
+lexed as:   OBJECTID negate
+should be:  NEW
+
+error #1592
+lexed as:   CASE
+should be:  TYPEID C
+
+error #1593
+lexed as:   OBJECTID avar
+should be:  ')'
+
+error #1594
+lexed as:   OF
+should be:  '@'
+
+error #1595
+lexed as:   OBJECTID c
+should be:  TYPEID B
+
+error #1596
+lexed as:   ':'
+should be:  '.'
+
+error #1597
+lexed as:   TYPEID C
+should be:  OBJECTID method5
+
+error #1598
+lexed as:   DARROW
+should be:  '('
+
+error #1600
+lexed as:   ASSIGN
+should be:  '.'
+
+error #1601
+lexed as:   OBJECTID c
+should be:  OBJECTID value
+
+error #1602
+lexed as:   '.'
+should be:  '('
+
+error #1603
+lexed as:   OBJECTID method6
+should be:  ')'
+
+error #1604
+lexed as:   '('
+should be:  ')'
+
+error #1605
+lexed as:   OBJECTID c
+should be:  ELSE
+
+error #1606
+lexed as:   '.'
+should be:  IF
+
+error #1607
+lexed as:   OBJECTID value
+should be:  OBJECTID char
+
+error #1608
+lexed as:   '('
+should be:  '='
+
+error #1609
+lexed as:   ')'
+should be:  STR_CONST "f"
+
+error #1610
+lexed as:   ')'
+should be:  THEN
+
+error #1611
+lexed as:   ';'
+should be:  OBJECTID avar
+
+error #1612
+lexed as:   OBJECTID a
+should be:  ASSIGN
+
+error #1613
+lexed as:   ':'
+should be:  '('
+
+error #1614
+lexed as:   TYPEID A
+should be:  NEW
+
+error #1615
+lexed as:   DARROW
+should be:  TYPEID C
+
+error #1616
+lexed as:   OBJECTID avar
+should be:  ')'
+
+error #1617
+lexed as:   ASSIGN
+should be:  '@'
+
+error #1618
+lexed as:   OBJECTID a
+should be:  TYPEID C
+
+error #1620
+lexed as:   OBJECTID method3
+should be:  OBJECTID method5
+
+error #1622
+lexed as:   OBJECTID a
+should be:  OBJECTID avar
+
+error #1628
+lexed as:   ';'
+should be:  ELSE
+
+error #1629
+lexed as:   OBJECTID o
+should be:  IF
+
+error #1630
+lexed as:   ':'
+should be:  OBJECTID char
+
+error #1631
+lexed as:   TYPEID Object
+should be:  '='
+
+error #1632
+lexed as:   DARROW
+should be:  STR_CONST "g"
+
+error #1633
+lexed as:   '{'
+should be:  THEN
+
+error #1634
+lexed as:   OBJECTID out_string
+should be:  IF
+
+error #1636
+lexed as:   TYPEID Oooops
+should be:  '('
+
+error #1637
+lexed as:   OBJECTID n
+should be:  NEW
+
+error #1638
+lexed as:   ')'
+should be:  TYPEID D
+
+error #1639
+lexed as:   ';'
+should be:  ')'
+
+error #1640
+lexed as:   OBJECTID abort
+should be:  '.'
+
+error #1641
+lexed as:   '('
+should be:  OBJECTID method7
+
+error #1642
+lexed as:   ')'
+should be:  '('
+
+error #1643
+lexed as:   ';'
+should be:  OBJECTID avar
+
+error #1644
+lexed as:   ';'
+should be:  '.'
+
+error #1645
+lexed as:   '}'
+should be:  OBJECTID value
+
+error #1646
+lexed as:   ';'
+should be:  '('
+
+error #1647
+lexed as:   ESAC
+should be:  ')'
+
+error #1648
+lexed as:   ELSE
+should be:  ')'
+
+error #1649
+lexed as:   IF
+should be:  ')'
+
+error #1650
+lexed as:   OBJECTID char
+should be:  THEN
+
+error #1651
+lexed as:   '='
+should be:  '{'
+
+error #1652
+lexed as:   OBJECTID c
+should be:  OBJECTID out_string
+
+error #1653
+lexed as:   THEN
+should be:  '('
+
+error #1654
+lexed as:   '-'
+should be:  STR_CONST "number "
+
+error #1655
+lexed as:   '-'
+should be:  ')'
+
+error #1656
+lexed as:   OBJECTID diff
+should be:  ';'
+
+error #1657
+lexed as:   '{'
+should be:  OBJECTID print
+
+error #1658
+lexed as:   OBJECTID a_var
+should be:  '('
+
+error #1659
+lexed as:   ASSIGN
+should be:  OBJECTID avar
+
+error #1660
+lexed as:   '('
+should be:  ')'
+
+error #1661
+lexed as:   NEW
+should be:  ';'
+
+error #1662
+lexed as:   TYPEID A
+should be:  OBJECTID out_string
+
+error #1663
+lexed as:   ')'
+should be:  '('
+
+error #1664
+lexed as:   '.'
+should be:  STR_CONST "is divisible by 3.\n"
+
+error #1665
+lexed as:   OBJECTID set_var
+should be:  ')'
+
+error #1666
+lexed as:   '('
+should be:  ';'
+
+error #1667
+lexed as:   OBJECTID get_int
+should be:  '}'
+
+error #1668
+lexed as:   '('
+should be:  ELSE
+
+error #1669
+lexed as:   ')'
+should be:  '{'
+
+error #1670
+lexed as:   ')'
+should be:  OBJECTID out_string
+
+error #1671
+lexed as:   ';'
+should be:  '('
+
+error #1672
+lexed as:   OBJECTID avar
+should be:  STR_CONST "number "
+
+error #1673
+lexed as:   ASSIGN
+should be:  ')'
+
+error #1674
+lexed as:   '('
+should be:  ';'
+
+error #1675
+lexed as:   NEW
+should be:  OBJECTID print
+
+error #1676
+lexed as:   TYPEID D
+should be:  '('
+
+error #1677
+lexed as:   ')'
+should be:  OBJECTID avar
+
+error #1678
+lexed as:   '.'
+should be:  ')'
+
+error #1679
+lexed as:   OBJECTID method4
+should be:  ';'
+
+error #1680
+lexed as:   '('
+should be:  OBJECTID out_string
+
+error #1681
+lexed as:   OBJECTID avar
+should be:  '('
+
+error #1682
+lexed as:   '.'
+should be:  STR_CONST "is not divisible by 3.\n"
+
+error #1683
+lexed as:   OBJECTID value
+should be:  ')'
+
+error #1684
+lexed as:   '('
+should be:  ';'
+
+error #1685
+lexed as:   ')'
+should be:  '}'
+
+error #1686
+lexed as:   ','
+should be:  FI
+
+error #1687
+lexed as:   OBJECTID a_var
+should be:  ELSE
+
+error #1688
+lexed as:   '.'
+should be:  IF
+
+error #1689
+lexed as:   OBJECTID value
+should be:  OBJECTID char
+
+error #1690
+lexed as:   '('
+should be:  '='
+
+error #1691
+lexed as:   ')'
+should be:  STR_CONST "h"
+
+error #1692
+lexed as:   ')'
+should be:  THEN
+
+error #1693
+lexed as:   ';'
+should be:  '('
+
+error #1694
+lexed as:   '}'
+should be:  LET
+
+error #1695
+lexed as:   ELSE
+should be:  OBJECTID x
+
+error #1696
+lexed as:   IF
+should be:  ':'
+
+error #1697
+lexed as:   OBJECTID char
+should be:  TYPEID A
+
+error #1698
+lexed as:   '='
+should be:  IN
+
+error #1699
+lexed as:   OBJECTID d
+should be:  '{'
+
+error #1700
+lexed as:   THEN
+should be:  OBJECTID x
+
+error #1701
+lexed as:   OBJECTID avar
+should be:  ASSIGN
+
+error #1702
+lexed as:   ASSIGN
+should be:  '('
+
+error #1703
+lexed as:   '('
+should be:  NEW
+
+error #1704
+lexed as:   NEW
+should be:  TYPEID E
+
+error #1705
+lexed as:   TYPEID C
+should be:  ')'
+
+error #1706
+lexed as:   ')'
+should be:  '.'
+
+error #1707
+lexed as:   '@'
+should be:  OBJECTID method6
+
+error #1708
+lexed as:   TYPEID A
+should be:  '('
+
+error #1709
+lexed as:   '.'
+should be:  OBJECTID avar
+
+error #1710
+lexed as:   OBJECTID method5
+should be:  '.'
+
+error #1711
+lexed as:   '('
+should be:  OBJECTID value
+
+error #1712
+lexed as:   OBJECTID avar
+should be:  '('
+
+error #1713
+lexed as:   '.'
+should be:  ')'
+
+error #1714
+lexed as:   OBJECTID value
+should be:  ')'
+
+error #1715
+lexed as:   '('
+should be:  ';'
+
+error #1716
+lexed as:   ')'
+should be:  '('
+
+error #1717
+lexed as:   ')'
+should be:  LET
+
+error #1718
+lexed as:   ELSE
+should be:  OBJECTID r
+
+error #1719
+lexed as:   '-'
+should be:  ':'
+
+error #1720
+lexed as:   '-'
+should be:  TYPEID Int
+
+error #1721
+lexed as:   OBJECTID factorial
+should be:  ASSIGN
+
+error #1722
+lexed as:   IF
+should be:  '('
+
+error #1723
+lexed as:   OBJECTID char
+should be:  OBJECTID avar
+
+error #1724
+lexed as:   '='
+should be:  '.'
+
+error #1725
+lexed as:   OBJECTID e
+should be:  OBJECTID value
+
+error #1726
+lexed as:   THEN
+should be:  '('
+
+error #1727
+lexed as:   OBJECTID avar
+should be:  ')'
+
+error #1728
+lexed as:   ASSIGN
+should be:  '-'
+
+error #1730
+lexed as:   NEW
+should be:  OBJECTID x
+
+error #1731
+lexed as:   TYPEID C
+should be:  '.'
+
+error #1732
+lexed as:   ')'
+should be:  OBJECTID value
+
+error #1733
+lexed as:   '@'
+should be:  '('
+
+error #1734
+lexed as:   TYPEID B
+should be:  ')'
+
+error #1735
+lexed as:   '.'
+should be:  '*'
+
+error #1736
+lexed as:   OBJECTID method5
+should be:  INT_CONST 8
+
+error #1737
+lexed as:   '('
+should be:  ')'
+
+error #1738
+lexed as:   OBJECTID avar
+should be:  ')'
+
+error #1739
+lexed as:   '.'
+should be:  IN
+
+error #1740
+lexed as:   OBJECTID value
+should be:  '{'
+
+error #1741
+lexed as:   '('
+should be:  OBJECTID out_string
+
+error #1742
+lexed as:   ')'
+should be:  '('
+
+error #1743
+lexed as:   ')'
+should be:  STR_CONST "number "
+
+error #1744
+lexed as:   ELSE
+should be:  ')'
+
+error #1745
+lexed as:   '-'
+should be:  ';'
+
+error #1746
+lexed as:   '-'
+should be:  OBJECTID print
+
+error #1747
+lexed as:   OBJECTID square
+should be:  '('
+
+error #1748
+lexed as:   IF
+should be:  OBJECTID avar
+
+error #1749
+lexed as:   OBJECTID char
+should be:  ')'
+
+error #1750
+lexed as:   '='
+should be:  ';'
+
+error #1751
+lexed as:   OBJECTID f
+should be:  OBJECTID out_string
+
+error #1752
+lexed as:   THEN
+should be:  '('
+
+error #1753
+lexed as:   OBJECTID avar
+should be:  STR_CONST "is equal to "
+
+error #1754
+lexed as:   ASSIGN
+should be:  ')'
+
+error #1755
+lexed as:   '('
+should be:  ';'
+
+error #1756
+lexed as:   NEW
+should be:  OBJECTID print
+
+error #1757
+lexed as:   TYPEID C
+should be:  '('
+
+error #1758
+lexed as:   ')'
+should be:  OBJECTID x
+
+error #1759
+lexed as:   '@'
+should be:  ')'
+
+error #1760
+lexed as:   TYPEID C
+should be:  ';'
+
+error #1761
+lexed as:   '.'
+should be:  OBJECTID out_string
+
+error #1762
+lexed as:   OBJECTID method5
+should be:  '('
+
+error #1763
+lexed as:   '('
+should be:  STR_CONST "times 8 with a remainder of "
+
+error #1764
+lexed as:   OBJECTID avar
+should be:  ')'
+
+error #1765
+lexed as:   '.'
+should be:  ';'
+
+error #1766
+lexed as:   OBJECTID value
+should be:  '('
+
+error #1767
+lexed as:   '('
+should be:  LET
+
+error #1768
+lexed as:   ')'
+should be:  OBJECTID a
+
+error #1769
+lexed as:   ')'
+should be:  ':'
+
+error #1770
+lexed as:   ELSE
+should be:  TYPEID A2I
+
+error #1771
+lexed as:   '-'
+should be:  ASSIGN
+
+error #1772
+lexed as:   '-'
+should be:  NEW
+
+error #1773
+lexed as:   OBJECTID cube
+should be:  TYPEID A2I
+
+error #1774
+lexed as:   IF
+should be:  IN
+
+error #1775
+lexed as:   OBJECTID char
+should be:  '{'
+
+error #1776
+lexed as:   '='
+should be:  OBJECTID out_string
+
+error #1777
+lexed as:   OBJECTID g
+should be:  '('
+
+error #1778
+lexed as:   THEN
+should be:  OBJECTID a
+
+error #1779
+lexed as:   '-'
+should be:  '.'
+
+error #1780
+lexed as:   '-'
+should be:  OBJECTID i2a
+
+error #1781
+lexed as:   OBJECTID multiple
+should be:  '('
+
+error #1782
+lexed as:   OF
+should be:  OBJECTID r
+
+error #1783
+lexed as:   IF
+should be:  ')'
+
+error #1784
+lexed as:   '('
+should be:  ')'
+
+error #1785
+lexed as:   '('
+should be:  ';'
+
+error #1786
+lexed as:   NEW
+should be:  OBJECTID out_string
+
+error #1787
+lexed as:   TYPEID D
+should be:  '('
+
+error #1788
+lexed as:   ')'
+should be:  STR_CONST "\n"
+
+error #1789
+lexed as:   '.'
+should be:  ')'
+
+error #1790
+lexed as:   OBJECTID method7
+should be:  ';'
+
+error #1791
+lexed as:   '('
+should be:  '}'
+
+error #1792
+lexed as:   OBJECTID avar
+should be:  ')'
+
+error #1793
+lexed as:   '.'
+should be:  ';'
+
+error #1794
+lexed as:   OBJECTID value
+should be:  '}'
+
+error #1795
+lexed as:   '('
+should be:  ')'
+
+error #1796
+lexed as:   ')'
+should be:  ';'
+
+error #1797
+lexed as:   ')'
+should be:  OBJECTID avar
+
+error #1798
+lexed as:   ')'
+should be:  ASSIGN
+
+error #1799
+lexed as:   THEN
+should be:  OBJECTID x
+
+error #1800
+lexed as:   '-'
+should be:  ';'
+
+error #1801
+lexed as:   '-'
+should be:  '}'
+
+error #1802
+lexed as:   OBJECTID avar
+should be:  ')'
+
+error #1803
+lexed as:   ASSIGN
+should be:  ELSE
+
+error #1804
+lexed as:   '('
+should be:  IF
+
+error #1805
+lexed as:   NEW
+should be:  OBJECTID char
+
+error #1806
+lexed as:   TYPEID A
+should be:  '='
+
+error #1807
+lexed as:   ')'
+should be:  STR_CONST "j"
+
+error #1808
+lexed as:   '.'
+should be:  THEN
+
+error #1809
+lexed as:   OBJECTID method1
+should be:  OBJECTID avar
+
+error #1810
+lexed as:   '('
+should be:  ASSIGN
+
+error #1811
+lexed as:   OBJECTID avar
+should be:  '('
+
+error #1812
+lexed as:   '.'
+should be:  NEW
+
+error #1813
+lexed as:   OBJECTID value
+should be:  TYPEID A
+
+error #1814
+lexed as:   '('
+should be:  ')'
+
+error #1815
+lexed as:   ')'
+should be:  ELSE
+
+error #1816
+lexed as:   ')'
+should be:  IF
+
+error #1817
+lexed as:   '{'
+should be:  OBJECTID char
+
+error #1818
+lexed as:   OBJECTID out_string
+should be:  '='
+
+error #1819
+lexed as:   '('
+should be:  STR_CONST "q"
+
+error #1820
+lexed as:   OBJECTID number
+should be:  THEN
+
+error #1821
+lexed as:   ')'
+should be:  OBJECTID flag
+
+error #1822
+lexed as:   ';'
+should be:  ASSIGN
+
+error #1823
+lexed as:   OBJECTID print
+should be:  BOOL_CONST false
+
+error #1824
+lexed as:   '('
+should be:  ELSE
+
+error #1826
+lexed as:   ')'
+should be:  ASSIGN
+
+error #1827
+lexed as:   ';'
+should be:  '('
+
+error #1828
+lexed as:   OBJECTID out_string
+should be:  NEW
+
+error #1829
+lexed as:   '('
+should be:  TYPEID A
+
+error #1830
+lexed as:   OBJECTID is
+should be:  ')'
+
+error #1831
+lexed as:   OBJECTID divisible
+should be:  '.'
+
+error #1832
+lexed as:   OBJECTID by
+should be:  OBJECTID method1
+
+error #1833
+lexed as:   '.'
+should be:  '('
+
+error #1834
+lexed as:   OBJECTID n
+should be:  OBJECTID avar
+
+error #1835
+lexed as:   ')'
+should be:  '.'
+
+error #1836
+lexed as:   ';'
+should be:  OBJECTID value
+
+error #1837
+lexed as:   '}'
+should be:  '('
+
+error #1838
+lexed as:   ELSE
+should be:  ')'
+
+error #1839
+lexed as:   '-'
+should be:  ')'
+
+error #1840
+lexed as:   '-'
+should be:  FI
+
+error #1841
+lexed as:   OBJECTID avar
+should be:  FI
+
+error #1842
+lexed as:   ASSIGN
+should be:  FI
+
+error #1843
+lexed as:   '('
+should be:  FI
+
+error #1844
+lexed as:   NEW
+should be:  FI
+
+error #1845
+lexed as:   TYPEID A
+should be:  FI
+
+error #1846
+lexed as:   ')'
+should be:  FI
+
+error #1847
+lexed as:   '.'
+should be:  FI
+
+error #1848
+lexed as:   OBJECTID set_var
+should be:  FI
+
+error #1849
+lexed as:   '('
+should be:  FI
+
+error #1850
+lexed as:   ')'
+should be:  ';'
+
+error #1851
+lexed as:   '{'
+should be:  '}'
+
+error #1852
+lexed as:   OBJECTID out_string
+should be:  POOL
+
+error #1853
+lexed as:   '('
+should be:  ';'
+
+error #1854
+lexed as:   OBJECTID number
+should be:  '}'
+
+error #1855
+lexed as:   ')'
+should be:  '}'
+
+error #1857
+lexed as:   OBJECTID print
+should be:  '}'
+
+error #1858
+lexed as:   '('
+should be:  ';'
+
+error #1859
+lexed as:   OBJECTID avar
+should be: 
+
+error #1860
+lexed as:   ')'
+should be: 
+
+error #1861
+lexed as:   ';'
+should be: 
+
+error #1862
+lexed as:   OBJECTID out_string
+should be: 
+
+error #1863
+lexed as:   '('
+should be: 
+
+error #1864
+lexed as:   OBJECTID is
+should be: 
+
+error #1865
+lexed as:   NOT
+should be: 
+
+error #1866
+lexed as:   OBJECTID divisible
+should be: 
+
+error #1867
+lexed as:   OBJECTID by
+should be: 
+
+error #1868
+lexed as:   '.'
+should be: 
+
+error #1869
+lexed as:   OBJECTID n
+should be: 
+
+error #1870
+lexed as:   ')'
+should be: 
+
+error #1871
+lexed as:   ';'
+should be: 
+
+error #1872
+lexed as:   '}'
+should be: 
+
+error #1873
+lexed as:   FI
+should be: 
+
+error #1874
+lexed as:   ELSE
+should be: 
+
+error #1875
+lexed as:   IF
+should be: 
+
+error #1876
+lexed as:   OBJECTID char
+should be: 
+
+error #1877
+lexed as:   '='
+should be: 
+
+error #1878
+lexed as:   OBJECTID h
+should be: 
+
+error #1879
+lexed as:   THEN
+should be: 
+
+error #1880
+lexed as:   '('
+should be: 
+
+error #1881
+lexed as:   LET
+should be: 
+
+error #1882
+lexed as:   OBJECTID x
+should be: 
+
+error #1883
+lexed as:   ':'
+should be: 
+
+error #1884
+lexed as:   TYPEID A
+should be: 
+
+error #1885
+lexed as:   IN
+should be: 
+
+error #1886
+lexed as:   '{'
+should be: 
+
+error #1887
+lexed as:   OBJECTID x
+should be: 
+
+error #1888
+lexed as:   ASSIGN
+should be: 
+
+error #1889
+lexed as:   '('
+should be: 
+
+error #1890
+lexed as:   NEW
+should be: 
+
+error #1891
+lexed as:   TYPEID E
+should be: 
+
+error #1892
+lexed as:   ')'
+should be: 
+
+error #1893
+lexed as:   '.'
+should be: 
+
+error #1894
+lexed as:   OBJECTID method6
+should be: 
+
+error #1895
+lexed as:   '('
+should be: 
+
+error #1896
+lexed as:   OBJECTID avar
+should be: 
+
+error #1897
+lexed as:   '.'
+should be: 
+
+error #1898
+lexed as:   OBJECTID value
+should be: 
+
+error #1899
+lexed as:   '('
+should be: 
+
+error #1900
+lexed as:   ')'
+should be: 
+
+error #1901
+lexed as:   ')'
+should be: 
+
+error #1902
+lexed as:   ';'
+should be: 
+
+error #1903
+lexed as:   '('
+should be: 
+
+error #1904
+lexed as:   LET
+should be: 
+
+error #1905
+lexed as:   OBJECTID r
+should be: 
+
+error #1906
+lexed as:   ':'
+should be: 
+
+error #1907
+lexed as:   TYPEID Int
+should be: 
+
+error #1908
+lexed as:   ASSIGN
+should be: 
+
+error #1909
+lexed as:   '('
+should be: 
+
+error #1910
+lexed as:   OBJECTID avar
+should be: 
+
+error #1911
+lexed as:   '.'
+should be: 
+
+error #1912
+lexed as:   OBJECTID value
+should be: 
+
+error #1913
+lexed as:   '('
+should be: 
+
+error #1914
+lexed as:   ')'
+should be: 
+
+error #1915
+lexed as:   '-'
+should be: 
+
+error #1916
+lexed as:   '('
+should be: 
+
+error #1917
+lexed as:   OBJECTID x
+should be: 
+
+error #1918
+lexed as:   '.'
+should be: 
+
+error #1919
+lexed as:   OBJECTID value
+should be: 
+
+error #1920
+lexed as:   '('
+should be: 
+
+error #1921
+lexed as:   ')'
+should be: 
+
+error #1922
+lexed as:   '*'
+should be: 
+
+error #1923
+lexed as:   ')'
+should be: 
+
+error #1924
+lexed as:   ')'
+should be: 
+
+error #1925
+lexed as:   IN
+should be: 
+
+error #1926
+lexed as:   '{'
+should be: 
+
+error #1927
+lexed as:   OBJECTID out_string
+should be: 
+
+error #1928
+lexed as:   '('
+should be: 
+
+error #1929
+lexed as:   OBJECTID number
+should be: 
+
+error #1930
+lexed as:   ')'
+should be: 
+
+error #1931
+lexed as:   ';'
+should be: 
+
+error #1932
+lexed as:   OBJECTID print
+should be: 
+
+error #1933
+lexed as:   '('
+should be: 
+
+error #1934
+lexed as:   OBJECTID avar
+should be: 
+
+error #1935
+lexed as:   ')'
+should be: 
+
+error #1936
+lexed as:   ';'
+should be: 
+
+error #1937
+lexed as:   OBJECTID out_string
+should be: 
+
+error #1938
+lexed as:   '('
+should be: 
+
+error #1939
+lexed as:   OBJECTID is
+should be: 
+
+error #1940
+lexed as:   OBJECTID equal
+should be: 
+
+error #1941
+lexed as:   OBJECTID to
+should be: 
+
+error #1942
+lexed as:   ')'
+should be: 
+
+error #1943
+lexed as:   ';'
+should be: 
+
+error #1944
+lexed as:   OBJECTID print
+should be: 
+
+error #1945
+lexed as:   '('
+should be: 
+
+error #1946
+lexed as:   OBJECTID x
+should be: 
+
+error #1947
+lexed as:   ')'
+should be: 
+
+error #1948
+lexed as:   ';'
+should be: 
+
+error #1949
+lexed as:   OBJECTID out_string
+should be: 
+
+error #1950
+lexed as:   '('
+should be: 
+
+error #1951
+lexed as:   OBJECTID times
+should be: 
+
+error #1952
+lexed as:   OBJECTID with
+should be: 
+
+error #1953
+lexed as:   OBJECTID a
+should be: 
+
+error #1954
+lexed as:   OBJECTID remainder
+should be: 
+
+error #1955
+lexed as:   OF
+should be: 
+
+error #1956
+lexed as:   ')'
+should be: 
+
+error #1957
+lexed as:   ';'
+should be: 
+
+error #1958
+lexed as:   '('
+should be: 
+
+error #1959
+lexed as:   LET
+should be: 
+
+error #1960
+lexed as:   OBJECTID a
+should be: 
+
+error #1961
+lexed as:   ':'
+should be: 
+
+error #1962
+lexed as:   TYPEID A2I
+should be: 
+
+error #1963
+lexed as:   ASSIGN
+should be: 
+
+error #1964
+lexed as:   NEW
+should be: 
+
+error #1965
+lexed as:   TYPEID A2I
+should be: 
+
+error #1966
+lexed as:   IN
+should be: 
+
+error #1967
+lexed as:   '{'
+should be: 
+
+error #1968
+lexed as:   OBJECTID out_string
+should be: 
+
+error #1969
+lexed as:   '('
+should be: 
+
+error #1970
+lexed as:   OBJECTID a
+should be: 
+
+error #1971
+lexed as:   '.'
+should be: 
+
+error #1972
+lexed as:   OBJECTID i2a
+should be: 
+
+error #1973
+lexed as:   '('
+should be: 
+
+error #1974
+lexed as:   OBJECTID r
+should be: 
+
+error #1975
+lexed as:   ')'
+should be: 
+
+error #1976
+lexed as:   ')'
+should be: 
+
+error #1977
+lexed as:   ';'
+should be: 
+
+error #1978
+lexed as:   OBJECTID out_string
+should be: 
+
+error #1979
+lexed as:   '('
+should be: 
+
+error #1980
+lexed as:   OBJECTID n
+should be: 
+
+error #1981
+lexed as:   ')'
+should be: 
+
+error #1982
+lexed as:   ';'
+should be: 
+
+error #1983
+lexed as:   '}'
+should be: 
+
+error #1984
+lexed as:   ')'
+should be: 
+
+error #1985
+lexed as:   ';'
+should be: 
+
+error #1986
+lexed as:   '-'
+should be: 
+
+error #1987
+lexed as:   '-'
+should be: 
+
+error #1988
+lexed as:   OBJECTID end
+should be: 
+
+error #1989
+lexed as:   LET
+should be: 
+
+error #1990
+lexed as:   OBJECTID a
+should be: 
+
+error #1991
+lexed as:   ':'
+should be: 
+
+error #1992
+lexed as:   '}'
+should be: 
+
+error #1993
+lexed as:   ')'
+should be: 
+
+error #1994
+lexed as:   ';'
+should be: 
+
+error #1995
+lexed as:   '-'
+should be: 
+
+error #1996
+lexed as:   '-'
+should be: 
+
+error #1997
+lexed as:   OBJECTID end
+should be: 
+
+error #1998
+lexed as:   LET
+should be: 
+
+error #1999
+lexed as:   OBJECTID r
+should be: 
+
+error #2000
+lexed as:   ':'
+should be: 
+
+error #2001
+lexed as:   OBJECTID avar
+should be: 
+
+error #2002
+lexed as:   ASSIGN
+should be: 
+
+error #2003
+lexed as:   OBJECTID x
+should be: 
+
+error #2004
+lexed as:   ';'
+should be: 
+
+error #2005
+lexed as:   '}'
+should be: 
+
+error #2006
+lexed as:   ')'
+should be: 
+
+error #2007
+lexed as:   '-'
+should be: 
+
+error #2008
+lexed as:   '-'
+should be: 
+
+error #2009
+lexed as:   OBJECTID end
+should be: 
+
+error #2010
+lexed as:   LET
+should be: 
+
+error #2011
+lexed as:   OBJECTID x
+should be: 
+
+error #2012
+lexed as:   ':'
+should be: 
+
+error #2013
+lexed as:   ELSE
+should be: 
+
+error #2014
+lexed as:   IF
+should be: 
+
+error #2015
+lexed as:   OBJECTID char
+should be: 
+
+error #2016
+lexed as:   '='
+should be: 
+
+error #2017
+lexed as:   OBJECTID j
+should be: 
+
+error #2018
+lexed as:   THEN
+should be: 
+
+error #2019
+lexed as:   OBJECTID avar
+should be: 
+
+error #2020
+lexed as:   ASSIGN
+should be: 
+
+error #2021
+lexed as:   '('
+should be: 
+
+error #2022
+lexed as:   NEW
+should be: 
+
+error #2023
+lexed as:   TYPEID A
+should be: 
+
+error #2024
+lexed as:   ')'
+should be: 
+
+error #2025
+lexed as:   ELSE
+should be: 
+
+error #2026
+lexed as:   IF
+should be: 
+
+error #2027
+lexed as:   OBJECTID char
+should be: 
+
+error #2028
+lexed as:   '='
+should be: 
+
+error #2029
+lexed as:   OBJECTID q
+should be: 
+
+error #2030
+lexed as:   THEN
+should be: 
+
+error #2031
+lexed as:   OBJECTID flag
+should be: 
+
+error #2032
+lexed as:   ASSIGN
+should be: 
+
+error #2033
+lexed as:   BOOL_CONST false
+should be: 
+
+error #2034
+lexed as:   ELSE
+should be: 
+
+error #2035
+lexed as:   OBJECTID avar
+should be: 
+
+error #2036
+lexed as:   ASSIGN
+should be: 
+
+error #2037
+lexed as:   '('
+should be: 
+
+error #2038
+lexed as:   NEW
+should be: 
+
+error #2039
+lexed as:   TYPEID A
+should be: 
+
+error #2040
+lexed as:   ')'
+should be: 
+
+error #2041
+lexed as:   '.'
+should be: 
+
+error #2042
+lexed as:   OBJECTID method1
+should be: 
+
+error #2043
+lexed as:   '('
+should be: 
+
+error #2044
+lexed as:   OBJECTID avar
+should be: 
+
+error #2045
+lexed as:   '.'
+should be: 
+
+error #2046
+lexed as:   OBJECTID value
+should be: 
+
+error #2047
+lexed as:   '('
+should be: 
+
+error #2048
+lexed as:   ')'
+should be: 
+
+error #2049
+lexed as:   ')'
+should be: 
+
+error #2050
+lexed as:   '-'
+should be: 
+
+error #2051
+lexed as:   '-'
+should be: 
+
+error #2052
+lexed as:   OBJECTID divide
+should be: 
+
+error #2053
+lexed as:   '/'
+should be: 
+
+error #2054
+lexed as:   FI
+should be: 
+
+error #2055
+lexed as:   FI
+should be: 
+
+error #2056
+lexed as:   FI
+should be: 
+
+error #2057
+lexed as:   FI
+should be: 
+
+error #2058
+lexed as:   FI
+should be: 
+
+error #2059
+lexed as:   FI
+should be: 
+
+error #2060
+lexed as:   FI
+should be: 
+
+error #2061
+lexed as:   FI
+should be: 
+
+error #2062
+lexed as:   FI
+should be: 
+
+error #2063
+lexed as:   FI
+should be: 
+
+error #2064
+lexed as:   ';'
+should be: 
+
+error #2065
+lexed as:   '}'
+should be: 
+
+error #2066
+lexed as:   POOL
+should be: 
+
+error #2067
+lexed as:   ';'
+should be: 
+
+error #2068
+lexed as:   '}'
+should be: 
+
+error #2069
+lexed as:   '}'
+should be: 
+
+error #2070
+lexed as:   ';'
+should be: 
+
+error #2071
+lexed as:   '}'
+should be: 
+
+error #2072
+lexed as:   ';'
+should be: 
+

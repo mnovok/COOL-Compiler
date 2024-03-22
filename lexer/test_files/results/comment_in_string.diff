@@ -1,0 +1,20 @@
+error #1
+lexed as:   OBJECTID string
+should be:  STR_CONST "string (* 123 *) string"
+
+error #2
+lexed as:   OBJECTID string
+should be:  STR_CONST "string \n(* 123 *)"
+
+error #3
+lexed as:   OBJECTID string
+should be:  STR_CONST "string (* \n123 *)"
+
+error #4
+lexed as:   OBJECTID string
+should be: 
+
+error #5
+lexed as:  "
+should be: 
+

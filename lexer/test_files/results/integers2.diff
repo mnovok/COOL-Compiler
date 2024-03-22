@@ -1,0 +1,12 @@
+error #1
+lexed as:   OBJECTID xAACD
+should be:  INT_CONST 01
+
+error #2
+lexed as:   '-'
+should be:  INT_CONST 02
+
+error #3
+lexed as:   OBJECTID b
+should be:  INT_CONST 03
+

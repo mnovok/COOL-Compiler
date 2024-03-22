@@ -1,0 +1,6 @@
+#name ".//test_files//comment_in_string.cl"
+"#1 OBJECTID string
+#1 OBJECTID string
+""#2 OBJECTID string
+\""#4 OBJECTID string
+"

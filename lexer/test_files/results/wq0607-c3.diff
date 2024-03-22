@@ -1,0 +1,4 @@
+error #1
+lexed as:  "\\""\"\""\\""\"\\"\"\\"""\"\""\"
+should be:  STR_CONST "\\"
+

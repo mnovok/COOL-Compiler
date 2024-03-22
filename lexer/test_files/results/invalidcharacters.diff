@@ -1,0 +1,4 @@
+error #1
+lexed as:  !#$%^&_>?`[]\|
+should be:  ERROR "!"
+

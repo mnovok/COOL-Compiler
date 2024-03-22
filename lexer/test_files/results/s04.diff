@@ -1,0 +1,4 @@
+error #1
+lexed as:  012345
+should be:  INT_CONST 0
+

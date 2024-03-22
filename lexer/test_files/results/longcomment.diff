@@ -1,0 +1,348 @@
+error #3
+lexed as:   '-'
+should be:  TYPEID Comment
+
+error #4
+lexed as:   '-'
+should be:  OBJECTID test
+
+error #5
+lexed as:   OBJECTID single
+should be:  TYPEID Foo
+
+error #6
+lexed as:   OBJECTID line
+should be:  OBJECTID bar
+
+error #7
+lexed as:   OBJECTID comments
+should be:  TYPEID Moo
+
+error #8
+lexed as:   '-'
+should be:  OBJECTID bow
+
+error #9
+lexed as:   '-'
+should be:  TYPEID JoJo
+
+error #10
+lexed as:   '*'
+should be:  TYPEID JojOj
+
+error #11
+lexed as:   '*'
+should be:  OBJECTID joJoj323
+
+error #12
+lexed as:   '*'
+should be:  OBJECTID dfdj
+
+error #13
+lexed as:   TYPEID G
+should be:  OBJECTID fadsjfkldsafjklsd
+
+error #14
+lexed as:   TYPEID GH
+should be:  ';'
+
+error #15
+lexed as:   TYPEID TH
+should be:  OBJECTID dfdsajfk312
+
+error #16
+lexed as:   '*'
+should be: 
+
+error #17
+lexed as:   '*'
+should be: 
+
+error #18
+lexed as:   TYPEID Comment
+should be: 
+
+error #19
+lexed as:   OBJECTID test
+should be: 
+
+error #20
+lexed as:   TYPEID Foo
+should be: 
+
+error #21
+lexed as:   OBJECTID bar
+should be: 
+
+error #22
+lexed as:   '-'
+should be: 
+
+error #23
+lexed as:   '-'
+should be: 
+
+error #24
+lexed as:   OBJECTID hello
+should be: 
+
+error #25
+lexed as:   OBJECTID my
+should be: 
+
+error #26
+lexed as:   OBJECTID name
+should be: 
+
+error #27
+lexed as:   OBJECTID is
+should be: 
+
+error #28
+lexed as:   OBJECTID george
+should be: 
+
+error #29
+lexed as:   ';'
+should be: 
+
+error #30
+lexed as:   '@'
+should be: 
+
+error #31
+lexed as:   '@'
+should be: 
+
+error #32
+lexed as:   '@'
+should be: 
+
+error #33
+lexed as:   TYPEID ESFsej
+should be: 
+
+error #34
+lexed as:   OBJECTID ok34
+should be: 
+
+error #35
+lexed as:   ';'
+should be: 
+
+error #36
+lexed as:   OBJECTID u90
+should be: 
+
+error #37
+lexed as:   TYPEID Moo
+should be: 
+
+error #38
+lexed as:   OBJECTID bow
+should be: 
+
+error #39
+lexed as:   '-'
+should be: 
+
+error #40
+lexed as:   '-'
+should be: 
+
+error #41
+lexed as:   '-'
+should be: 
+
+error #42
+lexed as:   OBJECTID heelo
+should be: 
+
+error #43
+lexed as:   OBJECTID my
+should be: 
+
+error #44
+lexed as:   OBJECTID nma
+should be: 
+
+error #45
+lexed as:   OBJECTID ei
+should be: 
+
+error #46
+lexed as:   OBJECTID sgeoegre
+should be: 
+
+error #47
+lexed as:   ';'
+should be: 
+
+error #48
+lexed as:   '@'
+should be: 
+
+error #49
+lexed as:   OBJECTID f
+should be: 
+
+error #50
+lexed as:   TYPEID JoJo
+should be: 
+
+error #51
+lexed as:   TYPEID JojOj
+should be: 
+
+error #52
+lexed as:   OBJECTID joJoj323
+should be: 
+
+error #53
+lexed as:   '-'
+should be: 
+
+error #54
+lexed as:   '-'
+should be: 
+
+error #55
+lexed as:   '-'
+should be: 
+
+error #56
+lexed as:   '-'
+should be: 
+
+error #57
+lexed as:   '-'
+should be: 
+
+error #58
+lexed as:   '-'
+should be: 
+
+error #59
+lexed as:   '-'
+should be: 
+
+error #60
+lexed as:   '-'
+should be: 
+
+error #61
+lexed as:   '-'
+should be: 
+
+error #62
+lexed as:   '-'
+should be: 
+
+error #63
+lexed as:   '-'
+should be: 
+
+error #64
+lexed as:   '-'
+should be: 
+
+error #65
+lexed as:   '-'
+should be: 
+
+error #66
+lexed as:   '-'
+should be: 
+
+error #67
+lexed as:   '-'
+should be: 
+
+error #68
+lexed as:   '-'
+should be: 
+
+error #69
+lexed as:   '-'
+should be: 
+
+error #70
+lexed as:   '-'
+should be: 
+
+error #71
+lexed as:   '-'
+should be: 
+
+error #72
+lexed as:   '-'
+should be: 
+
+error #73
+lexed as:   '-'
+should be: 
+
+error #74
+lexed as:   '-'
+should be: 
+
+error #75
+lexed as:   '-'
+should be: 
+
+error #76
+lexed as:   '-'
+should be: 
+
+error #77
+lexed as:   '-'
+should be: 
+
+error #78
+lexed as:   '-'
+should be: 
+
+error #79
+lexed as:   OBJECTID dfdj
+should be: 
+
+error #80
+lexed as:   '-'
+should be: 
+
+error #81
+lexed as:   '-'
+should be: 
+
+error #82
+lexed as:   OBJECTID fadsjfkldsafjklsd
+should be: 
+
+error #83
+lexed as:   ';'
+should be: 
+
+error #84
+lexed as:   '-'
+should be: 
+
+error #85
+lexed as:   '-'
+should be: 
+
+error #86
+lexed as:   OBJECTID n
+should be: 
+
+error #87
+lexed as:   OBJECTID dfdsajfk312
+should be: 
+
+error #88
+lexed as:   '-'
+should be: 
+
+error #89
+lexed as:   '-'
+should be: 
+

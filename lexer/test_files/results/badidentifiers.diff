@@ -1,0 +1,44 @@
+error #8
+lexed as:   OBJECTID thatwasanumber
+should be:  INT_CONST 1
+
+error #9
+lexed as:   OBJECTID two
+should be:  OBJECTID thatwasanumber
+
+error #10
+lexed as:   '-'
+should be:  OBJECTID two
+
+error #11
+lexed as:   OBJECTID objects
+should be:  '-'
+
+error #12
+lexed as:   TYPEID Two
+should be:  OBJECTID objects
+
+error #13
+lexed as:   '-'
+should be:  TYPEID Two
+
+error #14
+lexed as:   TYPEID Types
+should be:  '-'
+
+error #15
+lexed as:   OBJECTID underscore
+should be:  TYPEID Types
+
+error #16
+lexed as:   TYPEID Type
+should be:  ERROR "_"
+
+error #17
+lexed as:   '-'
+should be:  OBJECTID underscore
+
+error #18
+lexed as:   OBJECTID object
+should be:  TYPEID Type
+

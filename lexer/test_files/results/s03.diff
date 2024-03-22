@@ -1,0 +1,44 @@
+error #1
+lexed as:   '-'
+should be: 
+
+error #2
+lexed as:   '-'
+should be: 
+
+error #3
+lexed as:   OBJECTID can
+should be: 
+
+error #4
+lexed as:   OBJECTID they
+should be: 
+
+error #5
+lexed as:   OBJECTID handle
+should be: 
+
+error #6
+lexed as:   TYPEID EOF
+should be: 
+
+error #7
+lexed as:   IN
+should be: 
+
+error #8
+lexed as:   '-'
+should be: 
+
+error #9
+lexed as:   '-'
+should be: 
+
+error #10
+lexed as:   OBJECTID state
+should be: 
+
+error #11
+lexed as:  ?
+should be: 
+

@@ -1,0 +1,2256 @@
+error #1
+lexed as:   '-'
+should be:  CLASS
+
+error #2
+lexed as:   '-'
+should be:  TYPEID Book
+
+error #3
+lexed as:   OBJECTID example
+should be:  INHERITS
+
+error #4
+lexed as:   OF
+should be:  TYPEID IO
+
+error #5
+lexed as:   OBJECTID static
+should be:  '{'
+
+error #6
+lexed as:   OBJECTID and
+should be:  OBJECTID title
+
+error #7
+lexed as:   OBJECTID dynamic
+should be:  ':'
+
+error #8
+lexed as:   OBJECTID type
+should be:  TYPEID String
+
+error #9
+lexed as:   OBJECTID differing
+should be:  ';'
+
+error #10
+lexed as:   OBJECTID for
+should be:  OBJECTID author
+
+error #11
+lexed as:   OBJECTID a
+should be:  ':'
+
+error #12
+lexed as:   OBJECTID dispatch
+should be:  TYPEID String
+
+error #13
+lexed as:   TYPEID Class
+should be:  ';'
+
+error #14
+lexed as:   TYPEID Book
+should be:  OBJECTID initBook
+
+error #15
+lexed as:   INHERITS
+should be:  '('
+
+error #16
+lexed as:   TYPEID IO
+should be:  OBJECTID title_p
+
+error #17
+lexed as:   '{'
+should be:  ':'
+
+error #18
+lexed as:   OBJECTID title
+should be:  TYPEID String
+
+error #19
+lexed as:   ':'
+should be:  ','
+
+error #20
+lexed as:   TYPEID String
+should be:  OBJECTID author_p
+
+error #21
+lexed as:   ';'
+should be:  ':'
+
+error #22
+lexed as:   OBJECTID author
+should be:  TYPEID String
+
+error #23
+lexed as:   ':'
+should be:  ')'
+
+error #24
+lexed as:   TYPEID String
+should be:  ':'
+
+error #25
+lexed as:   ';'
+should be:  TYPEID Book
+
+error #26
+lexed as:   OBJECTID initBook
+should be:  '{'
+
+error #27
+lexed as:   '('
+should be:  '{'
+
+error #28
+lexed as:   OBJECTID title_p
+should be:  OBJECTID title
+
+error #29
+lexed as:   ':'
+should be:  ASSIGN
+
+error #30
+lexed as:   TYPEID String
+should be:  OBJECTID title_p
+
+error #31
+lexed as:   ','
+should be:  ';'
+
+error #32
+lexed as:   OBJECTID author_p
+should be:  OBJECTID author
+
+error #33
+lexed as:   ':'
+should be:  ASSIGN
+
+error #34
+lexed as:   TYPEID String
+should be:  OBJECTID author_p
+
+error #35
+lexed as:   ')'
+should be:  ';'
+
+error #36
+lexed as:   ':'
+should be:  OBJECTID self
+
+error #37
+lexed as:   TYPEID Book
+should be:  ';'
+
+error #38
+lexed as:   '{'
+should be:  '}'
+
+error #39
+lexed as:   '{'
+should be:  '}'
+
+error #40
+lexed as:   OBJECTID title
+should be:  ';'
+
+error #41
+lexed as:   ASSIGN
+should be:  OBJECTID print
+
+error #42
+lexed as:   OBJECTID title_p
+should be:  '('
+
+error #43
+lexed as:   ';'
+should be:  ')'
+
+error #44
+lexed as:   OBJECTID author
+should be:  ':'
+
+error #45
+lexed as:   ASSIGN
+should be:  TYPEID Book
+
+error #46
+lexed as:   OBJECTID author_p
+should be:  '{'
+
+error #47
+lexed as:   ';'
+should be:  '{'
+
+error #48
+lexed as:   OBJECTID self
+should be:  OBJECTID out_string
+
+error #49
+lexed as:   ';'
+should be:  '('
+
+error #50
+lexed as:   '}'
+should be:  STR_CONST "title:      "
+
+error #51
+lexed as:   '}'
+should be:  ')'
+
+error #52
+lexed as:   ';'
+should be:  '.'
+
+error #53
+lexed as:   OBJECTID print
+should be:  OBJECTID out_string
+
+error #55
+lexed as:   ')'
+should be:  OBJECTID title
+
+error #56
+lexed as:   ':'
+should be:  ')'
+
+error #57
+lexed as:   TYPEID Book
+should be:  '.'
+
+error #58
+lexed as:   '{'
+should be:  OBJECTID out_string
+
+error #59
+lexed as:   '{'
+should be:  '('
+
+error #60
+lexed as:   OBJECTID out_string
+should be:  STR_CONST "\n"
+
+error #61
+lexed as:   '('
+should be:  ')'
+
+error #62
+lexed as:   OBJECTID title
+should be:  ';'
+
+error #63
+lexed as:   ':'
+should be:  OBJECTID out_string
+
+error #64
+lexed as:   ')'
+should be:  '('
+
+error #65
+lexed as:   '.'
+should be:  STR_CONST "author:     "
+
+error #66
+lexed as:   OBJECTID out_string
+should be:  ')'
+
+error #67
+lexed as:   '('
+should be:  '.'
+
+error #68
+lexed as:   OBJECTID title
+should be:  OBJECTID out_string
+
+error #69
+lexed as:   ')'
+should be:  '('
+
+error #70
+lexed as:   '.'
+should be:  OBJECTID author
+
+error #71
+lexed as:   OBJECTID out_string
+should be:  ')'
+
+error #72
+lexed as:   '('
+should be:  '.'
+
+error #73
+lexed as:   OBJECTID n
+should be:  OBJECTID out_string
+
+error #74
+lexed as:   ')'
+should be:  '('
+
+error #75
+lexed as:   ';'
+should be:  STR_CONST "\n"
+
+error #76
+lexed as:   OBJECTID out_string
+should be:  ')'
+
+error #77
+lexed as:   '('
+should be:  ';'
+
+error #78
+lexed as:   OBJECTID author
+should be:  OBJECTID self
+
+error #79
+lexed as:   ':'
+should be:  ';'
+
+error #80
+lexed as:   ')'
+should be:  '}'
+
+error #81
+lexed as:   '.'
+should be:  '}'
+
+error #82
+lexed as:   OBJECTID out_string
+should be:  ';'
+
+error #83
+lexed as:   '('
+should be:  '}'
+
+error #84
+lexed as:   OBJECTID author
+should be:  ';'
+
+error #85
+lexed as:   ')'
+should be:  CLASS
+
+error #86
+lexed as:   '.'
+should be:  TYPEID Article
+
+error #87
+lexed as:   OBJECTID out_string
+should be:  INHERITS
+
+error #88
+lexed as:   '('
+should be:  TYPEID Book
+
+error #89
+lexed as:   OBJECTID n
+should be:  '{'
+
+error #90
+lexed as:   ')'
+should be:  OBJECTID per_title
+
+error #91
+lexed as:   ';'
+should be:  ':'
+
+error #92
+lexed as:   OBJECTID self
+should be:  TYPEID String
+
+error #94
+lexed as:   '}'
+should be:  OBJECTID initArticle
+
+error #95
+lexed as:   '}'
+should be:  '('
+
+error #96
+lexed as:   ';'
+should be:  OBJECTID title_p
+
+error #97
+lexed as:   '}'
+should be:  ':'
+
+error #98
+lexed as:   ';'
+should be:  TYPEID String
+
+error #99
+lexed as:   TYPEID Class
+should be:  ','
+
+error #100
+lexed as:   TYPEID Article
+should be:  OBJECTID author_p
+
+error #101
+lexed as:   INHERITS
+should be:  ':'
+
+error #102
+lexed as:   TYPEID Book
+should be:  TYPEID String
+
+error #103
+lexed as:   '{'
+should be:  ','
+
+error #104
+lexed as:   OBJECTID per_title
+should be:  OBJECTID per_title_p
+
+error #107
+lexed as:   ';'
+should be:  ')'
+
+error #108
+lexed as:   OBJECTID initArticle
+should be:  ':'
+
+error #109
+lexed as:   '('
+should be:  TYPEID Article
+
+error #110
+lexed as:   OBJECTID title_p
+should be:  '{'
+
+error #111
+lexed as:   ':'
+should be:  '{'
+
+error #112
+lexed as:   TYPEID String
+should be:  OBJECTID initBook
+
+error #113
+lexed as:   ','
+should be:  '('
+
+error #114
+lexed as:   OBJECTID author_p
+should be:  OBJECTID title_p
+
+error #115
+lexed as:   ':'
+should be:  ','
+
+error #116
+lexed as:   TYPEID String
+should be:  OBJECTID author_p
+
+error #117
+lexed as:   ','
+should be:  ')'
+
+error #118
+lexed as:   OBJECTID per_title_p
+should be:  ';'
+
+error #119
+lexed as:   ':'
+should be:  OBJECTID per_title
+
+error #120
+lexed as:   TYPEID String
+should be:  ASSIGN
+
+error #121
+lexed as:   ')'
+should be:  OBJECTID per_title_p
+
+error #122
+lexed as:   ':'
+should be:  ';'
+
+error #123
+lexed as:   TYPEID Article
+should be:  OBJECTID self
+
+error #124
+lexed as:   '{'
+should be:  ';'
+
+error #125
+lexed as:   '{'
+should be:  '}'
+
+error #126
+lexed as:   OBJECTID initBook
+should be:  '}'
+
+error #127
+lexed as:   '('
+should be:  ';'
+
+error #128
+lexed as:   OBJECTID title_p
+should be:  OBJECTID print
+
+error #129
+lexed as:   ','
+should be:  '('
+
+error #130
+lexed as:   OBJECTID author_p
+should be:  ')'
+
+error #131
+lexed as:   ')'
+should be:  ':'
+
+error #132
+lexed as:   ';'
+should be:  TYPEID Book
+
+error #133
+lexed as:   OBJECTID per_title
+should be:  '{'
+
+error #134
+lexed as:   ASSIGN
+should be:  '{'
+
+error #135
+lexed as:   OBJECTID per_title_p
+should be:  OBJECTID self
+
+error #136
+lexed as:   ';'
+should be:  '@'
+
+error #137
+lexed as:   OBJECTID self
+should be:  TYPEID Book
+
+error #138
+lexed as:   ';'
+should be:  '.'
+
+error #139
+lexed as:   '}'
+should be:  OBJECTID print
+
+error #140
+lexed as:   '}'
+should be:  '('
+
+error #141
+lexed as:   ';'
+should be:  ')'
+
+error #142
+lexed as:   OBJECTID print
+should be:  ';'
+
+error #143
+lexed as:   '('
+should be:  OBJECTID out_string
+
+error #144
+lexed as:   ')'
+should be:  '('
+
+error #145
+lexed as:   ':'
+should be:  STR_CONST "periodical:  "
+
+error #146
+lexed as:   TYPEID Book
+should be:  ')'
+
+error #147
+lexed as:   '{'
+should be:  '.'
+
+error #148
+lexed as:   '{'
+should be:  OBJECTID out_string
+
+error #149
+lexed as:   OBJECTID self
+should be:  '('
+
+error #150
+lexed as:   '@'
+should be:  OBJECTID per_title
+
+error #151
+lexed as:   TYPEID Book
+should be:  ')'
+
+error #153
+lexed as:   OBJECTID print
+should be:  OBJECTID out_string
+
+error #155
+lexed as:   ')'
+should be:  STR_CONST "\n"
+
+error #156
+lexed as:   ';'
+should be:  ')'
+
+error #157
+lexed as:   OBJECTID out_string
+should be:  ';'
+
+error #158
+lexed as:   '('
+should be:  OBJECTID self
+
+error #159
+lexed as:   OBJECTID periodical
+should be:  ';'
+
+error #160
+lexed as:   ':'
+should be:  '}'
+
+error #161
+lexed as:   ')'
+should be:  '}'
+
+error #162
+lexed as:   '.'
+should be:  ';'
+
+error #163
+lexed as:   OBJECTID out_string
+should be:  '}'
+
+error #164
+lexed as:   '('
+should be:  ';'
+
+error #165
+lexed as:   OBJECTID per_title
+should be:  CLASS
+
+error #166
+lexed as:   ')'
+should be:  TYPEID BookList
+
+error #167
+lexed as:   '.'
+should be:  INHERITS
+
+error #168
+lexed as:   OBJECTID out_string
+should be:  TYPEID IO
+
+error #169
+lexed as:   '('
+should be:  '{'
+
+error #170
+lexed as:   OBJECTID n
+should be:  OBJECTID isNil
+
+error #171
+lexed as:   ')'
+should be:  '('
+
+error #172
+lexed as:   ';'
+should be:  ')'
+
+error #173
+lexed as:   OBJECTID self
+should be:  ':'
+
+error #174
+lexed as:   ';'
+should be:  TYPEID Bool
+
+error #175
+lexed as:   '}'
+should be:  '{'
+
+error #176
+lexed as:   '}'
+should be:  '{'
+
+error #177
+lexed as:   ';'
+should be:  OBJECTID abort
+
+error #178
+lexed as:   '}'
+should be:  '('
+
+error #179
+lexed as:   ';'
+should be:  ')'
+
+error #180
+lexed as:   TYPEID Class
+should be:  ';'
+
+error #181
+lexed as:   TYPEID BookList
+should be:  BOOL_CONST true
+
+error #182
+lexed as:   INHERITS
+should be:  ';'
+
+error #183
+lexed as:   TYPEID IO
+should be:  '}'
+
+error #184
+lexed as:   '{'
+should be:  '}'
+
+error #185
+lexed as:   OBJECTID isNil
+should be:  ';'
+
+error #186
+lexed as:   '('
+should be:  OBJECTID cons
+
+error #187
+lexed as:   ')'
+should be:  '('
+
+error #188
+lexed as:   ':'
+should be:  OBJECTID hd
+
+error #189
+lexed as:   TYPEID Bool
+should be:  ':'
+
+error #190
+lexed as:   '{'
+should be:  TYPEID Book
+
+error #191
+lexed as:   '{'
+should be:  ')'
+
+error #192
+lexed as:   OBJECTID abort
+should be:  ':'
+
+error #193
+lexed as:   '('
+should be:  TYPEID Cons
+
+error #194
+lexed as:   ')'
+should be:  '{'
+
+error #195
+lexed as:   ';'
+should be:  '('
+
+error #196
+lexed as:   BOOL_CONST true
+should be:  LET
+
+error #197
+lexed as:   ';'
+should be:  OBJECTID new_cell
+
+error #198
+lexed as:   '}'
+should be:  ':'
+
+error #199
+lexed as:   '}'
+should be:  TYPEID Cons
+
+error #200
+lexed as:   ';'
+should be:  ASSIGN
+
+error #201
+lexed as:   OBJECTID cons
+should be:  NEW
+
+error #202
+lexed as:   '('
+should be:  TYPEID Cons
+
+error #203
+lexed as:   OBJECTID hd
+should be:  IN
+
+error #204
+lexed as:   ':'
+should be:  OBJECTID new_cell
+
+error #205
+lexed as:   TYPEID Book
+should be:  '.'
+
+error #206
+lexed as:   ')'
+should be:  OBJECTID init
+
+error #207
+lexed as:   ':'
+should be:  '('
+
+error #208
+lexed as:   TYPEID Cons
+should be:  OBJECTID hd
+
+error #209
+lexed as:   '{'
+should be:  ','
+
+error #210
+lexed as:   '('
+should be:  OBJECTID self
+
+error #211
+lexed as:   LET
+should be:  ')'
+
+error #212
+lexed as:   OBJECTID new_cell
+should be:  ')'
+
+error #213
+lexed as:   ':'
+should be:  '}'
+
+error #214
+lexed as:   TYPEID Cons
+should be:  ';'
+
+error #215
+lexed as:   ASSIGN
+should be:  OBJECTID car
+
+error #216
+lexed as:   NEW
+should be:  '('
+
+error #217
+lexed as:   TYPEID Cons
+should be:  ')'
+
+error #218
+lexed as:   IN
+should be:  ':'
+
+error #219
+lexed as:   OBJECTID new_cell
+should be:  TYPEID Book
+
+error #220
+lexed as:   '.'
+should be:  '{'
+
+error #221
+lexed as:   OBJECTID init
+should be:  '{'
+
+error #222
+lexed as:   '('
+should be:  OBJECTID abort
+
+error #223
+lexed as:   OBJECTID hd
+should be:  '('
+
+error #224
+lexed as:   ','
+should be:  ')'
+
+error #225
+lexed as:   OBJECTID self
+should be:  ';'
+
+error #226
+lexed as:   ')'
+should be:  NEW
+
+error #227
+lexed as:   ')'
+should be:  TYPEID Book
+
+error #228
+lexed as:   '}'
+should be:  ';'
+
+error #229
+lexed as:   ';'
+should be:  '}'
+
+error #230
+lexed as:   OBJECTID car
+should be:  '}'
+
+error #231
+lexed as:   '('
+should be:  ';'
+
+error #232
+lexed as:   ')'
+should be:  OBJECTID cdr
+
+error #233
+lexed as:   ':'
+should be:  '('
+
+error #234
+lexed as:   TYPEID Book
+should be:  ')'
+
+error #235
+lexed as:   '{'
+should be:  ':'
+
+error #236
+lexed as:   '{'
+should be:  TYPEID BookList
+
+error #237
+lexed as:   OBJECTID abort
+should be:  '{'
+
+error #238
+lexed as:   '('
+should be:  '{'
+
+error #239
+lexed as:   ')'
+should be:  OBJECTID abort
+
+error #240
+lexed as:   ';'
+should be:  '('
+
+error #241
+lexed as:   NEW
+should be:  ')'
+
+error #242
+lexed as:   TYPEID Book
+should be:  ';'
+
+error #243
+lexed as:   ';'
+should be:  NEW
+
+error #244
+lexed as:   '}'
+should be:  TYPEID BookList
+
+error #245
+lexed as:   '}'
+should be:  ';'
+
+error #246
+lexed as:   ';'
+should be:  '}'
+
+error #247
+lexed as:   OBJECTID cdr
+should be:  '}'
+
+error #248
+lexed as:   '('
+should be:  ';'
+
+error #249
+lexed as:   ')'
+should be:  OBJECTID print_list
+
+error #250
+lexed as:   ':'
+should be:  '('
+
+error #251
+lexed as:   TYPEID BookList
+should be:  ')'
+
+error #252
+lexed as:   '{'
+should be:  ':'
+
+error #253
+lexed as:   '{'
+should be:  TYPEID Object
+
+error #254
+lexed as:   OBJECTID abort
+should be:  '{'
+
+error #255
+lexed as:   '('
+should be:  OBJECTID abort
+
+error #256
+lexed as:   ')'
+should be:  '('
+
+error #257
+lexed as:   ';'
+should be:  ')'
+
+error #258
+lexed as:   NEW
+should be:  '}'
+
+error #259
+lexed as:   TYPEID BookList
+should be:  ';'
+
+error #260
+lexed as:   ';'
+should be:  '}'
+
+error #261
+lexed as:   '}'
+should be:  ';'
+
+error #262
+lexed as:   '}'
+should be:  CLASS
+
+error #263
+lexed as:   ';'
+should be:  TYPEID Cons
+
+error #264
+lexed as:   OBJECTID print_list
+should be:  INHERITS
+
+error #265
+lexed as:   '('
+should be:  TYPEID BookList
+
+error #266
+lexed as:   ')'
+should be:  '{'
+
+error #267
+lexed as:   ':'
+should be:  OBJECTID xcar
+
+error #268
+lexed as:   TYPEID Object
+should be:  ':'
+
+error #269
+lexed as:   '{'
+should be:  TYPEID Book
+
+error #270
+lexed as:   OBJECTID abort
+should be:  ';'
+
+error #271
+lexed as:   '('
+should be:  OBJECTID xcdr
+
+error #272
+lexed as:   ')'
+should be:  ':'
+
+error #273
+lexed as:   '}'
+should be:  TYPEID BookList
+
+error #275
+lexed as:   '}'
+should be:  OBJECTID isNil
+
+error #276
+lexed as:   ';'
+should be:  '('
+
+error #277
+lexed as:   TYPEID Class
+should be:  ')'
+
+error #278
+lexed as:   TYPEID Cons
+should be:  ':'
+
+error #279
+lexed as:   INHERITS
+should be:  TYPEID Bool
+
+error #280
+lexed as:   TYPEID BookList
+should be:  '{'
+
+error #281
+lexed as:   '{'
+should be:  BOOL_CONST false
+
+error #282
+lexed as:   OBJECTID xcar
+should be:  '}'
+
+error #283
+lexed as:   ':'
+should be:  ';'
+
+error #284
+lexed as:   TYPEID Book
+should be:  OBJECTID init
+
+error #285
+lexed as:   ';'
+should be:  '('
+
+error #286
+lexed as:   '-'
+should be:  OBJECTID hd
+
+error #287
+lexed as:   '-'
+should be:  ':'
+
+error #288
+lexed as:   TYPEID We
+should be:  TYPEID Book
+
+error #289
+lexed as:   OBJECTID keep
+should be:  ','
+
+error #290
+lexed as:   OBJECTID the
+should be:  OBJECTID tl
+
+error #291
+lexed as:   OBJECTID car
+should be:  ':'
+
+error #292
+lexed as:   OBJECTID and
+should be:  TYPEID BookList
+
+error #293
+lexed as:   OBJECTID cdr
+should be:  ')'
+
+error #294
+lexed as:   IN
+should be:  ':'
+
+error #295
+lexed as:   OBJECTID attributes
+should be:  TYPEID Cons
+
+error #296
+lexed as:   '.'
+should be:  '{'
+
+error #297
+lexed as:   OBJECTID xcdr
+should be:  '{'
+
+error #298
+lexed as:   ':'
+should be:  OBJECTID xcar
+
+error #299
+lexed as:   TYPEID BookList
+should be:  ASSIGN
+
+error #300
+lexed as:   ';'
+should be:  OBJECTID hd
+
+error #301
+lexed as:   '-'
+should be:  ';'
+
+error #302
+lexed as:   '-'
+should be:  OBJECTID xcdr
+
+error #303
+lexed as:   TYPEID Because
+should be:  ASSIGN
+
+error #304
+lexed as:   OBJECTID methods
+should be:  OBJECTID tl
+
+error #305
+lexed as:   OBJECTID and
+should be:  ';'
+
+error #306
+lexed as:   OBJECTID features
+should be:  OBJECTID self
+
+error #307
+lexed as:   OBJECTID must
+should be:  ';'
+
+error #308
+lexed as:   OBJECTID have
+should be:  '}'
+
+error #309
+lexed as:   OBJECTID different
+should be:  '}'
+
+error #310
+lexed as:   OBJECTID names
+should be:  ';'
+
+error #311
+lexed as:   ','
+should be:  OBJECTID car
+
+error #312
+lexed as:   '-'
+should be:  '('
+
+error #313
+lexed as:   '-'
+should be:  ')'
+
+error #314
+lexed as:   OBJECTID we
+should be:  ':'
+
+error #315
+lexed as:   OBJECTID use
+should be:  TYPEID Book
+
+error #316
+lexed as:   OBJECTID xcar
+should be:  '{'
+
+error #317
+lexed as:   OBJECTID and
+should be:  OBJECTID xcar
+
+error #318
+lexed as:   OBJECTID xcdr
+should be:  '}'
+
+error #319
+lexed as:   OBJECTID for
+should be:  ';'
+
+error #320
+lexed as:   OBJECTID the
+should be:  OBJECTID cdr
+
+error #321
+lexed as:   OBJECTID attributes
+should be:  '('
+
+error #322
+lexed as:   OBJECTID and
+should be:  ')'
+
+error #323
+lexed as:   OBJECTID reserve
+should be:  ':'
+
+error #324
+lexed as:   '-'
+should be:  TYPEID BookList
+
+error #325
+lexed as:   '-'
+should be:  '{'
+
+error #326
+lexed as:   OBJECTID car
+should be:  OBJECTID xcdr
+
+error #327
+lexed as:   OBJECTID and
+should be:  '}'
+
+error #328
+lexed as:   OBJECTID cdr
+should be:  ';'
+
+error #329
+lexed as:   OBJECTID for
+should be:  OBJECTID print_list
+
+error #330
+lexed as:   OBJECTID the
+should be:  '('
+
+error #331
+lexed as:   OBJECTID features
+should be:  ')'
+
+error #332
+lexed as:   '.'
+should be:  ':'
+
+error #333
+lexed as:   OBJECTID isNil
+should be:  TYPEID Object
+
+error #334
+lexed as:   '('
+should be:  '{'
+
+error #335
+lexed as:   ')'
+should be:  '{'
+
+error #336
+lexed as:   ':'
+should be:  CASE
+
+error #337
+lexed as:   TYPEID Bool
+should be:  OBJECTID xcar
+
+error #338
+lexed as:   '{'
+should be:  '.'
+
+error #339
+lexed as:   BOOL_CONST false
+should be:  OBJECTID print
+
+error #340
+lexed as:   '}'
+should be:  '('
+
+error #341
+lexed as:   ';'
+should be:  ')'
+
+error #342
+lexed as:   OBJECTID init
+should be:  OF
+
+error #343
+lexed as:   '('
+should be:  OBJECTID dummy
+
+error #344
+lexed as:   OBJECTID hd
+should be:  ':'
+
+error #345
+lexed as:   ':'
+should be:  TYPEID Book
+
+error #346
+lexed as:   TYPEID Book
+should be:  DARROW
+
+error #347
+lexed as:   ','
+should be:  OBJECTID out_string
+
+error #348
+lexed as:   OBJECTID tl
+should be:  '('
+
+error #349
+lexed as:   ':'
+should be:  STR_CONST "- dynamic type was Book -\n"
+
+error #350
+lexed as:   TYPEID BookList
+should be:  ')'
+
+error #351
+lexed as:   ')'
+should be:  ';'
+
+error #352
+lexed as:   ':'
+should be:  OBJECTID dummy
+
+error #353
+lexed as:   TYPEID Cons
+should be:  ':'
+
+error #354
+lexed as:   '{'
+should be:  TYPEID Article
+
+error #355
+lexed as:   '{'
+should be:  DARROW
+
+error #356
+lexed as:   OBJECTID xcar
+should be:  OBJECTID out_string
+
+error #357
+lexed as:   ASSIGN
+should be:  '('
+
+error #358
+lexed as:   OBJECTID hd
+should be:  STR_CONST "- dynamic type was Article -\n"
+
+error #359
+lexed as:   ';'
+should be:  ')'
+
+error #360
+lexed as:   OBJECTID xcdr
+should be:  ';'
+
+error #361
+lexed as:   ASSIGN
+should be:  ESAC
+
+error #362
+lexed as:   OBJECTID tl
+should be:  ';'
+
+error #363
+lexed as:   ';'
+should be:  OBJECTID xcdr
+
+error #364
+lexed as:   OBJECTID self
+should be:  '.'
+
+error #365
+lexed as:   ';'
+should be:  OBJECTID print_list
+
+error #366
+lexed as:   '}'
+should be:  '('
+
+error #367
+lexed as:   '}'
+should be:  ')'
+
+error #369
+lexed as:   OBJECTID car
+should be:  '}'
+
+error #370
+lexed as:   '('
+should be:  '}'
+
+error #371
+lexed as:   ')'
+should be:  ';'
+
+error #372
+lexed as:   ':'
+should be:  '}'
+
+error #373
+lexed as:   TYPEID Book
+should be:  ';'
+
+error #374
+lexed as:   '{'
+should be:  CLASS
+
+error #375
+lexed as:   OBJECTID xcar
+should be:  TYPEID Nil
+
+error #376
+lexed as:   '}'
+should be:  INHERITS
+
+error #377
+lexed as:   ';'
+should be:  TYPEID BookList
+
+error #378
+lexed as:   OBJECTID cdr
+should be:  '{'
+
+error #379
+lexed as:   '('
+should be:  OBJECTID isNil
+
+error #380
+lexed as:   ')'
+should be:  '('
+
+error #381
+lexed as:   ':'
+should be:  ')'
+
+error #382
+lexed as:   TYPEID BookList
+should be:  ':'
+
+error #383
+lexed as:   '{'
+should be:  TYPEID Bool
+
+error #384
+lexed as:   OBJECTID xcdr
+should be:  '{'
+
+error #385
+lexed as:   '}'
+should be:  BOOL_CONST true
+
+error #386
+lexed as:   ';'
+should be:  '}'
+
+error #387
+lexed as:   OBJECTID print_list
+should be:  ';'
+
+error #388
+lexed as:   '('
+should be:  OBJECTID print_list
+
+error #389
+lexed as:   ')'
+should be:  '('
+
+error #390
+lexed as:   ':'
+should be:  ')'
+
+error #391
+lexed as:   TYPEID Object
+should be:  ':'
+
+error #392
+lexed as:   '{'
+should be:  TYPEID Object
+
+error #394
+lexed as:   CASE
+should be:  BOOL_CONST true
+
+error #395
+lexed as:   OBJECTID xcar
+should be:  '}'
+
+error #396
+lexed as:   '.'
+should be:  ';'
+
+error #397
+lexed as:   OBJECTID print
+should be:  '}'
+
+error #398
+lexed as:   '('
+should be:  ';'
+
+error #399
+lexed as:   ')'
+should be:  CLASS
+
+error #400
+lexed as:   OF
+should be:  TYPEID Main
+
+error #401
+lexed as:   OBJECTID dummy
+should be:  '{'
+
+error #402
+lexed as:   ':'
+should be:  OBJECTID books
+
+error #403
+lexed as:   TYPEID Book
+should be:  ':'
+
+error #404
+lexed as:   DARROW
+should be:  TYPEID BookList
+
+error #405
+lexed as:   OBJECTID out_string
+should be:  ';'
+
+error #406
+lexed as:   '('
+should be:  OBJECTID main
+
+error #407
+lexed as:   '-'
+should be:  '('
+
+error #408
+lexed as:   OBJECTID dynamic
+should be:  ')'
+
+error #409
+lexed as:   OBJECTID type
+should be:  ':'
+
+error #410
+lexed as:   OBJECTID was
+should be:  TYPEID Object
+
+error #411
+lexed as:   TYPEID Book
+should be:  '{'
+
+error #412
+lexed as:   '-'
+should be:  '('
+
+error #413
+lexed as:   OBJECTID n
+should be:  LET
+
+error #414
+lexed as:   ')'
+should be:  OBJECTID a_book
+
+error #415
+lexed as:   ';'
+should be:  ':'
+
+error #416
+lexed as:   OBJECTID dummy
+should be:  TYPEID Book
+
+error #417
+lexed as:   ':'
+should be:  ASSIGN
+
+error #418
+lexed as:   TYPEID Article
+should be:  '('
+
+error #419
+lexed as:   DARROW
+should be:  NEW
+
+error #420
+lexed as:   OBJECTID out_string
+should be:  TYPEID Book
+
+error #421
+lexed as:   '('
+should be:  ')'
+
+error #422
+lexed as:   '-'
+should be:  '.'
+
+error #423
+lexed as:   OBJECTID dynamic
+should be:  OBJECTID initBook
+
+error #424
+lexed as:   OBJECTID type
+should be:  '('
+
+error #425
+lexed as:   OBJECTID was
+should be:  STR_CONST "Compilers, Principles, Techniques, and Tools"
+
+error #426
+lexed as:   TYPEID Article
+should be:  ','
+
+error #427
+lexed as:   '-'
+should be:  STR_CONST "Aho, Sethi, and Ullman"
+
+error #428
+lexed as:   OBJECTID n
+should be:  ')'
+
+error #429
+lexed as:   ')'
+should be:  IN
+
+error #430
+lexed as:   ';'
+should be:  '('
+
+error #431
+lexed as:   ESAC
+should be:  LET
+
+error #432
+lexed as:   ';'
+should be:  OBJECTID an_article
+
+error #433
+lexed as:   OBJECTID xcdr
+should be:  ':'
+
+error #434
+lexed as:   '.'
+should be:  TYPEID Article
+
+error #435
+lexed as:   OBJECTID print_list
+should be:  ASSIGN
+
+error #437
+lexed as:   ')'
+should be:  NEW
+
+error #438
+lexed as:   ';'
+should be:  TYPEID Article
+
+error #439
+lexed as:   '}'
+should be:  ')'
+
+error #440
+lexed as:   '}'
+should be:  '.'
+
+error #441
+lexed as:   ';'
+should be:  OBJECTID initArticle
+
+error #442
+lexed as:   '}'
+should be:  '('
+
+error #443
+lexed as:   ';'
+should be:  STR_CONST "The Top 100 CD_ROMs"
+
+error #444
+lexed as:   TYPEID Class
+should be:  ','
+
+error #445
+lexed as:   TYPEID Nil
+should be:  STR_CONST "Ulanoff"
+
+error #446
+lexed as:   INHERITS
+should be:  ','
+
+error #447
+lexed as:   TYPEID BookList
+should be:  STR_CONST "PC Magazine"
+
+error #448
+lexed as:   '{'
+should be:  ')'
+
+error #449
+lexed as:   OBJECTID isNil
+should be:  IN
+
+error #450
+lexed as:   '('
+should be:  '{'
+
+error #451
+lexed as:   ')'
+should be:  OBJECTID books
+
+error #452
+lexed as:   ':'
+should be:  ASSIGN
+
+error #453
+lexed as:   TYPEID Bool
+should be:  '('
+
+error #454
+lexed as:   '{'
+should be:  NEW
+
+error #455
+lexed as:   BOOL_CONST true
+should be:  TYPEID Nil
+
+error #456
+lexed as:   '}'
+should be:  ')'
+
+error #457
+lexed as:   ';'
+should be:  '.'
+
+error #458
+lexed as:   OBJECTID print_list
+should be:  OBJECTID cons
+
+error #460
+lexed as:   ')'
+should be:  OBJECTID a_book
+
+error #461
+lexed as:   ':'
+should be:  ')'
+
+error #462
+lexed as:   TYPEID Object
+should be:  '.'
+
+error #463
+lexed as:   '{'
+should be:  OBJECTID cons
+
+error #464
+lexed as:   BOOL_CONST true
+should be:  '('
+
+error #465
+lexed as:   '}'
+should be:  OBJECTID an_article
+
+error #466
+lexed as:   ';'
+should be:  ')'
+
+error #467
+lexed as:   '}'
+should be:  ';'
+
+error #468
+lexed as:   ';'
+should be:  OBJECTID books
+
+error #469
+lexed as:   TYPEID Class
+should be:  '.'
+
+error #470
+lexed as:   TYPEID Main
+should be:  OBJECTID print_list
+
+error #471
+lexed as:   '{'
+should be:  '('
+
+error #472
+lexed as:   OBJECTID books
+should be:  ')'
+
+error #473
+lexed as:   ':'
+should be:  ';'
+
+error #474
+lexed as:   TYPEID BookList
+should be:  '}'
+
+error #475
+lexed as:   ';'
+should be:  ')'
+
+error #476
+lexed as:   OBJECTID main
+should be:  ')'
+
+error #477
+lexed as:   '('
+should be:  '}'
+
+error #478
+lexed as:   ')'
+should be:  ';'
+
+error #479
+lexed as:   ':'
+should be:  '}'
+
+error #480
+lexed as:   TYPEID Object
+should be:  ';'
+
+error #481
+lexed as:   '{'
+should be: 
+
+error #482
+lexed as:   '('
+should be: 
+
+error #483
+lexed as:   LET
+should be: 
+
+error #484
+lexed as:   OBJECTID a_book
+should be: 
+
+error #485
+lexed as:   ':'
+should be: 
+
+error #486
+lexed as:   TYPEID Book
+should be: 
+
+error #487
+lexed as:   ASSIGN
+should be: 
+
+error #488
+lexed as:   '('
+should be: 
+
+error #489
+lexed as:   NEW
+should be: 
+
+error #490
+lexed as:   TYPEID Book
+should be: 
+
+error #491
+lexed as:   ')'
+should be: 
+
+error #492
+lexed as:   '.'
+should be: 
+
+error #493
+lexed as:   OBJECTID initBook
+should be: 
+
+error #494
+lexed as:   '('
+should be: 
+
+error #495
+lexed as:   TYPEID Compilers
+should be: 
+
+error #496
+lexed as:   ','
+should be: 
+
+error #497
+lexed as:   TYPEID Principles
+should be: 
+
+error #498
+lexed as:   ','
+should be: 
+
+error #499
+lexed as:   TYPEID Techniques
+should be: 
+
+error #500
+lexed as:   ','
+should be: 
+
+error #501
+lexed as:   OBJECTID and
+should be: 
+
+error #502
+lexed as:   TYPEID Tools
+should be: 
+
+error #503
+lexed as:   ','
+should be: 
+
+error #504
+lexed as:   TYPEID Aho
+should be: 
+
+error #505
+lexed as:   ','
+should be: 
+
+error #506
+lexed as:   TYPEID Sethi
+should be: 
+
+error #507
+lexed as:   ','
+should be: 
+
+error #508
+lexed as:   OBJECTID and
+should be: 
+
+error #509
+lexed as:   TYPEID Ullman
+should be: 
+
+error #510
+lexed as:   ')'
+should be: 
+
+error #511
+lexed as:   IN
+should be: 
+
+error #512
+lexed as:   '('
+should be: 
+
+error #513
+lexed as:   LET
+should be: 
+
+error #514
+lexed as:   OBJECTID an_article
+should be: 
+
+error #515
+lexed as:   ':'
+should be: 
+
+error #516
+lexed as:   TYPEID Article
+should be: 
+
+error #517
+lexed as:   ASSIGN
+should be: 
+
+error #518
+lexed as:   '('
+should be: 
+
+error #519
+lexed as:   NEW
+should be: 
+
+error #520
+lexed as:   TYPEID Article
+should be: 
+
+error #521
+lexed as:   ')'
+should be: 
+
+error #522
+lexed as:   '.'
+should be: 
+
+error #523
+lexed as:   OBJECTID initArticle
+should be: 
+
+error #524
+lexed as:   '('
+should be: 
+
+error #525
+lexed as:   TYPEID The
+should be: 
+
+error #526
+lexed as:   TYPEID Top
+should be: 
+
+error #527
+lexed as:   TYPEID CD_ROMs
+should be: 
+
+error #528
+lexed as:   ','
+should be: 
+
+error #529
+lexed as:   TYPEID Ulanoff
+should be: 
+
+error #530
+lexed as:   ','
+should be: 
+
+error #531
+lexed as:   TYPEID PC
+should be: 
+
+error #532
+lexed as:   TYPEID Magazine
+should be: 
+
+error #533
+lexed as:   ')'
+should be: 
+
+error #534
+lexed as:   IN
+should be: 
+
+error #535
+lexed as:   '{'
+should be: 
+
+error #536
+lexed as:   OBJECTID books
+should be: 
+
+error #537
+lexed as:   ASSIGN
+should be: 
+
+error #538
+lexed as:   '('
+should be: 
+
+error #539
+lexed as:   NEW
+should be: 
+
+error #540
+lexed as:   TYPEID Nil
+should be: 
+
+error #541
+lexed as:   ')'
+should be: 
+
+error #542
+lexed as:   '.'
+should be: 
+
+error #543
+lexed as:   OBJECTID cons
+should be: 
+
+error #544
+lexed as:   '('
+should be: 
+
+error #545
+lexed as:   OBJECTID a_book
+should be: 
+
+error #546
+lexed as:   ')'
+should be: 
+
+error #547
+lexed as:   '.'
+should be: 
+
+error #548
+lexed as:   OBJECTID cons
+should be: 
+
+error #549
+lexed as:   '('
+should be: 
+
+error #550
+lexed as:   OBJECTID an_article
+should be: 
+
+error #551
+lexed as:   ')'
+should be: 
+
+error #552
+lexed as:   ';'
+should be: 
+
+error #553
+lexed as:   OBJECTID books
+should be: 
+
+error #554
+lexed as:   '.'
+should be: 
+
+error #555
+lexed as:   OBJECTID print_list
+should be: 
+
+error #556
+lexed as:   '('
+should be: 
+
+error #557
+lexed as:   ')'
+should be: 
+
+error #558
+lexed as:   ';'
+should be: 
+
+error #559
+lexed as:   '}'
+should be: 
+
+error #560
+lexed as:   ')'
+should be: 
+
+error #561
+lexed as:   '-'
+should be: 
+
+error #562
+lexed as:   '-'
+should be: 
+
+error #563
+lexed as:   OBJECTID end
+should be: 
+
+error #564
+lexed as:   LET
+should be: 
+
+error #565
+lexed as:   OBJECTID an_article
+should be: 
+
+error #566
+lexed as:   ')'
+should be: 
+
+error #567
+lexed as:   '-'
+should be: 
+
+error #568
+lexed as:   '-'
+should be: 
+
+error #569
+lexed as:   OBJECTID end
+should be: 
+
+error #570
+lexed as:   LET
+should be: 
+
+error #571
+lexed as:   OBJECTID a_book
+should be: 
+
+error #572
+lexed as:   '}'
+should be: 
+
+error #573
+lexed as:   ';'
+should be: 
+
+error #574
+lexed as:   '}'
+should be: 
+
+error #575
+lexed as:   ';'
+should be: 
+

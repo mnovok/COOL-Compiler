@@ -1,0 +1,32 @@
+error #1
+lexed as:   TYPEID What
+should be:  ERROR "EOF in string constant"
+
+error #2
+lexed as:   OBJECTID happens
+should be: 
+
+error #3
+lexed as:   IF
+should be: 
+
+error #4
+lexed as:   TYPEID I
+should be: 
+
+error #5
+lexed as:   OBJECTID escape
+should be: 
+
+error #6
+lexed as:   OBJECTID an
+should be: 
+
+error #7
+lexed as:   TYPEID EOF
+should be: 
+
+error #8
+lexed as:  ?\
+should be: 
+

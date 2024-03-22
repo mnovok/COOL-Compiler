@@ -1,0 +1,4 @@
+error #2
+lexed as:   TYPEID CLASS
+should be:  CLASS
+

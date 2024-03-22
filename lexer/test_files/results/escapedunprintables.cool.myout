@@ -1,0 +1,28 @@
+#name ".//test_files//escapedunprintables.cl"
+"#1 TYPEID This
+#1 OBJECTID is
+#1 OBJECTID a
+#1 OBJECTID tab
+#1 ':'
+\""#2 TYPEID This
+#2 OBJECTID is
+#2 OBJECTID a
+#2 OBJECTID backspace
+#2 ':'
+\""#3 TYPEID This
+#3 OBJECTID is
+#3 OBJECTID a
+#3 OBJECTID formfeed
+#3 ':'
+\""#4 TYPEID This
+#4 OBJECTID is
+#4 OBJECTID a
+#4 OBJECTID carriage
+#4 OBJECTID return
+#4 ':'
+""#5 TYPEID This
+#5 OBJECTID is
+#5 OBJECTID an
+#5 OBJECTID escape
+#5 ':'
+"

@@ -1,0 +1,92 @@
+error #1
+lexed as:   TYPEID This
+should be:  STR_CONST "This is a string--and it's still a string"
+
+error #2
+lexed as:   OBJECTID is
+should be:  STR_CONST "(* not a comment *)"
+
+error #3
+lexed as:   OBJECTID a
+should be: 
+
+error #4
+lexed as:   OBJECTID string
+should be: 
+
+error #5
+lexed as:   '-'
+should be: 
+
+error #6
+lexed as:   '-'
+should be: 
+
+error #7
+lexed as:   OBJECTID and
+should be: 
+
+error #8
+lexed as:   OBJECTID it
+should be: 
+
+error #9
+lexed as:   OBJECTID s
+should be: 
+
+error #10
+lexed as:   OBJECTID still
+should be: 
+
+error #11
+lexed as:   OBJECTID a
+should be: 
+
+error #12
+lexed as:   OBJECTID string
+should be: 
+
+error #13
+lexed as:   '-'
+should be: 
+
+error #14
+lexed as:   '-'
+should be: 
+
+error #15
+lexed as:   TYPEID This
+should be: 
+
+error #16
+lexed as:   OBJECTID is
+should be: 
+
+error #17
+lexed as:   OBJECTID a
+should be: 
+
+error #18
+lexed as:   OBJECTID comment
+should be: 
+
+error #19
+lexed as:   ','
+should be: 
+
+error #20
+lexed as:   NOT
+should be: 
+
+error #21
+lexed as:   OBJECTID a
+should be: 
+
+error #22
+lexed as:   OBJECTID string
+should be: 
+
+error #23
+lexed as:  """
+should be: 
+
