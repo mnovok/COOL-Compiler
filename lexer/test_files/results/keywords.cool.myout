@@ -1,6 +1,6 @@
 #name ".//test_files//keywords.cl"
 #1 CASE
-#2 TYPEID CLASS
+#2 CLASS
 #3 ELSE
 #4 ESAC
 #5 BOOL_CONST false

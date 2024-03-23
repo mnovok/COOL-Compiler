@@ -1,3 +1,4 @@
 #name ".//test_files//lineno2.cl"
-!#6 OBJECTID fjdk
-""
+#5 ERROR "!"
+#6 OBJECTID fjdk
+#7 STR_CONST ""

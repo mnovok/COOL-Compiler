@@ -1,5 +1,5 @@
 #name ".//test_files//palindrome.cl"
-#1 OBJECTID class
+#1 CLASS
 #1 TYPEID Main
 #1 INHERITS
 #1 TYPEID IO
@@ -20,7 +20,8 @@
 #3 '('
 #3 ')'
 #3 '='
-0#4 THEN
+#3 INT_CONST 0
+#4 THEN
 #4 BOOL_CONST true
 #5 ELSE
 #5 IF
@@ -30,7 +31,8 @@
 #5 '('
 #5 ')'
 #5 '='
-1#6 THEN
+#5 INT_CONST 1
+#6 THEN
 #6 BOOL_CONST true
 #7 ELSE
 #7 IF
@@ -38,8 +40,10 @@
 #7 '.'
 #7 OBJECTID substr
 #7 '('
-0#7 ','
-1#7 ')'
+#7 INT_CONST 0
+#7 ','
+#7 INT_CONST 1
+#7 ')'
 #7 '='
 #7 OBJECTID s
 #7 '.'
@@ -51,8 +55,10 @@
 #7 '('
 #7 ')'
 #7 '-'
-1#7 ','
-1#7 ')'
+#7 INT_CONST 1
+#7 ','
+#7 INT_CONST 1
+#7 ')'
 #8 THEN
 #8 OBJECTID pal
 #8 '('
@@ -60,14 +66,16 @@
 #8 '.'
 #8 OBJECTID substr
 #8 '('
-1#8 ','
+#8 INT_CONST 1
+#8 ','
 #8 OBJECTID s
 #8 '.'
 #8 OBJECTID length
 #8 '('
 #8 ')'
 #8 '-'
-2#8 ')'
+#8 INT_CONST 2
+#8 ')'
 #8 ')'
 #9 ELSE
 #9 BOOL_CONST false
@@ -90,14 +98,12 @@
 #17 OBJECTID i
 #17 ASSIGN
 #17 '~'
-1#17 ';'
+#17 INT_CONST 1
+#17 ';'
 #18 OBJECTID out_string
 #18 '('
-"#18 OBJECTID enter
-#18 OBJECTID a
-#18 OBJECTID string
-\#18 OBJECTID n
-"#18 ')'
+#18 STR_CONST "enter a string\n"
+#18 ')'
 #18 ';'
 #19 IF
 #19 OBJECTID pal
@@ -109,22 +115,13 @@
 #20 THEN
 #20 OBJECTID out_string
 #20 '('
-"#20 OBJECTID that
-#20 OBJECTID was
-#20 OBJECTID a
-#20 OBJECTID palindrome
-\#20 OBJECTID n
-"#20 ')'
+#20 STR_CONST "that was a palindrome\n"
+#20 ')'
 #21 ELSE
 #21 OBJECTID out_string
 #21 '('
-"#21 OBJECTID that
-#21 OBJECTID was
-#21 NOT
-#21 OBJECTID a
-#21 OBJECTID palindrome
-\#21 OBJECTID n
-"#21 ')'
+#21 STR_CONST "that was not a palindrome\n"
+#21 ')'
 #22 FI
 #22 ';'
 #23 '}'

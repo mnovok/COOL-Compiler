@@ -1,90 +1,16 @@
 #name ".//test_files//longcomment.cl"
 #1 TYPEID Comment
 #1 OBJECTID test
-#14 '-'
-#14 '-'
-#14 OBJECTID single
-#14 OBJECTID line
-#14 OBJECTID comments
-#15 '-'
-#15 '-'
-$#%^^$%&%^&%&%##15 '*'
-&#15 '*'
-$^#15 '*'
-%>#15 TYPEID G
-%>#15 TYPEID GH
->%#15 TYPEID TH
-%>^#15 '*'
-^$$#15 '*'
-&^$#16 TYPEID Comment
-#17 OBJECTID test
-#48 TYPEID Foo
-#48 OBJECTID bar
-#48 '-'
-#48 '-'
-#48 OBJECTID hello
-#48 OBJECTID my
-#48 OBJECTID name
-#48 OBJECTID is
-#48 OBJECTID george
-#48 ';'
-#48 '@'
-#$##48 '@'
-!^%&$&#48 '@'
-$#$#48 TYPEID ESFsej
-#48 OBJECTID ok34
-#48 ';'
-#48 OBJECTID u90
-#49 TYPEID Moo
-#49 OBJECTID bow
-#49 '-'
-#49 '-'
-#49 '-'
-#49 OBJECTID heelo
-#49 OBJECTID my
-#49 OBJECTID nma
-#49 OBJECTID ei
-#49 OBJECTID sgeoegre
-#49 ';'
-2342#$#49 '@'
-#$#49 OBJECTID f
-#50 TYPEID JoJo
-#50 TYPEID JojOj
-#50 OBJECTID joJoj323
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#50 '-'
-#51 OBJECTID dfdj
-#51 '-'
-#51 '-'
-#52 OBJECTID fadsjfkldsafjklsd
-#52 ';'
-#52 '-'
-#52 '-'
-\#52 OBJECTID n
-#53 OBJECTID dfdsajfk312
-#54 '-'
-#54 '-'
+#14 TYPEID Comment
+#15 OBJECTID test
+#46 TYPEID Foo
+#46 OBJECTID bar
+#46 TYPEID Moo
+#46 OBJECTID bow
+#46 TYPEID JoJo
+#46 TYPEID JojOj
+#46 OBJECTID joJoj323
+#46 OBJECTID dfdj
+#46 OBJECTID fadsjfkldsafjklsd
+#46 ';'
+#46 OBJECTID dfdsajfk312

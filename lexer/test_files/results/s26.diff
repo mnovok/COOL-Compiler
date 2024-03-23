@@ -1,4 +1,0 @@
-error #1
-lexed as:   OBJECTID a
-should be:  INT_CONST 3
-

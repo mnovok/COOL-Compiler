@@ -48,8 +48,7 @@ extern YYSTYPE cool_yylval;
 int str_len = 0;
 int comment_counter = 0;
 
-/* funkcija za dodavanje u string buffer */
-void add_to_buffer(const char*);
+void empty_buffer();
 
 %}
 
@@ -58,19 +57,21 @@ void add_to_buffer(const char*);
  */
 
 %x COMMENT
+%x LINECOMMENT
 %x STRING 
 
 DIGIT          [0-9]
-CHARACTER      [a-zA-Z_0-9]
+CHARACTER      [a-zA-Z0-9_]
 LOWERCASE      [a-z]
 UPPERCASE      [A-Z]
 TYPEID         {UPPERCASE}{CHARACTER}*
 OBJECTID       {LOWERCASE}{CHARACTER}*
-WHITESPACE     [ \n\t\r\v]
-INVALID        "!"|"^"|"?"|"$"|"#"|"%"
+WHITESPACE     [ \b\t\n\f]
+INVALID        "!"|"^"|"?"|"$"|"#"|"%"|"["|"]"|"_"|">"|"&"|"`"|"\\"
 DASH           --
 COMMENTSTART   \(\*
 COMMENTEND     \*\)
+STRINGSTART    \"
 SELF           self
 SELFTYPE       SELF_TYPE
 
@@ -84,7 +85,7 @@ LE              <=
 
 /* kljucne rijeci */
 
-CLASS           [cC][lL][aA][sS]
+CLASS           [cC][lL][aA][sS][sS]
 ELSE            [eE][lL][sS][eE]
 FI              [fF][iI]
 IF              [iI][fF]
@@ -105,12 +106,9 @@ NOT             [nN][oO][tT]
 TRUE            t[rR][uU][eE]
 FALSE           f[aA][lL][sS][eE]
 
+INTCONST       {DIGIT}+
 
-/* STR_CONST
-INT_CONST
-BOOL_CONST
-ERROR
-LET_STMT */
+
 
 %%
 
@@ -142,6 +140,13 @@ LET_STMT */
 ":"         { return ':'; }
 ";"         { return ';'; }
 {DARROW}		{ return (DARROW); }
+
+ /*dodatni znakovi iz mape*/
+
+           { cool_yylval.error_msg = "\001"; return (ERROR); }      
+           { cool_yylval.error_msg = "\002"; return (ERROR); } 
+           { cool_yylval.error_msg = "\003"; return (ERROR); } 
+           { cool_yylval.error_msg = "\004"; return (ERROR); } 
 
  /*
   * Keywords are case-insensitive except for the values true and false,
@@ -190,7 +195,19 @@ LET_STMT */
 {SELF}      {
               cool_yylval.symbol = stringtable.add_string(yytext);
               return (TYPEID);
-            }            
+            }
+{INTCONST}  {
+              cool_yylval.symbol = inttable.add_string(yytext);
+              return (INT_CONST);
+            }
+{INVALID}   {
+              cool_yylval.error_msg = yytext;  
+              return (ERROR); 
+            }                        
+"|"         {  
+              cool_yylval.error_msg = "|";  
+              return (ERROR); 
+            } 
  /*
   *  String constants (C syntax)
   *  Escape sequence \c is accepted for all characters c. Except for 
@@ -199,30 +216,154 @@ LET_STMT */
   */
 
 [\n]            { curr_lineno++; }
+
 {WHITESPACE}    {;}
-
-{COMMENTSTART}  {
-                  comment_counter++;
-                  BEGIN COMMENT;
+               
+{STRINGSTART}   {
+                  str_len = 0;
+                  BEGIN (STRING);
                 }
-{COMMENTEND}    {
-                  if(comment_counter == 0) {
-                    cool_yylval.error_msg = "Comment isn't closed!";
-                    return (ERROR);
-                  }
-                }                
+                
+<LINECOMMENT>{
+"\n"              {BEGIN (INITIAL);}             
+.                 { ; }             
+}
 
-<COMMENT>{DASH}.*[\n] /*ignoriraj komentar u jednom redu*/
 <COMMENT>{
 {COMMENTSTART}    { comment_counter++; }
 "\n"              { curr_lineno++; }
 {COMMENTEND}      {
                     comment_counter--;
                     if(comment_counter == 0)
-                      BEGIN INITIAL;
+                      BEGIN (INITIAL); /*vrati skener u prvobitno stanje*/
                   }
+<<EOF>>           {
+                    cool_yylval.error_msg = "EOF in comment";
+                    BEGIN (INITIAL);
+                    return (ERROR);
+                  }                  
 .                 { ; }
          }
 
+<INITIAL>{
+{COMMENTEND}    {
+                    cool_yylval.error_msg = "Unmatched *)";
+                    return (ERROR);
+                } 
+}
 
+<INITIAL>{
+{COMMENTSTART}  {
+                  comment_counter++;
+                  BEGIN (COMMENT);
+                } 
+}
+
+<INITIAL>{
+{DASH}  {
+                  BEGIN (LINECOMMENT);
+        } 
+}
+
+<STRING>{
+{STRINGSTART}   {
+                  if(str_len >= MAX_STR_CONST)
+                  {
+                    cool_yylval.error_msg = "String constant too long";
+                    empty_buffer();
+                    BEGIN (INITIAL); 
+                    return (ERROR); 
+                  }
+                  else
+                  {
+                    cool_yylval.symbol = stringtable.add_string(string_buf); 
+                    empty_buffer();
+                    BEGIN (INITIAL); 
+                    return (STR_CONST); 
+                  }
+                }
+<<EOF>>         {
+                    cool_yylval.error_msg = "EOF in string constant";
+                    empty_buffer();
+                    BEGIN (INITIAL);
+                    return (ERROR);
+                }
+\0              {
+                    cool_yylval.error_msg = "String contains null character";
+                    empty_buffer();
+                    BEGIN (INITIAL);
+                    return (ERROR);
+                }
+                /*string nije zatvoren*/
+\n              {
+                    cool_yylval.error_msg = "Unterminated string constant";
+                    empty_buffer();
+                    curr_lineno++;
+                    BEGIN (INITIAL);
+                    return (ERROR);
+                }
+\\n             {
+                    if(str_len > MAX_STR_CONST)
+                  {
+                    cool_yylval.error_msg = "String constant too long";
+                    empty_buffer();
+                    BEGIN (INITIAL); 
+                    return (ERROR); 
+                  }
+                  else
+                    string_buf[str_len++]= '\n';
+                }
+\\t             {
+                    if(str_len > MAX_STR_CONST)
+                  {
+                    cool_yylval.error_msg = "String constant too long";
+                    empty_buffer();
+                    BEGIN (INITIAL); 
+                    return (ERROR); 
+                  }
+                  else
+                    string_buf[str_len++]= '\t';
+                }
+\\b             {
+                    if(str_len > MAX_STR_CONST)
+                  {
+                    cool_yylval.error_msg = "String constant too long";
+                    empty_buffer();
+                    BEGIN (INITIAL); 
+                    return (ERROR); 
+                  }
+                  else
+                    string_buf[str_len++]= '\b';
+                }
+\\f             {
+                    if(str_len > MAX_STR_CONST)
+                  {
+                    cool_yylval.error_msg = "String constant too long";
+                    empty_buffer();
+                    BEGIN (INITIAL); 
+                    return (ERROR); 
+                  }
+                  else
+                    string_buf[str_len++]= '\f';
+                }                                                      
+\\\0            {
+                  cool_yylval.error_msg = "String has an escaped null character";
+	                empty_buffer();
+                  BEGIN (INITIAL);
+                  return (ERROR);
+                }
+\\[^btnf]       {
+                  string_buf[str_len++]= yytext[1];
+                }
+\\\"            {
+                  string_buf[str_len++]= '"';
+                }                                                                                                  
+.               {
+                  string_buf[str_len++]= *yytext;
+                }                              
+}
 %%
+
+void empty_buffer(){
+  memset(string_buf, 0, sizeof(string_buf));
+}

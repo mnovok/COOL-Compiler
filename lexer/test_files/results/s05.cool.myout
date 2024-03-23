@@ -1,6 +1,2 @@
 #name ".//test_files//s05.cl"
-"#1 OBJECTID other
-#1 OBJECTID unescaped
-#1 OBJECTID whitespace
-#1 ':'
-"
+#1 STR_CONST "other unescaped whitespace: \t\f\022\013"

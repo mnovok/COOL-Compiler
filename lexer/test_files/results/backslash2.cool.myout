@@ -1,30 +1,8 @@
 #name ".//test_files//backslash2.cl"
-"#1 TYPEID I
-'#1 OBJECTID m
-#1 NOT
-#1 OBJECTID going
-#1 OBJECTID to
-#1 OBJECTID escape
-#1 OBJECTID this
-#1 OBJECTID newline
-""#4 TYPEID This
-#4 OBJECTID is
-#4 OBJECTID also
-#4 NOT
-#4 OBJECTID escaped
-\\""#7 TYPEID This
-#7 OBJECTID is
-#7 ','
-#7 OBJECTID though
-\\\""\\""#12 TYPEID It
-'#12 OBJECTID s
-#12 OBJECTID fine
-#12 OBJECTID to
-#12 OBJECTID have
-#12 OBJECTID this
-#12 ':'
-\#12 OBJECTID n
-#12 IN
-#12 OBJECTID a
-#12 OBJECTID string
-"
+#2 ERROR "Unterminated string constant"
+#3 ERROR "Unterminated string constant"
+#5 ERROR "Unterminated string constant"
+#6 ERROR "Unterminated string constant"
+#7 STR_CONST "This is, though \\\n"
+#9 STR_CONST "\\"
+#11 STR_CONST "It's fine to have this: \n in a string"
