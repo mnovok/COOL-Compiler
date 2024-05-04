@@ -1,2 +1,5 @@
 ".//test_files//assigngetstype.cl", line 3: syntax error at or near ASSIGN
+".//test_files//assigngetstype.cl", line 6: syntax error at or near ','
+".//test_files//assigngetstype.cl", line 6: syntax error at or near ','
+".//test_files//assigngetstype.cl", line 6: syntax error at or near ')'
 Compilation halted due to lex and parse errors

@@ -1,3 +1,8 @@
-".//test_files//complex.cl", line 2: syntax error at or near '('
-".//test_files//complex.cl", line 14: syntax error at or near OBJECTID = y
+".//test_files//complex.cl", line 3: syntax error at or near LET
+".//test_files//complex.cl", line 3: syntax error at or near ASSIGN
+".//test_files//complex.cl", line 4: syntax error at or near '.'
+".//test_files//complex.cl", line 4: syntax error at or near '='
+".//test_files//complex.cl", line 5: syntax error at or near THEN
+".//test_files//complex.cl", line 16: syntax error at or near ','
+".//test_files//complex.cl", line 16: syntax error at or near ')'
 Compilation halted due to lex and parse errors

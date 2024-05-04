@@ -1,2 +1,5 @@
-".//test_files//letparens.cl", line 2: syntax error at or near '('
+".//test_files//letparens.cl", line 2: syntax error at or near LET
+".//test_files//letparens.cl", line 2: syntax error at or near IN
+".//test_files//letparens.cl", line 3: syntax error at or near IN
+".//test_files//letparens.cl", line 4: syntax error at or near IN
 Compilation halted due to lex and parse errors

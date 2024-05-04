@@ -215,20 +215,34 @@ enum yysymbol_kind_t
   YYSYMBOL_NOT = 26,                       /* NOT  */
   YYSYMBOL_LE = 27,                        /* LE  */
   YYSYMBOL_ERROR = 28,                     /* ERROR  */
-  YYSYMBOL_29_ = 29,                       /* '+'  */
-  YYSYMBOL_30_ = 30,                       /* '-'  */
-  YYSYMBOL_31_ = 31,                       /* '*'  */
-  YYSYMBOL_32_ = 32,                       /* '/'  */
-  YYSYMBOL_33_ = 33,                       /* '{'  */
-  YYSYMBOL_34_ = 34,                       /* '}'  */
-  YYSYMBOL_35_ = 35,                       /* ';'  */
-  YYSYMBOL_36_ = 36,                       /* ':'  */
-  YYSYMBOL_YYACCEPT = 37,                  /* $accept  */
-  YYSYMBOL_program = 38,                   /* program  */
-  YYSYMBOL_class_list = 39,                /* class_list  */
-  YYSYMBOL_class = 40,                     /* class  */
-  YYSYMBOL_feature_list = 41,              /* feature_list  */
-  YYSYMBOL_feature = 42                    /* feature  */
+  YYSYMBOL_29_ = 29,                       /* '<'  */
+  YYSYMBOL_30_ = 30,                       /* '='  */
+  YYSYMBOL_31_ = 31,                       /* '+'  */
+  YYSYMBOL_32_ = 32,                       /* '-'  */
+  YYSYMBOL_33_ = 33,                       /* '*'  */
+  YYSYMBOL_34_ = 34,                       /* '/'  */
+  YYSYMBOL_35_ = 35,                       /* '.'  */
+  YYSYMBOL_36_ = 36,                       /* '@'  */
+  YYSYMBOL_37_ = 37,                       /* '~'  */
+  YYSYMBOL_38_ = 38,                       /* '{'  */
+  YYSYMBOL_39_ = 39,                       /* '}'  */
+  YYSYMBOL_40_ = 40,                       /* ';'  */
+  YYSYMBOL_41_ = 41,                       /* ':'  */
+  YYSYMBOL_42_ = 42,                       /* '('  */
+  YYSYMBOL_43_ = 43,                       /* ')'  */
+  YYSYMBOL_44_ = 44,                       /* ','  */
+  YYSYMBOL_YYACCEPT = 45,                  /* $accept  */
+  YYSYMBOL_program = 46,                   /* program  */
+  YYSYMBOL_class_list = 47,                /* class_list  */
+  YYSYMBOL_class = 48,                     /* class  */
+  YYSYMBOL_feature_list = 49,              /* feature_list  */
+  YYSYMBOL_feature = 50,                   /* feature  */
+  YYSYMBOL_formal_list = 51,               /* formal_list  */
+  YYSYMBOL_formal = 52,                    /* formal  */
+  YYSYMBOL_expression = 53,                /* expression  */
+  YYSYMBOL_expression_list = 54,           /* expression_list  */
+  YYSYMBOL_case = 55,                      /* case  */
+  YYSYMBOL_case_list = 56                  /* case_list  */
 };
 typedef enum yysymbol_kind_t yysymbol_kind_t;
 
@@ -559,16 +573,16 @@ union yyalloc
 /* YYFINAL -- State number of the termination state.  */
 #define YYFINAL  7
 /* YYLAST -- Last index in YYTABLE.  */
-#define YYLAST   25
+#define YYLAST   198
 
 /* YYNTOKENS -- Number of terminals.  */
-#define YYNTOKENS  37
+#define YYNTOKENS  45
 /* YYNNTS -- Number of nonterminals.  */
-#define YYNNTS  6
+#define YYNNTS  12
 /* YYNRULES -- Number of rules.  */
-#define YYNRULES  10
+#define YYNRULES  47
 /* YYNSTATES -- Number of states.  */
-#define YYNSTATES  24
+#define YYNSTATES  113
 
 /* YYMAXUTOK -- Last valid token kind.  */
 #define YYMAXUTOK   284
@@ -589,15 +603,15 @@ static const yytype_int8 yytranslate[] =
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
-       2,     2,    31,    29,     2,    30,     2,    32,     2,     2,
-       2,     2,     2,     2,     2,     2,     2,     2,    36,    35,
+      42,    43,    33,    31,    44,    32,    35,    34,     2,     2,
+       2,     2,     2,     2,     2,     2,     2,     2,    41,    40,
+      29,    30,     2,     2,    36,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
-       2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
-       2,     2,     2,    33,     2,    34,     2,     2,     2,     2,
+       2,     2,     2,    38,     2,    39,    37,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
@@ -618,10 +632,13 @@ static const yytype_int8 yytranslate[] =
 
 #if YYDEBUG
 /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
-static const yytype_uint8 yyrline[] =
+static const yytype_int16 yyrline[] =
 {
-       0,   149,   149,   154,   159,   167,   170,   172,   180,   181,
-     184
+       0,   159,   159,   164,   169,   177,   182,   187,   194,   195,
+     197,   201,   203,   205,   210,   211,   213,   217,   221,   223,
+     225,   227,   229,   231,   233,   235,   237,   239,   241,   243,
+     245,   247,   249,   251,   253,   255,   257,   259,   261,   263,
+     265,   270,   271,   273,   277,   282,   283,   285
 };
 #endif
 
@@ -641,8 +658,10 @@ static const char *const yytname[] =
   "IF", "IN", "INHERITS", "LET", "LOOP", "POOL", "THEN", "WHILE", "CASE",
   "ESAC", "OF", "DARROW", "NEW", "ISVOID", "STR_CONST", "INT_CONST",
   "BOOL_CONST", "TYPEID", "OBJECTID", "ASSIGN", "NOT", "LE", "ERROR",
-  "'+'", "'-'", "'*'", "'/'", "'{'", "'}'", "';'", "':'", "$accept",
-  "program", "class_list", "class", "feature_list", "feature", YY_NULLPTR
+  "'<'", "'='", "'+'", "'-'", "'*'", "'/'", "'.'", "'@'", "'~'", "'{'",
+  "'}'", "';'", "':'", "'('", "')'", "','", "$accept", "program",
+  "class_list", "class", "feature_list", "feature", "formal_list",
+  "formal", "expression", "expression_list", "case", "case_list", YY_NULLPTR
 };
 
 static const char *
@@ -652,23 +671,32 @@ yysymbol_name (yysymbol_kind_t yysymbol)
 }
 #endif
 
-#define YYPACT_NINF (-26)
+#define YYPACT_NINF (-56)
 
 #define yypact_value_is_default(Yyn) \
   ((Yyn) == YYPACT_NINF)
 
-#define YYTABLE_NINF (-3)
+#define YYTABLE_NINF (-9)
 
 #define yytable_value_is_error(Yyn) \
-  0
+  ((Yyn) == YYTABLE_NINF)
 
 /* YYPACT[STATE-NUM] -- Index in YYTABLE of the portion describing
    STATE-NUM.  */
-static const yytype_int8 yypact[] =
+static const yytype_int16 yypact[] =
 {
-       2,   -26,   -17,     7,     1,   -26,    -8,   -26,   -26,   -15,
-     -14,   -24,   -25,   -22,   -26,   -14,   -10,   -21,   -19,   -18,
-     -26,   -16,   -26,   -26
+      71,   -56,   -16,     9,    40,   -56,     6,   -56,   -56,     3,
+      11,    -4,   -56,    17,    14,   -56,    11,    24,    28,    31,
+     -56,    15,    42,    27,   -22,   -56,   -56,    44,   -56,    32,
+      45,    28,   -56,    47,    50,   -56,   -56,    52,    43,    43,
+      43,    43,    60,    43,   -56,   -56,   -56,   -19,    43,    43,
+      43,    43,   151,   110,    78,   129,   -56,    79,    43,    43,
+      94,   -56,    94,   -20,   121,    43,    43,    43,    43,    43,
+      43,    43,    93,   -56,    43,    43,    95,    94,    33,   -56,
+      43,   -56,   162,   162,   162,    12,    12,    79,    79,    82,
+      62,   102,    77,   -56,    -7,   -56,    94,    96,    43,   -56,
+     124,   -56,   -56,   107,    70,   150,    43,   -56,    43,    35,
+     139,   -56,   -56
 };
 
 /* YYDEFACT[STATE-NUM] -- Default reduction number in state STATE-NUM.
@@ -677,20 +705,31 @@ static const yytype_int8 yypact[] =
 static const yytype_int8 yydefact[] =
 {
        0,     7,     0,     0,     0,     3,     0,     1,     4,     0,
-       8,     0,     0,     0,     9,     8,     0,     0,     0,     0,
-       5,     0,    10,     6
+       0,     0,    13,     0,     0,     9,     0,     0,    14,     0,
+      10,     0,     0,     0,     0,    15,     5,     0,    11,     0,
+       0,     0,     6,     0,     0,    16,    17,     0,     0,     0,
+       0,     0,     0,     0,    39,    38,    40,    37,     0,     0,
+      41,     0,     0,     0,     0,     0,    25,    26,     0,    41,
+      35,    31,    42,     0,     0,     0,     0,     0,     0,     0,
+       0,     0,     0,    12,     0,     0,    45,    18,     0,    23,
+       0,    36,    33,    32,    34,    27,    28,    29,    30,     0,
+       0,     0,     0,    46,     0,    20,    43,     0,     0,    22,
+       0,    24,    47,     0,     0,     0,    41,    21,     0,     0,
+       0,    19,    44
 };
 
 /* YYPGOTO[NTERM-NUM].  */
-static const yytype_int8 yypgoto[] =
+static const yytype_int16 yypgoto[] =
 {
-     -26,   -26,   -26,    12,     3,   -26
+     -56,   -56,   -56,   170,   160,     4,   -56,   146,   -38,   -55,
+      92,   -56
 };
 
 /* YYDEFGOTO[NTERM-NUM].  */
 static const yytype_int8 yydefgoto[] =
 {
-       0,     3,     4,     5,    13,    14
+       0,     3,     4,     5,    14,    15,    24,    25,    62,    63,
+      93,    94
 };
 
 /* YYTABLE[YYPACT[STATE-NUM]] -- What to do in state STATE-NUM.  If
@@ -698,39 +737,88 @@ static const yytype_int8 yydefgoto[] =
    number is the opposite.  If YYTABLE_NINF, syntax error.  */
 static const yytype_int8 yytable[] =
 {
-       9,    -2,     1,     1,     2,     2,     6,     7,    11,    15,
-      12,    16,    17,    19,    20,    21,     8,    22,    18,    23,
-       0,     0,     0,     0,     0,    10
+      52,    53,    54,    55,    78,    57,    58,     6,   101,     7,
+      60,    61,    12,    64,     9,    12,    12,    92,    20,    79,
+      77,    30,    31,    59,    80,    20,    11,    82,    83,    84,
+      85,    86,    87,    88,    16,    13,    90,    91,    13,    13,
+      -2,     1,    96,     2,    10,    70,    71,    22,    72,    39,
+      -8,   109,    23,    19,    27,    33,    40,    41,    17,    18,
+     104,    42,    43,    44,    45,    46,    98,    47,    29,    48,
+     110,    26,     1,    37,     2,   107,    95,    80,   111,    80,
+      49,    50,    28,    56,    32,    51,    34,    36,    75,    65,
+      38,    66,    67,    68,    69,    70,    71,    65,    72,    66,
+      67,    68,    69,    70,    71,    65,    72,    66,    67,    68,
+      69,    70,    71,    99,    72,    72,    89,    97,   100,    92,
+     103,    65,    74,    66,    67,    68,    69,    70,    71,    65,
+      72,    66,    67,    68,    69,    70,    71,    65,    72,    66,
+      67,    68,    69,    70,    71,    76,    72,   105,    65,   106,
+      66,    67,    68,    69,    70,    71,    65,    72,    66,    67,
+      68,    69,    70,    71,    81,    72,    65,   108,    66,    67,
+      68,    69,    70,    71,     8,    72,    21,    35,    65,   112,
+      66,    67,    68,    69,    70,    71,   102,    72,     0,    -9,
+      73,    -9,    -9,    68,    69,    70,    71,     0,    72
 };
 
 static const yytype_int8 yycheck[] =
 {
-       8,     0,     1,     1,     3,     3,    23,     0,    23,    33,
-      24,    36,    34,    23,    35,    34,     4,    35,    15,    35,
-      -1,    -1,    -1,    -1,    -1,    33
+      38,    39,    40,    41,    59,    43,    25,    23,    15,     0,
+      48,    49,     1,    51,     8,     1,     1,    24,    14,    39,
+      58,    43,    44,    42,    44,    21,    23,    65,    66,    67,
+      68,    69,    70,    71,    38,    24,    74,    75,    24,    24,
+       0,     1,    80,     3,    38,    33,    34,    23,    36,     6,
+      39,   106,    24,    39,    39,    23,    13,    14,    41,    42,
+      98,    18,    19,    20,    21,    22,     4,    24,    41,    26,
+     108,    40,     1,    23,     3,     5,    43,    44,    43,    44,
+      37,    38,    40,    23,    40,    42,    41,    40,    10,    27,
+      38,    29,    30,    31,    32,    33,    34,    27,    36,    29,
+      30,    31,    32,    33,    34,    27,    36,    29,    30,    31,
+      32,    33,    34,    11,    36,    36,    23,    35,    41,    24,
+      24,    27,    12,    29,    30,    31,    32,    33,    34,    27,
+      36,    29,    30,    31,    32,    33,    34,    27,    36,    29,
+      30,    31,    32,    33,    34,    16,    36,    23,    27,    42,
+      29,    30,    31,    32,    33,    34,    27,    36,    29,    30,
+      31,    32,    33,    34,    43,    36,    27,    17,    29,    30,
+      31,    32,    33,    34,     4,    36,    16,    31,    27,    40,
+      29,    30,    31,    32,    33,    34,    94,    36,    -1,    27,
+      39,    29,    30,    31,    32,    33,    34,    -1,    36
 };
 
 /* YYSTOS[STATE-NUM] -- The symbol kind of the accessing symbol of
    state STATE-NUM.  */
 static const yytype_int8 yystos[] =
 {
-       0,     1,     3,    38,    39,    40,    23,     0,    40,     8,
-      33,    23,    24,    41,    42,    33,    36,    34,    41,    23,
-      35,    34,    35,    35
+       0,     1,     3,    46,    47,    48,    23,     0,    48,     8,
+      38,    23,     1,    24,    49,    50,    38,    41,    42,    39,
+      50,    49,    23,    24,    51,    52,    40,    39,    40,    41,
+      43,    44,    40,    23,    41,    52,    40,    23,    38,     6,
+      13,    14,    18,    19,    20,    21,    22,    24,    26,    37,
+      38,    42,    53,    53,    53,    53,    23,    53,    25,    42,
+      53,    53,    53,    54,    53,    27,    29,    30,    31,    32,
+      33,    34,    36,    39,    12,    10,    16,    53,    54,    39,
+      44,    43,    53,    53,    53,    53,    53,    53,    53,    23,
+      53,    53,    24,    55,    56,    43,    53,    35,     4,    11,
+      41,    15,    55,    24,    53,    23,    42,     5,    17,    54,
+      53,    43,    40
 };
 
 /* YYR1[RULE-NUM] -- Symbol kind of the left-hand side of rule RULE-NUM.  */
 static const yytype_int8 yyr1[] =
 {
-       0,    37,    38,    39,    39,    40,    40,    40,    41,    41,
-      42
+       0,    45,    46,    47,    47,    48,    48,    48,    49,    49,
+      49,    50,    50,    50,    51,    51,    51,    52,    53,    53,
+      53,    53,    53,    53,    53,    53,    53,    53,    53,    53,
+      53,    53,    53,    53,    53,    53,    53,    53,    53,    53,
+      53,    54,    54,    54,    55,    56,    56,    56
 };
 
 /* YYR2[RULE-NUM] -- Number of symbols on the right-hand side of rule RULE-NUM.  */
 static const yytype_int8 yyr2[] =
 {
        0,     2,     1,     1,     2,     6,     8,     1,     0,     1,
-       4
+       2,     4,     9,     1,     0,     1,     3,     4,     3,     8,
+       4,     7,     5,     3,     5,     2,     2,     3,     3,     3,
+       3,     2,     3,     3,     3,     2,     3,     1,     1,     1,
+       1,     0,     1,     3,     6,     0,     1,     2
 };
 
 
@@ -1307,70 +1395,297 @@ yyreduce:
   switch (yyn)
     {
   case 2: /* program: class_list  */
-#line 149 "cool.y"
+#line 159 "cool.y"
                                 { (yyloc) = (yylsp[0]); 
                             SET_NODELOC((yylsp[0]));
                             ast_root = program((yyvsp[0].classes)); }
-#line 1315 "cool.tab.c"
+#line 1403 "cool.tab.c"
     break;
 
   case 3: /* class_list: class  */
-#line 155 "cool.y"
-      { (yyloc) = (yylsp[0]);
-        SET_NODELOC((yylsp[0]));
-        (yyval.classes) = single_Classes((yyvsp[0].class_));
-        parse_results = (yyval.classes); }
-#line 1324 "cool.tab.c"
+#line 165 "cool.y"
+                { (yyloc) = (yylsp[0]);
+                  SET_NODELOC((yylsp[0]));
+                  (yyval.classes) = single_Classes((yyvsp[0].class_));
+                  parse_results = (yyval.classes); }
+#line 1412 "cool.tab.c"
     break;
 
   case 4: /* class_list: class_list class  */
-#line 160 "cool.y"
-      { (yyloc) = (yylsp[0]);
-        SET_NODELOC((yylsp[0]));
-        (yyval.classes) = append_Classes((yyvsp[-1].classes),single_Classes((yyvsp[0].class_))); 
-        parse_results = (yyval.classes); }
-#line 1333 "cool.tab.c"
+#line 170 "cool.y"
+                { (yyloc) = (yylsp[0]);
+                  SET_NODELOC((yylsp[0]));
+                  (yyval.classes) = append_Classes((yyvsp[-1].classes),single_Classes((yyvsp[0].class_))); 
+                  parse_results = (yyval.classes); }
+#line 1421 "cool.tab.c"
     break;
 
   case 5: /* class: CLASS TYPEID '{' feature_list '}' ';'  */
-#line 168 "cool.y"
-        { (yyval.class_) = class_((yyvsp[-4].symbol),idtable.add_string("Object"),(yyvsp[-2].features),
-          stringtable.add_string(curr_filename)); }
-#line 1340 "cool.tab.c"
+#line 178 "cool.y"
+          { (yyloc) = (yylsp[0]);
+            SET_NODELOC((yylsp[0]));
+            (yyval.class_) = class_((yyvsp[-4].symbol),idtable.add_string("Object"),
+                        (yyvsp[-2].features), stringtable.add_string(curr_filename)); }
+#line 1430 "cool.tab.c"
     break;
 
   case 6: /* class: CLASS TYPEID INHERITS TYPEID '{' feature_list '}' ';'  */
-#line 171 "cool.y"
-        { (yyval.class_) = class_((yyvsp[-6].symbol),(yyvsp[-4].symbol),(yyvsp[-2].features),stringtable.add_string(curr_filename)); }
-#line 1346 "cool.tab.c"
+#line 183 "cool.y"
+          { 
+            (yyloc) = (yylsp[0]);
+            SET_NODELOC((yylsp[0]));
+            (yyval.class_) = class_((yyvsp[-6].symbol),(yyvsp[-4].symbol),(yyvsp[-2].features),stringtable.add_string(curr_filename)); }
+#line 1439 "cool.tab.c"
     break;
 
   case 7: /* class: error  */
-#line 173 "cool.y"
-        {}
-#line 1352 "cool.tab.c"
+#line 188 "cool.y"
+          {}
+#line 1445 "cool.tab.c"
     break;
 
   case 8: /* feature_list: %empty  */
-#line 180 "cool.y"
-        { (yyval.features) = nil_Features(); }
-#line 1358 "cool.tab.c"
+#line 194 "cool.y"
+                  { (yyval.features) = nil_Features(); }
+#line 1451 "cool.tab.c"
     break;
 
   case 9: /* feature_list: feature  */
-#line 182 "cool.y"
-        { (yyval.features) = single_Features((yyvsp[0].feature)); }
-#line 1364 "cool.tab.c"
+#line 196 "cool.y"
+                  { (yyval.features) = single_Features((yyvsp[0].feature)); }
+#line 1457 "cool.tab.c"
     break;
 
-  case 10: /* feature: OBJECTID ':' TYPEID ';'  */
-#line 185 "cool.y"
-        { (yyval.feature) = attr((yyvsp[-3].symbol), (yyvsp[-1].symbol), no_expr()); }
-#line 1370 "cool.tab.c"
+  case 10: /* feature_list: feature_list feature  */
+#line 198 "cool.y"
+                  { (yyval.features) = append_Features((yyvsp[-1].features), single_Features((yyvsp[0].feature))); }
+#line 1463 "cool.tab.c"
+    break;
+
+  case 11: /* feature: OBJECTID ':' TYPEID ';'  */
+#line 202 "cool.y"
+            { (yyval.feature) = attr((yyvsp[-3].symbol), (yyvsp[-1].symbol), no_expr()); }
+#line 1469 "cool.tab.c"
+    break;
+
+  case 12: /* feature: OBJECTID '(' formal_list ')' ':' TYPEID '{' expression '}'  */
+#line 204 "cool.y"
+            { (yyval.feature) = method((yyvsp[-8].symbol), (yyvsp[-6].formals), (yyvsp[-3].symbol), (yyvsp[-1].expression)); }
+#line 1475 "cool.tab.c"
+    break;
+
+  case 13: /* feature: error  */
+#line 206 "cool.y"
+            {}
+#line 1481 "cool.tab.c"
+    break;
+
+  case 14: /* formal_list: %empty  */
+#line 210 "cool.y"
+                { (yyval.formals) = nil_Formals(); }
+#line 1487 "cool.tab.c"
+    break;
+
+  case 15: /* formal_list: formal  */
+#line 212 "cool.y"
+                { (yyval.formals) = single_Formals((yyvsp[0].formal)); }
+#line 1493 "cool.tab.c"
+    break;
+
+  case 16: /* formal_list: formal_list ',' formal  */
+#line 214 "cool.y"
+                { (yyval.formals) = append_Formals((yyvsp[-2].formals), single_Formals((yyvsp[0].formal))); }
+#line 1499 "cool.tab.c"
+    break;
+
+  case 17: /* formal: OBJECTID ':' TYPEID ';'  */
+#line 218 "cool.y"
+           { (yyval.formal) = formal((yyvsp[-3].symbol), (yyvsp[-1].symbol)); }
+#line 1505 "cool.tab.c"
+    break;
+
+  case 18: /* expression: OBJECTID ASSIGN expression  */
+#line 222 "cool.y"
+               { (yyval.expression) = assign((yyvsp[-2].symbol), (yyvsp[0].expression)); }
+#line 1511 "cool.tab.c"
+    break;
+
+  case 19: /* expression: expression '@' TYPEID '.' OBJECTID '(' expression_list ')'  */
+#line 224 "cool.y"
+               { (yyval.expression) = static_dispatch((yyvsp[-7].expression), (yyvsp[-5].symbol), (yyvsp[-3].symbol), (yyvsp[-1].expressions)); }
+#line 1517 "cool.tab.c"
+    break;
+
+  case 20: /* expression: OBJECTID '(' expression_list ')'  */
+#line 226 "cool.y"
+               { (yyval.expression) = dispatch(object(idtable.add_string("Self")), (yyvsp[-3].symbol), (yyvsp[-1].expressions)); }
+#line 1523 "cool.tab.c"
+    break;
+
+  case 21: /* expression: IF expression THEN expression ELSE expression FI  */
+#line 228 "cool.y"
+               { (yyval.expression) = cond((yyvsp[-5].expression), (yyvsp[-3].expression), (yyvsp[-1].expression)); }
+#line 1529 "cool.tab.c"
+    break;
+
+  case 22: /* expression: WHILE expression LOOP expression POOL  */
+#line 230 "cool.y"
+               { (yyval.expression) = loop((yyvsp[-3].expression), (yyvsp[-1].expression)); }
+#line 1535 "cool.tab.c"
+    break;
+
+  case 23: /* expression: '{' expression_list '}'  */
+#line 232 "cool.y"
+               { (yyval.expression) = block((yyvsp[-1].expressions)); }
+#line 1541 "cool.tab.c"
+    break;
+
+  case 24: /* expression: CASE expression OF case_list ESAC  */
+#line 234 "cool.y"
+               { (yyval.expression) = typcase((yyvsp[-3].expression), (yyvsp[-1].cases)); }
+#line 1547 "cool.tab.c"
+    break;
+
+  case 25: /* expression: NEW TYPEID  */
+#line 236 "cool.y"
+               { (yyval.expression) = new_((yyvsp[0].symbol)); }
+#line 1553 "cool.tab.c"
+    break;
+
+  case 26: /* expression: ISVOID expression  */
+#line 238 "cool.y"
+               { (yyval.expression) = isvoid((yyvsp[0].expression)); }
+#line 1559 "cool.tab.c"
+    break;
+
+  case 27: /* expression: expression '+' expression  */
+#line 240 "cool.y"
+               { (yyval.expression) = plus((yyvsp[-2].expression), (yyvsp[0].expression)); }
+#line 1565 "cool.tab.c"
+    break;
+
+  case 28: /* expression: expression '-' expression  */
+#line 242 "cool.y"
+               { (yyval.expression) = sub((yyvsp[-2].expression), (yyvsp[0].expression)); }
+#line 1571 "cool.tab.c"
+    break;
+
+  case 29: /* expression: expression '*' expression  */
+#line 244 "cool.y"
+               { (yyval.expression) = mul((yyvsp[-2].expression), (yyvsp[0].expression)); }
+#line 1577 "cool.tab.c"
+    break;
+
+  case 30: /* expression: expression '/' expression  */
+#line 246 "cool.y"
+               { (yyval.expression) = divide((yyvsp[-2].expression), (yyvsp[0].expression)); }
+#line 1583 "cool.tab.c"
+    break;
+
+  case 31: /* expression: '~' expression  */
+#line 248 "cool.y"
+               { (yyval.expression) = neg((yyvsp[0].expression)); }
+#line 1589 "cool.tab.c"
+    break;
+
+  case 32: /* expression: expression '<' expression  */
+#line 250 "cool.y"
+               { (yyval.expression) = lt((yyvsp[-2].expression), (yyvsp[0].expression)); }
+#line 1595 "cool.tab.c"
+    break;
+
+  case 33: /* expression: expression LE expression  */
+#line 252 "cool.y"
+               { (yyval.expression) = leq((yyvsp[-2].expression), (yyvsp[0].expression)); }
+#line 1601 "cool.tab.c"
+    break;
+
+  case 34: /* expression: expression '=' expression  */
+#line 254 "cool.y"
+               { (yyval.expression) = eq((yyvsp[-2].expression), (yyvsp[0].expression)); }
+#line 1607 "cool.tab.c"
+    break;
+
+  case 35: /* expression: NOT expression  */
+#line 256 "cool.y"
+               { (yyval.expression) = comp((yyvsp[0].expression)); }
+#line 1613 "cool.tab.c"
+    break;
+
+  case 36: /* expression: '(' expression ')'  */
+#line 258 "cool.y"
+               { (yyval.expression) = (yyvsp[-1].expression); }
+#line 1619 "cool.tab.c"
+    break;
+
+  case 37: /* expression: OBJECTID  */
+#line 260 "cool.y"
+               { (yyval.expression) = object((yyvsp[0].symbol)); }
+#line 1625 "cool.tab.c"
+    break;
+
+  case 38: /* expression: INT_CONST  */
+#line 262 "cool.y"
+               { (yyval.expression) = int_const((yyvsp[0].symbol)); }
+#line 1631 "cool.tab.c"
+    break;
+
+  case 39: /* expression: STR_CONST  */
+#line 264 "cool.y"
+               { (yyval.expression) = string_const((yyvsp[0].symbol)); }
+#line 1637 "cool.tab.c"
+    break;
+
+  case 40: /* expression: BOOL_CONST  */
+#line 266 "cool.y"
+               { (yyval.expression) = bool_const((yyvsp[0].boolean)); }
+#line 1643 "cool.tab.c"
+    break;
+
+  case 41: /* expression_list: %empty  */
+#line 270 "cool.y"
+                    { (yyval.expressions) = nil_Expressions(); }
+#line 1649 "cool.tab.c"
+    break;
+
+  case 42: /* expression_list: expression  */
+#line 272 "cool.y"
+                    { (yyval.expressions) = single_Expressions((yyvsp[0].expression)); }
+#line 1655 "cool.tab.c"
+    break;
+
+  case 43: /* expression_list: expression_list ',' expression  */
+#line 274 "cool.y"
+                    { (yyval.expressions) = append_Expressions((yyvsp[-2].expressions), single_Expressions((yyvsp[0].expression))); }
+#line 1661 "cool.tab.c"
+    break;
+
+  case 44: /* case: OBJECTID ':' TYPEID DARROW expression ';'  */
+#line 278 "cool.y"
+        { (yyval.case_) = branch((yyvsp[-5].symbol), (yyvsp[-3].symbol), (yyvsp[-1].expression)); }
+#line 1667 "cool.tab.c"
+    break;
+
+  case 45: /* case_list: %empty  */
+#line 282 "cool.y"
+              { (yyval.cases) = nil_Cases(); }
+#line 1673 "cool.tab.c"
+    break;
+
+  case 46: /* case_list: case  */
+#line 284 "cool.y"
+              { (yyval.cases) = single_Cases((yyvsp[0].case_)); }
+#line 1679 "cool.tab.c"
+    break;
+
+  case 47: /* case_list: case_list case  */
+#line 286 "cool.y"
+              { (yyval.cases) = append_Cases((yyvsp[-1].cases), single_Cases((yyvsp[0].case_))); }
+#line 1685 "cool.tab.c"
     break;
 
 
-#line 1374 "cool.tab.c"
+#line 1689 "cool.tab.c"
 
       default: break;
     }
@@ -1568,7 +1883,7 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 191 "cool.y"
+#line 290 "cool.y"
 
     
     /* This function is called automatically when Bison detects a parse error. */

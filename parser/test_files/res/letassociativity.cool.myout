@@ -1,2 +1,3 @@
-".//test_files//letassociativity.cl", line 3: syntax error at or near '('
+".//test_files//letassociativity.cl", line 3: syntax error at or near ')'
+".//test_files//letassociativity.cl", line 4: syntax error at or near IN
 Compilation halted due to lex and parse errors

@@ -2,5 +2,5 @@ error in line# 1
     parsed as: filename, line 3: syntax error at or near
     should be: filename, line 4: syntax error at or near
 error in line# 1
-    parsed as: Compilation halted due to lex and parse errors
+    parsed as: filename, line 4: syntax error at or near
     should be: filename, line 6: syntax error at or near

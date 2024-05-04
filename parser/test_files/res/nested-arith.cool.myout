@@ -1,2 +1,5 @@
 ".//test_files//nested-arith.cl", line 8: syntax error at or near ASSIGN
+".//test_files//nested-arith.cl", line 9: syntax error at or near ASSIGN
+".//test_files//nested-arith.cl", line 10: syntax error at or near ASSIGN
+".//test_files//nested-arith.cl", line 15: memory exhausted at or near <Invalid Token>
 Compilation halted due to lex and parse errors

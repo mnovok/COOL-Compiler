@@ -1,2 +1,6 @@
-".//test_files//casemultiplebranch.cl", line 3: syntax error at or near OBJECTID = bar
+".//test_files//casemultiplebranch.cl", line 3: syntax error at or near '.'
+".//test_files//casemultiplebranch.cl", line 3: syntax error at or near OF
+".//test_files//casemultiplebranch.cl", line 3: syntax error at or near DARROW
+".//test_files//casemultiplebranch.cl", line 4: syntax error at or near DARROW
+".//test_files//casemultiplebranch.cl", line 5: syntax error at or near DARROW
 Compilation halted due to lex and parse errors

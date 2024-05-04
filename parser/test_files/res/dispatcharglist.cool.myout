@@ -1,2 +1,5 @@
-".//test_files//dispatcharglist.cl", line 3: syntax error at or near OBJECTID = bar
+".//test_files//dispatcharglist.cl", line 3: syntax error at or near ','
+".//test_files//dispatcharglist.cl", line 3: syntax error at or near ','
+".//test_files//dispatcharglist.cl", line 3: syntax error at or near ')'
+".//test_files//dispatcharglist.cl", line 3: syntax error at or near ','
 Compilation halted due to lex and parse errors

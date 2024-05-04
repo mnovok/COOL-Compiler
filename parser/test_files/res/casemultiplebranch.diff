@@ -2,5 +2,17 @@ error in line# 1
     parsed as: filename, line 3: syntax error at or near
     should be: 
 error in line# 1
-    parsed as: Compilation halted due to lex and parse errors
+    parsed as: filename, line 3: syntax error at or near
     should be: _program
+error in line# 1
+    parsed as: filename, line 3: syntax error at or near
+    should be: 
+error in line# 1
+    parsed as: filename, line 4: syntax error at or near
+    should be:   _class
+error in line# 1
+    parsed as: filename, line 5: syntax error at or near
+    should be:     Test
+error in line# 1
+    parsed as: Compilation halted due to lex and parse errors
+    should be:     Object

@@ -1,2 +1,23 @@
-".//test_files//classtwofields.cl", line 3: syntax error at or near OBJECTID = bar
-Compilation halted due to lex and parse errors
+#4
+_program
+  #4
+  _class
+    Hello
+    Object
+    ".//test_files//classtwofields.cl"
+    (
+    #2
+    _attr
+      foo
+      Int
+      #2
+      _no_expr
+      : _no_type
+    #3
+    _attr
+      bar
+      String
+      #3
+      _no_expr
+      : _no_type
+    )

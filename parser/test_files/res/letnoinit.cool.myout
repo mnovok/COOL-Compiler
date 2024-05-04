@@ -1,2 +1,3 @@
-".//test_files//letnoinit.cl", line 3: syntax error at or near OBJECTID = baz
+".//test_files//letnoinit.cl", line 3: syntax error at or near LET
+".//test_files//letnoinit.cl", line 3: syntax error at or near IN
 Compilation halted due to lex and parse errors

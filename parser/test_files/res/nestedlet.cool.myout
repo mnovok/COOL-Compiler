@@ -1,2 +1,9 @@
-".//test_files//nestedlet.cl", line 2: syntax error at or near '('
+".//test_files//nestedlet.cl", line 2: syntax error at or near ')'
+".//test_files//nestedlet.cl", line 3: syntax error at or near ASSIGN
+".//test_files//nestedlet.cl", line 4: syntax error at or near ','
+".//test_files//nestedlet.cl", line 4: syntax error at or near IN
+".//test_files//nestedlet.cl", line 5: syntax error at or near ','
+".//test_files//nestedlet.cl", line 5: syntax error at or near ','
+".//test_files//nestedlet.cl", line 5: syntax error at or near IN
+".//test_files//nestedlet.cl", line 6: syntax error at or near ASSIGN
 Compilation halted due to lex and parse errors
