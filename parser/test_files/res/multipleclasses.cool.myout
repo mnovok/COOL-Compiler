@@ -1,0 +1,3 @@
+".//test_files//multipleclasses.cl", line 3: syntax error at or near OBJECTID = bar
+".//test_files//multipleclasses.cl", line 12: syntax error at or near OBJECTID = bar
+Compilation halted due to lex and parse errors

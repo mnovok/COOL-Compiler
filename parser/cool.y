@@ -133,41 +133,59 @@
     %type <program> program
     %type <classes> class_list
     %type <class_> class
-    
+    %type <feature> feature 
+
     /* You will want to change the following line. */
-    %type <features> dummy_feature_list
+    %type <features> feature_list
     
     /* Precedence declarations go here. */
-    
+    %left   '+' '-'
+    %left   '*' '/'
     
     %%
     /* 
     Save the root of the abstract syntax tree in a global variable.
     */
-    program	: class_list	{ @$ = @1; ast_root = program($1); }
+    program	: class_list	{ @$ = @1; 
+                            SET_NODELOC(@1);
+                            ast_root = program($1); }
     ;
     
-    class_list
-    : class			/* single class */
-    { $$ = single_Classes($1);
-    parse_results = $$; }
+    class_list  : class			/* single class */
+      { @$ = @1;
+        SET_NODELOC(@1);
+        $$ = single_Classes($1);
+        parse_results = $$; }
     | class_list class	/* several classes */
-    { $$ = append_Classes($1,single_Classes($2)); 
-    parse_results = $$; }
+      { @$ = @2;
+        SET_NODELOC(@2);
+        $$ = append_Classes($1,single_Classes($2)); 
+        parse_results = $$; }
     ;
     
     /* If no parent is specified, the class inherits from the Object class. */
-    class	: CLASS TYPEID '{' dummy_feature_list '}' ';'
-    { $$ = class_($2,idtable.add_string("Object"),$4,
-    stringtable.add_string(curr_filename)); }
-    | CLASS TYPEID INHERITS TYPEID '{' dummy_feature_list '}' ';'
-    { $$ = class_($2,$4,$6,stringtable.add_string(curr_filename)); }
+    class	: CLASS TYPEID '{' feature_list '}' ';'
+        { $$ = class_($2,idtable.add_string("Object"),$4,
+          stringtable.add_string(curr_filename)); }
+    | CLASS TYPEID INHERITS TYPEID '{' feature_list '}' ';'
+        { $$ = class_($2,$4,$6,stringtable.add_string(curr_filename)); }
+    | error
+        {}    
+    ;
+
+    /* Feature list may be empty, but no empty features in list. */
+    
+
+    feature_list : /* empty */
+        { $$ = nil_Features(); }
+    | feature /* jedan feature */
+        { $$ = single_Features($1); }
+      
+    feature : OBJECTID ':' TYPEID ';'
+        { $$ = attr($1, $3, no_expr()); }
     ;
     
-    /* Feature list may be empty, but no empty features in list. */
-    dummy_feature_list:		/* empty */
-    {  $$ = nil_Features(); }
-    
+  
     
     /* end of grammar */
     %%

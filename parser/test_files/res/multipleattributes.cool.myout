@@ -1,0 +1,2 @@
+".//test_files//multipleattributes.cl", line 3: syntax error at or near OBJECTID = y
+Compilation halted due to lex and parse errors
