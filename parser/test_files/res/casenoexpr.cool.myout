@@ -1,7 +1,4 @@
-".//test_files//casenoexpr.cl", line 3: syntax error at or near ASSIGN
-".//test_files//casenoexpr.cl", line 6: syntax error at or near ','
-".//test_files//casenoexpr.cl", line 6: syntax error at or near ','
-".//test_files//casenoexpr.cl", line 6: syntax error at or near ')'
-".//test_files//casenoexpr.cl", line 8: syntax error at or near DARROW
+".//test_files//casenoexpr.cl", line 7: syntax error at or near OF
 ".//test_files//casenoexpr.cl", line 9: syntax error at or near DARROW
+".//test_files//casenoexpr.cl", line 10: syntax error at or near ESAC
 Compilation halted due to lex and parse errors

@@ -1,9 +1,0 @@
-error in line# 3
-    parsed as: filename, line 2: syntax error at or near
-    should be: Compilation halted due to lex and parse errors
-error in line# 3
-    parsed as: filename, line 2: syntax error at or near
-    should be: 
-error in line# 3
-    parsed as: Compilation halted due to lex and parse errors
-    should be: 
