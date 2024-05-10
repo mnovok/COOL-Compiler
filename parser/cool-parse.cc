@@ -83,6 +83,9 @@
   #include "utilities.h"
   
   extern char *curr_filename;
+
+  /*dodano za nestedarith*/
+  #define YYINITDEPTH 1360
   
   
   /* Locations */
@@ -158,7 +161,7 @@
     int omerrs = 0;               /* number of errors in lexing and parsing */
     
 
-#line 162 "cool.tab.c"
+#line 165 "cool.tab.c"
 
 # ifndef YY_CAST
 #  ifdef __cplusplus
@@ -636,13 +639,13 @@ static const yytype_int8 yytranslate[] =
 /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_int16 yyrline[] =
 {
-       0,   165,   165,   171,   176,   187,   191,   196,   203,   204,
-     206,   208,   212,   214,   216,   221,   222,   224,   228,   232,
-     234,   236,   238,   240,   242,   244,   246,   248,   250,   252,
-     254,   256,   258,   260,   262,   264,   266,   268,   270,   272,
-     274,   276,   278,   280,   282,   287,   288,   290,   292,   296,
-     298,   300,   302,   306,   311,   312,   314,   318,   320,   322,
-     324,   326
+       0,   168,   168,   174,   179,   190,   194,   199,   206,   207,
+     209,   211,   215,   217,   219,   224,   225,   227,   231,   235,
+     237,   239,   241,   243,   245,   247,   249,   251,   253,   255,
+     257,   259,   261,   263,   265,   267,   269,   271,   273,   275,
+     277,   279,   281,   283,   285,   290,   291,   293,   295,   299,
+     301,   303,   305,   309,   314,   315,   317,   321,   323,   325,
+     327,   329
 };
 #endif
 
@@ -1449,380 +1452,380 @@ yyreduce:
   switch (yyn)
     {
   case 2: /* program: class_list  */
-#line 166 "cool.y"
+#line 169 "cool.y"
             { (yyloc) = (yylsp[0]); 
               SET_NODELOC((yylsp[0]));
               ast_root = program((yyvsp[0].classes)); }
-#line 1457 "cool.tab.c"
+#line 1460 "cool.tab.c"
     break;
 
   case 3: /* class_list: class  */
-#line 172 "cool.y"
+#line 175 "cool.y"
                 { (yyloc) = (yylsp[0]);
                   SET_NODELOC((yylsp[0]));
                   (yyval.classes) = single_Classes((yyvsp[0].class_));
                   parse_results = (yyval.classes); }
-#line 1466 "cool.tab.c"
+#line 1469 "cool.tab.c"
     break;
 
   case 4: /* class_list: class_list class  */
-#line 177 "cool.y"
+#line 180 "cool.y"
                 { (yyloc) = (yylsp[0]);
                   SET_NODELOC((yylsp[0]));
                   (yyval.classes) = append_Classes((yyvsp[-1].classes), single_Classes((yyvsp[0].class_))); 
                   parse_results = (yyval.classes); }
-#line 1475 "cool.tab.c"
+#line 1478 "cool.tab.c"
     break;
 
   case 5: /* class: CLASS TYPEID '{' feature_list '}' ';'  */
-#line 188 "cool.y"
+#line 191 "cool.y"
           { (yyloc) = (yylsp[0]);
             SET_NODELOC((yylsp[0]));
             (yyval.class_) = class_((yyvsp[-4].symbol),idtable.add_string("Object"),(yyvsp[-2].features), stringtable.add_string(curr_filename)); }
-#line 1483 "cool.tab.c"
+#line 1486 "cool.tab.c"
     break;
 
   case 6: /* class: CLASS TYPEID INHERITS TYPEID '{' feature_list '}' ';'  */
-#line 192 "cool.y"
+#line 195 "cool.y"
           { 
             (yyloc) = (yylsp[0]);
             SET_NODELOC((yylsp[0]));
             (yyval.class_) = class_((yyvsp[-6].symbol),(yyvsp[-4].symbol),(yyvsp[-2].features),stringtable.add_string(curr_filename)); }
-#line 1492 "cool.tab.c"
+#line 1495 "cool.tab.c"
     break;
 
   case 7: /* class: error  */
-#line 197 "cool.y"
+#line 200 "cool.y"
           {;}
-#line 1498 "cool.tab.c"
+#line 1501 "cool.tab.c"
     break;
 
   case 8: /* feature_list: %empty  */
-#line 203 "cool.y"
+#line 206 "cool.y"
                   { (yyval.features) = nil_Features(); }
-#line 1504 "cool.tab.c"
+#line 1507 "cool.tab.c"
     break;
 
   case 9: /* feature_list: feature  */
-#line 205 "cool.y"
+#line 208 "cool.y"
                   { (yyval.features) = single_Features((yyvsp[0].feature)); }
-#line 1510 "cool.tab.c"
+#line 1513 "cool.tab.c"
     break;
 
   case 10: /* feature_list: feature_list feature  */
-#line 207 "cool.y"
+#line 210 "cool.y"
                   { (yyval.features) = append_Features((yyvsp[-1].features), single_Features((yyvsp[0].feature))); }
-#line 1516 "cool.tab.c"
+#line 1519 "cool.tab.c"
     break;
 
   case 11: /* feature_list: error ';'  */
-#line 209 "cool.y"
+#line 212 "cool.y"
                   {;}
-#line 1522 "cool.tab.c"
+#line 1525 "cool.tab.c"
     break;
 
   case 12: /* feature: OBJECTID ':' TYPEID ';'  */
-#line 213 "cool.y"
+#line 216 "cool.y"
             { (yyval.feature) = attr((yyvsp[-3].symbol), (yyvsp[-1].symbol), no_expr()); }
-#line 1528 "cool.tab.c"
+#line 1531 "cool.tab.c"
     break;
 
   case 13: /* feature: OBJECTID '(' formal_list ')' ':' TYPEID '{' expression '}' ';'  */
-#line 215 "cool.y"
+#line 218 "cool.y"
             { (yyval.feature) = method((yyvsp[-9].symbol), (yyvsp[-7].formals), (yyvsp[-4].symbol), (yyvsp[-2].expression)); }
-#line 1534 "cool.tab.c"
+#line 1537 "cool.tab.c"
     break;
 
   case 14: /* feature: OBJECTID ':' TYPEID ASSIGN expression ';'  */
-#line 217 "cool.y"
+#line 220 "cool.y"
             { (yyval.feature) = attr((yyvsp[-5].symbol), (yyvsp[-3].symbol), (yyvsp[-1].expression)); }
-#line 1540 "cool.tab.c"
+#line 1543 "cool.tab.c"
     break;
 
   case 15: /* formal_list: %empty  */
-#line 221 "cool.y"
+#line 224 "cool.y"
                 { (yyval.formals) = nil_Formals(); }
-#line 1546 "cool.tab.c"
+#line 1549 "cool.tab.c"
     break;
 
   case 16: /* formal_list: formal  */
-#line 223 "cool.y"
+#line 226 "cool.y"
                 { (yyval.formals) = single_Formals((yyvsp[0].formal)); }
-#line 1552 "cool.tab.c"
+#line 1555 "cool.tab.c"
     break;
 
   case 17: /* formal_list: formal_list ',' formal  */
-#line 225 "cool.y"
+#line 228 "cool.y"
                 { (yyval.formals) = append_Formals((yyvsp[-2].formals), single_Formals((yyvsp[0].formal))); }
-#line 1558 "cool.tab.c"
+#line 1561 "cool.tab.c"
     break;
 
   case 18: /* formal: OBJECTID ':' TYPEID  */
-#line 229 "cool.y"
+#line 232 "cool.y"
            { (yyval.formal) = formal((yyvsp[-2].symbol), (yyvsp[0].symbol)); }
-#line 1564 "cool.tab.c"
+#line 1567 "cool.tab.c"
     break;
 
   case 19: /* expression: OBJECTID ASSIGN expression  */
-#line 233 "cool.y"
+#line 236 "cool.y"
                { (yyval.expression) = assign((yyvsp[-2].symbol), (yyvsp[0].expression)); }
-#line 1570 "cool.tab.c"
+#line 1573 "cool.tab.c"
     break;
 
   case 20: /* expression: expression '@' TYPEID '.' OBJECTID '(' expression_list ')'  */
-#line 235 "cool.y"
+#line 238 "cool.y"
                { (yyval.expression) = static_dispatch((yyvsp[-7].expression), (yyvsp[-5].symbol), (yyvsp[-3].symbol), (yyvsp[-1].expressions)); }
-#line 1576 "cool.tab.c"
+#line 1579 "cool.tab.c"
     break;
 
   case 21: /* expression: expression '.' OBJECTID '(' expression_list ')'  */
-#line 237 "cool.y"
+#line 240 "cool.y"
                { (yyval.expression) = dispatch((yyvsp[-5].expression), (yyvsp[-3].symbol), (yyvsp[-1].expressions)); }
-#line 1582 "cool.tab.c"
+#line 1585 "cool.tab.c"
     break;
 
   case 22: /* expression: OBJECTID '(' expression_list ')'  */
-#line 239 "cool.y"
+#line 242 "cool.y"
                { (yyval.expression) = dispatch(object(idtable.add_string("self")), (yyvsp[-3].symbol), (yyvsp[-1].expressions)); }
-#line 1588 "cool.tab.c"
+#line 1591 "cool.tab.c"
     break;
 
   case 23: /* expression: IF expression THEN expression ELSE expression FI  */
-#line 241 "cool.y"
+#line 244 "cool.y"
                { (yyval.expression) = cond((yyvsp[-5].expression), (yyvsp[-3].expression), (yyvsp[-1].expression)); }
-#line 1594 "cool.tab.c"
+#line 1597 "cool.tab.c"
     break;
 
   case 24: /* expression: IF expression THEN expression  */
-#line 243 "cool.y"
+#line 246 "cool.y"
                { (yyval.expression) = cond((yyvsp[-2].expression), (yyvsp[0].expression), no_expr()); }
-#line 1600 "cool.tab.c"
+#line 1603 "cool.tab.c"
     break;
 
   case 25: /* expression: WHILE expression LOOP expression POOL  */
-#line 245 "cool.y"
+#line 248 "cool.y"
                { (yyval.expression) = loop((yyvsp[-3].expression), (yyvsp[-1].expression)); }
-#line 1606 "cool.tab.c"
+#line 1609 "cool.tab.c"
     break;
 
   case 26: /* expression: '{' expression_block '}'  */
-#line 247 "cool.y"
+#line 250 "cool.y"
                { (yyval.expression) = block((yyvsp[-1].expressions)); }
-#line 1612 "cool.tab.c"
+#line 1615 "cool.tab.c"
     break;
 
   case 27: /* expression: LET expression_let  */
-#line 249 "cool.y"
+#line 252 "cool.y"
                { (yyval.expression) = (yyvsp[0].expression); }
-#line 1618 "cool.tab.c"
+#line 1621 "cool.tab.c"
     break;
 
   case 28: /* expression: CASE expression OF case_list ESAC  */
-#line 251 "cool.y"
+#line 254 "cool.y"
                { (yyval.expression) = typcase((yyvsp[-3].expression), (yyvsp[-1].cases)); }
-#line 1624 "cool.tab.c"
+#line 1627 "cool.tab.c"
     break;
 
   case 29: /* expression: NEW TYPEID  */
-#line 253 "cool.y"
+#line 256 "cool.y"
                { (yyval.expression) = new_((yyvsp[0].symbol)); }
-#line 1630 "cool.tab.c"
+#line 1633 "cool.tab.c"
     break;
 
   case 30: /* expression: ISVOID expression  */
-#line 255 "cool.y"
+#line 258 "cool.y"
                { (yyval.expression) = isvoid((yyvsp[0].expression)); }
-#line 1636 "cool.tab.c"
+#line 1639 "cool.tab.c"
     break;
 
   case 31: /* expression: expression '+' expression  */
-#line 257 "cool.y"
+#line 260 "cool.y"
                { (yyval.expression) = plus((yyvsp[-2].expression), (yyvsp[0].expression)); }
-#line 1642 "cool.tab.c"
+#line 1645 "cool.tab.c"
     break;
 
   case 32: /* expression: expression '-' expression  */
-#line 259 "cool.y"
+#line 262 "cool.y"
                { (yyval.expression) = sub((yyvsp[-2].expression), (yyvsp[0].expression)); }
-#line 1648 "cool.tab.c"
+#line 1651 "cool.tab.c"
     break;
 
   case 33: /* expression: expression '*' expression  */
-#line 261 "cool.y"
+#line 264 "cool.y"
                { (yyval.expression) = mul((yyvsp[-2].expression), (yyvsp[0].expression)); }
-#line 1654 "cool.tab.c"
+#line 1657 "cool.tab.c"
     break;
 
   case 34: /* expression: expression '/' expression  */
-#line 263 "cool.y"
+#line 266 "cool.y"
                { (yyval.expression) = divide((yyvsp[-2].expression), (yyvsp[0].expression)); }
-#line 1660 "cool.tab.c"
+#line 1663 "cool.tab.c"
     break;
 
   case 35: /* expression: '~' expression  */
-#line 265 "cool.y"
+#line 268 "cool.y"
                { (yyval.expression) = neg((yyvsp[0].expression)); }
-#line 1666 "cool.tab.c"
+#line 1669 "cool.tab.c"
     break;
 
   case 36: /* expression: expression '<' expression  */
-#line 267 "cool.y"
+#line 270 "cool.y"
                { (yyval.expression) = lt((yyvsp[-2].expression), (yyvsp[0].expression)); }
-#line 1672 "cool.tab.c"
+#line 1675 "cool.tab.c"
     break;
 
   case 37: /* expression: expression LE expression  */
-#line 269 "cool.y"
+#line 272 "cool.y"
                { (yyval.expression) = leq((yyvsp[-2].expression), (yyvsp[0].expression)); }
-#line 1678 "cool.tab.c"
+#line 1681 "cool.tab.c"
     break;
 
   case 38: /* expression: expression '=' expression  */
-#line 271 "cool.y"
+#line 274 "cool.y"
                { (yyval.expression) = eq((yyvsp[-2].expression), (yyvsp[0].expression)); }
-#line 1684 "cool.tab.c"
+#line 1687 "cool.tab.c"
     break;
 
   case 39: /* expression: NOT expression  */
-#line 273 "cool.y"
+#line 276 "cool.y"
                { (yyval.expression) = comp((yyvsp[0].expression)); }
-#line 1690 "cool.tab.c"
+#line 1693 "cool.tab.c"
     break;
 
   case 40: /* expression: '(' expression ')'  */
-#line 275 "cool.y"
+#line 278 "cool.y"
                { (yyval.expression) = (yyvsp[-1].expression); }
-#line 1696 "cool.tab.c"
+#line 1699 "cool.tab.c"
     break;
 
   case 41: /* expression: OBJECTID  */
-#line 277 "cool.y"
+#line 280 "cool.y"
                { (yyval.expression) = object((yyvsp[0].symbol)); }
-#line 1702 "cool.tab.c"
+#line 1705 "cool.tab.c"
     break;
 
   case 42: /* expression: INT_CONST  */
-#line 279 "cool.y"
+#line 282 "cool.y"
                { (yyval.expression) = int_const((yyvsp[0].symbol)); }
-#line 1708 "cool.tab.c"
+#line 1711 "cool.tab.c"
     break;
 
   case 43: /* expression: STR_CONST  */
-#line 281 "cool.y"
+#line 284 "cool.y"
                { (yyval.expression) = string_const((yyvsp[0].symbol)); }
-#line 1714 "cool.tab.c"
+#line 1717 "cool.tab.c"
     break;
 
   case 44: /* expression: BOOL_CONST  */
-#line 283 "cool.y"
+#line 286 "cool.y"
                { (yyval.expression) = bool_const((yyvsp[0].boolean)); }
-#line 1720 "cool.tab.c"
+#line 1723 "cool.tab.c"
     break;
 
   case 45: /* expression_list: %empty  */
-#line 287 "cool.y"
+#line 290 "cool.y"
                     { (yyval.expressions) = nil_Expressions(); }
-#line 1726 "cool.tab.c"
+#line 1729 "cool.tab.c"
     break;
 
   case 46: /* expression_list: expression  */
-#line 289 "cool.y"
+#line 292 "cool.y"
                     { (yyval.expressions) = single_Expressions((yyvsp[0].expression)); }
-#line 1732 "cool.tab.c"
+#line 1735 "cool.tab.c"
     break;
 
   case 47: /* expression_list: expression_list ',' expression  */
-#line 291 "cool.y"
+#line 294 "cool.y"
                     { (yyval.expressions) = append_Expressions((yyvsp[-2].expressions), single_Expressions((yyvsp[0].expression))); }
-#line 1738 "cool.tab.c"
+#line 1741 "cool.tab.c"
     break;
 
   case 48: /* expression_list: error ','  */
-#line 293 "cool.y"
+#line 296 "cool.y"
                     {;}
-#line 1744 "cool.tab.c"
+#line 1747 "cool.tab.c"
     break;
 
   case 49: /* expression_block: expression ';'  */
-#line 297 "cool.y"
+#line 300 "cool.y"
                      { (yyval.expressions) = single_Expressions((yyvsp[-1].expression)); }
-#line 1750 "cool.tab.c"
+#line 1753 "cool.tab.c"
     break;
 
   case 50: /* expression_block: expression_block expression ';'  */
-#line 299 "cool.y"
+#line 302 "cool.y"
                      { (yyval.expressions) = append_Expressions((yyvsp[-2].expressions), single_Expressions((yyvsp[-1].expression))); }
-#line 1756 "cool.tab.c"
+#line 1759 "cool.tab.c"
     break;
 
   case 51: /* expression_block: expression_block ',' expression  */
-#line 301 "cool.y"
+#line 304 "cool.y"
                      { (yyval.expressions) = append_Expressions((yyvsp[-2].expressions), single_Expressions((yyvsp[0].expression))); }
-#line 1762 "cool.tab.c"
+#line 1765 "cool.tab.c"
     break;
 
   case 52: /* expression_block: error ';'  */
-#line 303 "cool.y"
+#line 306 "cool.y"
                      {;}
-#line 1768 "cool.tab.c"
+#line 1771 "cool.tab.c"
     break;
 
   case 53: /* case: OBJECTID ':' TYPEID DARROW expression ';'  */
-#line 307 "cool.y"
+#line 310 "cool.y"
         { (yyval.case_) = branch((yyvsp[-5].symbol), (yyvsp[-3].symbol), (yyvsp[-1].expression)); }
-#line 1774 "cool.tab.c"
+#line 1777 "cool.tab.c"
     break;
 
   case 54: /* case_list: %empty  */
-#line 311 "cool.y"
+#line 314 "cool.y"
               { (yyval.cases) = nil_Cases(); }
-#line 1780 "cool.tab.c"
+#line 1783 "cool.tab.c"
     break;
 
   case 55: /* case_list: case  */
-#line 313 "cool.y"
+#line 316 "cool.y"
               { (yyval.cases) = single_Cases((yyvsp[0].case_)); }
-#line 1786 "cool.tab.c"
+#line 1789 "cool.tab.c"
     break;
 
   case 56: /* case_list: case_list case  */
-#line 315 "cool.y"
+#line 318 "cool.y"
               { (yyval.cases) = append_Cases((yyvsp[-1].cases), single_Cases((yyvsp[0].case_))); }
-#line 1792 "cool.tab.c"
+#line 1795 "cool.tab.c"
     break;
 
   case 57: /* expression_let: OBJECTID ':' TYPEID IN expression  */
-#line 319 "cool.y"
+#line 322 "cool.y"
                    { (yyval.expression) = let((yyvsp[-4].symbol), (yyvsp[-2].symbol), no_expr(), (yyvsp[0].expression)); }
-#line 1798 "cool.tab.c"
+#line 1801 "cool.tab.c"
     break;
 
   case 58: /* expression_let: OBJECTID ':' TYPEID ASSIGN expression IN expression  */
-#line 321 "cool.y"
+#line 324 "cool.y"
                    { (yyval.expression) = let((yyvsp[-6].symbol), (yyvsp[-4].symbol), (yyvsp[-2].expression), (yyvsp[0].expression)); }
-#line 1804 "cool.tab.c"
+#line 1807 "cool.tab.c"
     break;
 
   case 59: /* expression_let: OBJECTID ':' TYPEID ASSIGN expression ',' expression_let  */
-#line 323 "cool.y"
+#line 326 "cool.y"
                    { (yyval.expression) = let((yyvsp[-6].symbol), (yyvsp[-4].symbol), (yyvsp[-2].expression), (yyvsp[0].expression)); }
-#line 1810 "cool.tab.c"
+#line 1813 "cool.tab.c"
     break;
 
   case 60: /* expression_let: OBJECTID ':' TYPEID ',' expression_let  */
-#line 325 "cool.y"
+#line 328 "cool.y"
                    { (yyval.expression) = let((yyvsp[-4].symbol), (yyvsp[-2].symbol), no_expr(), (yyvsp[0].expression)); }
-#line 1816 "cool.tab.c"
+#line 1819 "cool.tab.c"
     break;
 
   case 61: /* expression_let: error expression_let  */
-#line 327 "cool.y"
+#line 330 "cool.y"
                    {;}
-#line 1822 "cool.tab.c"
+#line 1825 "cool.tab.c"
     break;
 
 
-#line 1826 "cool.tab.c"
+#line 1829 "cool.tab.c"
 
       default: break;
     }
@@ -2020,7 +2023,7 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 331 "cool.y"
+#line 334 "cool.y"
 
     
     /* This function is called automatically when Bison detects a parse error. */

@@ -1,6 +1,0 @@
-error in line# 1
-    parsed as: ".//test_files//nested-arith.cl", line 15: memory exhausted at or near <Invalid Token>
-    should be: 
-error in line# 1
-    parsed as: Compilation halted due to lex and parse errors
-    should be: _program

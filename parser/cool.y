@@ -10,6 +10,9 @@
   #include "utilities.h"
   
   extern char *curr_filename;
+
+  /*dodano za nestedarith*/
+  #define YYINITDEPTH 1360
   
   
   /* Locations */
