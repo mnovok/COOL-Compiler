@@ -86,6 +86,14 @@ static void initialize_constants(void)
 ClassTable::ClassTable(Classes classes) : semant_errors(0) , error_stream(cerr) {
 
     /* Fill this in */
+    install_basic_classes();
+
+    int f = 0;
+    for(int i = classes->first(); classes->more(i); i = classes->next(i))
+	{
+		if(classes->nth(i)->getName() == Main) f = 1;
+	}    
+	if(!f)	semant_error()<<"Class Main is not defined.\n";
 
 }
 
