@@ -7,6 +7,7 @@
 #include "utilities.h"
 
 
+
 extern int semant_debug;
 extern char *curr_filename;
 
@@ -88,14 +89,41 @@ ClassTable::ClassTable(Classes classes) : semant_errors(0) , error_stream(cerr) 
     /* Fill this in */
     install_basic_classes();
 
-    int f = 0;
-    for(int i = classes->first(); classes->more(i); i = classes->next(i))
-	{
-		if(classes->nth(i)->getName() == Main) f = 1;
-	}    
-	if(!f)	semant_error()<<"Class Main is not defined.\n";
+    /*provjera postojanja glavne klase*/
+    bool isMainDefined = false;
+        for (int i = classes->first(); classes->more(i); i = classes->next(i)) {
+            if (classes->nth(i)->getName() == Main) {
+                isMainDefined = true;
+                break;
+            }
+        }
+
+    if (!isMainDefined) {
+        semant_error() << "Class Main is not defined.\n";
+    }
+
+    /*formiranje kolekcije klasa*/
+    for (int i = classes->first(); classes->more(i); i = classes->next(i)) {
+        Class_ current_class = classes->nth(i);
+        Symbol class_name = current_class->getName();
+        Symbol parent_name = current_class->getParent();
+
+        if (class_name == Object) {
+            semant_error(current_class) << "Class Object cannot be redefined.\n";
+        } else if (class_name == SELF_TYPE) {
+            semant_error(current_class) << "Class name cannot be SELF_TYPE.\n";
+        } else if (class_name == Int || class_name == Bool || class_name == Str) {
+            semant_error(current_class) << "Redefinition of " << class_name << " is not allowed.\n";
+        } else if (parent_name == Bool || parent_name == Str || parent_name == Int || parent_name == SELF_TYPE) {
+            semant_error(current_class) << "Cannot inherit from " << parent_name << ".\n";
+        }
+    }
+
+    /*aciklicnost*/
 
 }
+
+
 
 void ClassTable::install_basic_classes() {
 

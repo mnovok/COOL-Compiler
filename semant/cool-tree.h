@@ -38,6 +38,7 @@ public:
 
    /*dodano*/
    virtual Symbol getName() = 0;
+   virtual Symbol getParent() = 0;
 
 #ifdef Class__EXTRAS
    Class__EXTRAS
@@ -173,7 +174,11 @@ public:
 
    /*dodano*/
    Symbol getName(){
-      return name;}
+      return name;
+   }
+   Symbol getParent(){
+      return parent;
+   }   
 
 #ifdef Class__SHARED_EXTRAS
    Class__SHARED_EXTRAS

@@ -1,24 +1,2 @@
-#1
-_program
-  #1
-  _class
-    Main
-    Object
-    ".//test_files//badredefineint.cl"
-    (
-    #1
-    _method
-      main
-      Int
-      #1
-      _int
-        0
-      : _no_type
-    )
-  #1
-  _class
-    Int
-    Object
-    ".//test_files//badredefineint.cl"
-    (
-    )
+.//test_files//badredefineint.cl:1: Redefinition of Int is not allowed.
+Compilation halted due to static semantic errors.
